@@ -1,0 +1,521 @@
+.admin-panel .contact-form form select {
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #ededed;
+    color: #828282;
+    font-size: 15px;
+    border-radius: 0;
+    appearance: auto;
+}
+
+.admin-panel .contact-form form input[type="file"] {
+    height: auto;
+    padding: 12px 20px;
+    background: #ffffff;
+    border: 1px solid #ededed;
+    width: 100%;
+}
+
+.admin-panel .contact-form form input[type="text"],
+.admin-panel .contact-form form input[type="search"],
+.admin-panel .contact-form form input[type="email"],
+.admin-panel .contact-form form input[type="password"],
+.admin-panel .contact-form form input[type="datetime-local"],
+.admin-panel .contact-form form input[type="date"],
+.admin-panel .contact-form form textarea {
+    padding-left: 20px;
+    height: 50px;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #ededed;
+    color: #828282;
+    font-size: 15px;
+    border-radius: 0;
+}
+
+.admin-panel .contact-form form input[type="text"]:focus,
+.admin-panel .contact-form form input[type="search"]:focus,
+.admin-panel .contact-form form input[type="email"]:focus,
+.admin-panel .contact-form form input[type="password"]:focus,
+.admin-panel .contact-form form input[type="datetime-local"]:focus,
+.admin-panel .contact-form form input[type="date"]:focus,
+.admin-panel .contact-form form select:focus,
+.admin-panel .contact-form form textarea:focus {
+    border-color: #1d1d1d;
+    color: #222222;
+    outline: none;
+}
+
+.admin-panel .contact-form form textarea {
+    padding-top: 14px;
+    min-height: 110px;
+    height: auto;
+}
+
+.admin-panel .contact-form form .input-box {
+    margin-bottom: 0;
+}
+
+.admin-panel .admin-field {
+    margin-bottom: 25px;
+}
+
+.admin-panel .admin-field label {
+    display: block;
+    color: #27282c;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin-panel .admin-field .required {
+    color: #e55737;
+}
+
+.admin-panel .admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.admin-panel .contact-form form .admin-actions button,
+.admin-panel .contact-form form .admin-actions .btn-one,
+.admin-panel .contact-form form .admin-actions .admin-btn-secondary {
+    width: auto;
+    display: inline-block;
+}
+
+.admin-panel .admin-actions .btn-one,
+.admin-panel .admin-actions .admin-btn-secondary {
+    margin: 0;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 24px;
+}
+
+.admin-btn-secondary {
+    background: #ffffff;
+    border: 1px solid #0b314f;
+    color: #0b314f;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.admin-btn-secondary:hover {
+    background: #0b314f;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.admin-thumb {
+    max-height: 80px;
+    border: 1px solid #ededed;
+}
+
+.admin-alert {
+    padding: 14px 18px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    border-left: 4px solid;
+}
+
+.admin-alert-success {
+    background: #f0faf4;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.admin-alert-error {
+    background: #fdf2f2;
+    border-color: #e55737;
+    color: #721c24;
+}
+
+.admin-table-wrap {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #ededed;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    color: #27282c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: #fafafa;
+}
+
+.admin-table tr:hover td {
+    background: #fafafa;
+}
+
+.admin-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.admin-badge-published {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.admin-badge-draft {
+    background: #f5f5f5;
+    color: #616161;
+}
+
+.admin-table .btn-one,
+.admin-table .btn-two {
+    line-height: 40px;
+    padding: 0 18px;
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.admin-action-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+}
+
+.admin-inline-form {
+    display: flex;
+    margin: 0;
+}
+
+.admin-inline-form button.btn-one {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.admin-login-area {
+    padding: 80px 0 110px;
+}
+
+body.admin-body {
+    background: #f4f6f9;
+    min-height: 100vh;
+}
+
+.admin-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-shell-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background: #0b314f;
+    padding: 30px 0;
+}
+
+.admin-shell-main {
+    flex: 1;
+    padding: 30px 40px;
+    overflow-x: auto;
+    background: #f4f6f9;
+}
+
+.admin-brand {
+    padding: 0 24px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.admin-brand img {
+    max-width: 160px;
+    filter: brightness(0) invert(1);
+}
+
+.admin-brand p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.admin-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-nav li a {
+    display: block;
+    padding: 14px 24px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    transition: all 300ms ease;
+}
+
+.admin-nav li a:hover,
+.admin-nav li.active a {
+    color: #ffffff;
+    background: rgba(229, 87, 55, 0.9);
+    text-decoration: none;
+}
+
+.admin-nav li form.admin-logout-form {
+    margin: 0;
+}
+
+.admin-nav li form.admin-logout-form button {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.admin-nav li form.admin-logout-form button:hover {
+    color: #ffffff;
+    background: rgba(229, 87, 55, 0.9);
+}
+
+.admin-table .btn-one.danger {
+    background: #c0392b;
+}
+
+.admin-table .btn-one.danger:hover {
+    background: #922b21;
+}
+
+.admin-login-shell {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #f4f6f9;
+}
+
+.admin-login-brand {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.admin-login-brand img {
+    max-width: 200px;
+}
+
+.admin-login-box {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.admin-login-box .sec-title {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.admin-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.admin-header-row .sec-title {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.admin-header-row .btn-one {
+    flex-shrink: 0;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 24px;
+}
+
+.admin-filter-bar {
+    margin-bottom: 25px;
+}
+
+.admin-filter-bar .inner-box {
+    padding: 25px 30px 20px;
+}
+
+.admin-date-range-wrap input[readonly] {
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.admin-filter-bar .litepicker .container__months {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.admin-filter-bar .litepicker .month-item-weekdays-row > div,
+.admin-filter-bar .litepicker .day-item {
+    font-family: 'Rubik', sans-serif;
+}
+
+.admin-filter-bar .litepicker .day-item.is-start-date,
+.admin-filter-bar .litepicker .day-item.is-end-date {
+    background: #e55737;
+}
+
+.admin-filter-bar .litepicker .day-item.is-in-range {
+    background: rgba(229, 87, 55, 0.15);
+}
+
+.admin-filter-bar .contact-form form input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.admin-filter-form .admin-btn-reset {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    margin-top: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: #0b314f;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+    transition: all 500ms ease;
+}
+
+.admin-filter-form .admin-btn-reset:hover {
+    background: #e55737;
+    color: #ffffff;
+}
+
+.admin-list-meta {
+    margin: 18px 0 0;
+    color: #828282;
+    font-size: 14px;
+}
+
+.admin-list-panel {
+    position: relative;
+}
+
+.admin-list-panel.is-loading .admin-table-wrap {
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+.admin-list-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ededed;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #27282c;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ededed;
+    border-top-color: #e55737;
+    border-radius: 50%;
+    animation: admin-spin 0.7s linear infinite;
+}
+
+@keyframes admin-spin {
+    to { transform: rotate(360deg); }
+}
+
+.admin-panel .pagination {
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.admin-panel .note-editor {
+    border-color: #ededed;
+}
+
+.admin-panel .note-toolbar {
+    background: #fafafa;
+    border-color: #ededed;
+}
+
+.admin-panel .note-editable {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #828282;
+}
+
+.admin-muted {
+    color: #828282;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+@media (max-width: 991px) {
+    .admin-shell {
+        flex-direction: column;
+    }
+
+    .admin-shell-sidebar {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .admin-shell-main {
+        padding: 20px;
+    }
+
+    .admin-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .admin-nav li a {
+        padding: 10px 16px;
+    }
+}
