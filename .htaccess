@@ -1,8 +1,10 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Kalau site di subfolder, uncomment & sesuaikan:
-    # RewriteBase /
+    # Admin CMS — nginx/Plesk sering gagal parse admin/login sebagai route CI.
+    # Rewrite ke controller underscore yang sudah terbukti jalan di server ini.
+    RewriteRule ^admin/login/?(.*)$ index.php/admin_login/$1 [L,QSA]
+    RewriteRule ^admin/berita/?(.*)$ index.php/admin_berita/$1 [L,QSA]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
