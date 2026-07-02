@@ -5,6 +5,7 @@
     # Rewrite ke controller underscore yang sudah terbukti jalan di server ini.
     RewriteRule ^admin/login/?(.*)$ index.php/admin_login/$1 [L,QSA]
     RewriteRule ^admin/berita/?(.*)$ index.php/admin_berita/$1 [L,QSA]
+    RewriteRule ^admin/akun/?(.*)$ index.php/admin_akun/$1 [L,QSA]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f

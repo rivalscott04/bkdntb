@@ -9,6 +9,9 @@
     <li class="<?php echo ($active_menu ?? '') === 'berita' ? 'active' : ''; ?>">
         <a href="<?php echo site_url('admin/berita'); ?>">Kelola Berita</a>
     </li>
+    <li class="<?php echo ($active_menu ?? '') === 'akun' ? 'active' : ''; ?>">
+        <a href="<?php echo site_url('admin/akun'); ?>">Ubah Akun</a>
+    </li>
     <li>
         <a href="<?php echo site_url(); ?>" target="_blank">Lihat Website</a>
     </li>

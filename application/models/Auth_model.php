@@ -36,6 +36,49 @@ class Auth_model extends CI_Model {
 		return $this->db->count_all_results() > 0;
 	}
 
+	public function get_by_id($id)
+	{
+		$this->db->from('user');
+		$this->db->where('id', (int) $id);
+		return $this->db->get()->row_array();
+	}
+
+	public function username_exists($username, $exclude_id = null)
+	{
+		$this->db->from('user');
+		$this->db->where('username', $username);
+		if ($exclude_id !== null) {
+			$this->db->where('id !=', (int) $exclude_id);
+		}
+		return $this->db->count_all_results() > 0;
+	}
+
+	public function update_account($id, array $data)
+	{
+		if (empty($data)) {
+			return false;
+		}
+		$this->db->where('id', (int) $id);
+		return $this->db->update('user', $data);
+	}
+
+	public function validate_password_strength($password)
+	{
+		if (strlen($password) < 6) {
+			return 'Password minimal 6 karakter dan harus mengandung huruf, angka, serta karakter khusus.';
+		}
+		if (!preg_match('/[a-zA-Z]/', $password)) {
+			return 'Password minimal 6 karakter dan harus mengandung huruf, angka, serta karakter khusus.';
+		}
+		if (!preg_match('/[0-9]/', $password)) {
+			return 'Password minimal 6 karakter dan harus mengandung huruf, angka, serta karakter khusus.';
+		}
+		if (!preg_match('/[^a-zA-Z0-9]/', $password)) {
+			return 'Password minimal 6 karakter dan harus mengandung huruf, angka, serta karakter khusus.';
+		}
+		return null;
+	}
+
 	public function verify_password($password, $stored_hash)
 	{
 		if ($this->is_bcrypt_hash($stored_hash)) {
