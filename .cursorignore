@@ -1,0 +1,2 @@
+# Override Cursor default ignore untuk file konfigurasi database project ini.
+!application/config/database.php

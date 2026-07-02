@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS `berita` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `judul_berita` varchar(255) NOT NULL,
+  `slug` varchar(255) NOT NULL,
+  `isi_berita` text NOT NULL,
+  `penulis` varchar(100) NOT NULL DEFAULT 'Admin',
+  `tanggal` datetime NOT NULL,
+  `gambar_berita` varchar(255) NOT NULL,
+  `bidang` varchar(100) NOT NULL,
+  `status` enum('draft','published') NOT NULL DEFAULT 'published',
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `slug` (`slug`),
+  KEY `idx_bidang` (`bidang`),
+  KEY `idx_tanggal` (`tanggal`),
+  KEY `idx_status` (`status`),
+  KEY `idx_status_tanggal` (`status`, `tanggal`),
+  KEY `idx_bidang_status_tanggal` (`bidang`, `status`, `tanggal`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

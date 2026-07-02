@@ -6,27 +6,21 @@
  *   php scripts/seed_berita.php          # insert yang belum ada (by slug)
  *   php scripts/seed_berita.php --fresh  # hapus semua berita lalu seed ulang
  */
-define('ENVIRONMENT', 'development');
-define('BASEPATH', realpath(__DIR__ . '/../system/') . '/');
-define('APPPATH', realpath(__DIR__ . '/../application/') . '/');
-define('FCPATH', realpath(__DIR__ . '/../') . '/');
-
-$_SERVER['HTTP_HOST'] = 'localhost';
-$_SERVER['SCRIPT_NAME'] = '/index.php';
-
-require BASEPATH . 'core/Common.php';
-require BASEPATH . 'database/DB.php';
-require APPPATH . 'helpers/berita_helper.php';
+require __DIR__ . '/lib/db_config.php';
 require __DIR__ . '/../database/seeds/Berita_html_parser.php';
+
+if (!defined('BASEPATH')) {
+	define('BASEPATH', realpath(__DIR__ . '/../system/') . '/');
+}
+if (!defined('APPPATH')) {
+	define('APPPATH', realpath(__DIR__ . '/../application/') . '/');
+}
+require APPPATH . 'helpers/berita_helper.php';
 
 $fresh = in_array('--fresh', $argv, true);
 
-$mysqli = new mysqli('127.0.0.1', 'root', '', 'berita', 3306);
-if ($mysqli->connect_error) {
-	fwrite(STDERR, "DB error: {$mysqli->connect_error}\n");
-	exit(1);
-}
-$mysqli->set_charset('utf8mb4');
+$config = db_load_config();
+$mysqli = db_connect($config, true);
 
 if ($fresh) {
 	$mysqli->query('DELETE FROM berita');
