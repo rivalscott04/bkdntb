@@ -52,6 +52,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// Admin CMS Berita (CodeIgniter — application/controllers/admin/)
+$route['admin'] = 'admin/login/index';
+$route['admin/login'] = 'admin/login/index';
+$route['admin/login/authenticate'] = 'admin/login/authenticate';
+$route['admin/login/logout'] = 'admin/login/logout';
 $route['admin/berita'] = 'admin/berita/index';
 $route['admin/berita/tambah'] = 'admin/berita/tambah';
 $route['admin/berita/cari'] = 'admin/berita/cari';
