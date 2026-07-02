@@ -131,12 +131,12 @@ php scripts/db.php migrate
 
 ## Admin CMS Berita (CodeIgniter)
 
-Halaman admin **sudah CodeIgniter**, bukan Laravel. Kodenya di:
+Halaman admin **CodeIgniter**. Controller di root (bukan subfolder `admin/`) supaya kompatibel nginx/Plesk:
 
 ```
-application/controllers/admin/Login.php    → /admin/login
-application/controllers/admin/Berita.php   → /admin/berita
-application/views/admin/                   → tampilan admin
+application/controllers/Admin_login.php  → /admin/login
+application/controllers/Admin_berita.php → /admin/berita
+application/views/admin/                 → tampilan admin
 ```
 
 ### URL admin

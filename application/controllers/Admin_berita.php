@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Berita extends Admin_Controller {
+class Admin_berita extends Admin_Controller {
 
 	private $per_page = 10;
 
