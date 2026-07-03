@@ -12,6 +12,8 @@ class Berita extends CI_Controller {
 		$this->load->model('Berita_model');
 		$this->load->helper('berita');
 		$this->load->library('pagination');
+		berita_bidang_list(TRUE);
+		berita_bidang_list();
 	}
 
 	public function index()

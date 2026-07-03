@@ -7,6 +7,8 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->load->model('Berita_model');
 		$this->load->helper('berita');
+		berita_bidang_list(TRUE);
+		berita_bidang_list();
 	}
 
 	public function index()

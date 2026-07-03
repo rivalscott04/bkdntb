@@ -10,12 +10,14 @@ class Bidang_model extends CI_Model {
 
 	public function get_all($include_inactive = TRUE)
 	{
+		$this->db->reset_query();
+		$this->db->select('bidang.*');
 		$this->db->from('bidang');
 		if (!$include_inactive) {
-			$this->db->where('aktif', 1);
+			$this->db->where('bidang.aktif', 1);
 		}
-		$this->db->order_by('urutan', 'ASC');
-		$this->db->order_by('label', 'ASC');
+		$this->db->order_by('bidang.urutan', 'ASC');
+		$this->db->order_by('bidang.label', 'ASC');
 		return $this->db->get()->result_array();
 	}
 
@@ -52,6 +54,7 @@ class Bidang_model extends CI_Model {
 
 	public function get_by_url_slug($url_slug)
 	{
+		$this->db->reset_query();
 		return $this->db->get_where('bidang', array('url_slug' => $url_slug))->row_array();
 	}
 
@@ -89,16 +92,19 @@ class Bidang_model extends CI_Model {
 
 	public function get_by_id($id)
 	{
+		$this->db->reset_query();
 		return $this->db->get_where('bidang', array('id' => (int) $id))->row_array();
 	}
 
 	public function get_by_kode($kode)
 	{
+		$this->db->reset_query();
 		return $this->db->get_where('bidang', array('kode' => $kode))->row_array();
 	}
 
 	public function kode_exists($kode, $exclude_id = null)
 	{
+		$this->db->reset_query();
 		$this->db->from('bidang');
 		$this->db->where('kode', $kode);
 		if ($exclude_id !== null) {
@@ -109,6 +115,7 @@ class Bidang_model extends CI_Model {
 
 	public function url_slug_exists($url_slug, $exclude_id = null)
 	{
+		$this->db->reset_query();
 		$this->db->from('bidang');
 		$this->db->where('url_slug', $url_slug);
 		if ($exclude_id !== null) {
@@ -128,12 +135,14 @@ class Bidang_model extends CI_Model {
 
 	public function insert($data)
 	{
+		$this->db->reset_query();
 		$this->db->insert('bidang', $data);
 		return $this->db->insert_id();
 	}
 
 	public function update($id, $data)
 	{
+		$this->db->reset_query();
 		$this->db->where('id', (int) $id);
 		return $this->db->update('bidang', $data);
 	}
@@ -147,6 +156,7 @@ class Bidang_model extends CI_Model {
 		if ($this->count_berita($row['kode']) > 0) {
 			return false;
 		}
+		$this->db->reset_query();
 		$this->db->where('id', (int) $id);
 		return $this->db->delete('bidang');
 	}

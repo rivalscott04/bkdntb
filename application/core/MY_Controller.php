@@ -66,6 +66,8 @@ class Bidang_Controller extends CI_Controller {
 		parent::__construct();
 		$this->load->model(array('Berita_model', 'Bidang_model'));
 		$this->load->helper('berita');
+		berita_bidang_list(TRUE);
+		berita_bidang_list();
 
 		if ($this->url_slug !== '' && $this->db->table_exists('bidang')) {
 			$row = $this->Bidang_model->get_by_url_slug($this->url_slug);

@@ -202,6 +202,12 @@ if (!function_exists('resolve_bidang_kode')) {
 			return '';
 		}
 
+		$CI =& get_instance();
+		if ($CI->db->table_exists('bidang')) {
+			$CI->load->model('Bidang_model');
+			return $CI->Bidang_model->resolve_kode($bidang);
+		}
+
 		$list = berita_bidang_list();
 		if (isset($list[$bidang])) {
 			return $bidang;
@@ -213,12 +219,6 @@ if (!function_exists('resolve_bidang_kode')) {
 			}
 		}
 
-		$CI =& get_instance();
-		if ($CI->db->table_exists('bidang')) {
-			$CI->load->model('Bidang_model');
-			return $CI->Bidang_model->resolve_kode($bidang);
-		}
-
 		return $bidang;
 	}
 }
@@ -226,7 +226,7 @@ if (!function_exists('resolve_bidang_kode')) {
 if (!function_exists('bidang_match_values')) {
 	function bidang_match_values($kode)
 	{
-		$kode = resolve_bidang_kode($kode);
+		$kode = trim($kode);
 		if ($kode === '') {
 			return array();
 		}
@@ -234,10 +234,15 @@ if (!function_exists('bidang_match_values')) {
 		$CI =& get_instance();
 		if ($CI->db->table_exists('bidang')) {
 			$CI->load->model('Bidang_model');
+			$kode = $CI->Bidang_model->resolve_kode($kode);
+			if ($kode === '') {
+				return array();
+			}
 			return $CI->Bidang_model->get_match_values($kode);
 		}
 
-		return array($kode);
+		$kode = resolve_bidang_kode($kode);
+		return $kode === '' ? array() : array($kode);
 	}
 }
 

@@ -153,14 +153,14 @@ class Berita_model extends CI_Model {
 	private function _select_list_columns()
 	{
 		$len = (int) self::$list_excerpt_length;
-		$this->db->select('id, judul_berita, slug, penulis, tanggal, gambar_berita, bidang, status');
-		$this->db->select('SUBSTRING(isi_berita, 1, ' . $len . ') AS isi_berita', FALSE);
+		$this->db->select('berita.id, berita.judul_berita, berita.slug, berita.penulis, berita.tanggal, berita.gambar_berita, berita.bidang, berita.status');
+		$this->db->select('SUBSTRING(berita.isi_berita, 1, ' . $len . ') AS isi_berita', FALSE);
 	}
 
 	private function _apply_status_filter($status)
 	{
 		if ($status !== null) {
-			$this->db->where('status', $status);
+			$this->db->where('berita.status', $status);
 		}
 	}
 
