@@ -119,8 +119,10 @@ class Bidang_model extends CI_Model {
 
 	public function count_berita($kode)
 	{
+		$values = $this->get_match_values($kode);
+		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->db->where_in('bidang', $this->get_match_values($kode));
+		$this->db->where_in('bidang', $values);
 		return $this->db->count_all_results();
 	}
 

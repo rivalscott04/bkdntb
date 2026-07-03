@@ -26,10 +26,11 @@ class Berita_model extends CI_Model {
 	public function get_by_bidang($bidang, $limit = null, $offset = 0, $status = 'published')
 	{
 		$this->load->helper('berita');
+		$match_values = bidang_match_values($bidang);
 		$this->db->reset_query();
 		$this->_select_list_columns();
 		$this->db->from('berita');
-		$this->db->where_in('bidang', bidang_match_values($bidang));
+		$this->db->where_in('bidang', $match_values);
 		$this->_apply_status_filter($status);
 		$this->db->order_by('tanggal', 'DESC');
 		if ($limit !== null) {
@@ -64,19 +65,21 @@ class Berita_model extends CI_Model {
 	public function count_by_bidang($bidang, $status = 'published')
 	{
 		$this->load->helper('berita');
+		$match_values = bidang_match_values($bidang);
 		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->db->where_in('bidang', bidang_match_values($bidang));
+		$this->db->where_in('bidang', $match_values);
 		$this->_apply_status_filter($status);
 		return $this->db->count_all_results();
 	}
 
 	public function search_admin($filters = array(), $limit = 10, $offset = 0)
 	{
+		$bidang_values = $this->_resolve_bidang_filter_values($filters);
 		$this->db->reset_query();
 		$this->_select_list_columns();
 		$this->db->from('berita');
-		$this->_apply_admin_filters($filters);
+		$this->_apply_admin_filters($filters, $bidang_values);
 		$this->db->order_by('tanggal', 'DESC');
 		$this->db->limit($limit, $offset);
 		return $this->db->get()->result_array();
@@ -84,9 +87,10 @@ class Berita_model extends CI_Model {
 
 	public function count_search_admin($filters = array())
 	{
+		$bidang_values = $this->_resolve_bidang_filter_values($filters);
 		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->_apply_admin_filters($filters);
+		$this->_apply_admin_filters($filters, $bidang_values);
 		return $this->db->count_all_results();
 	}
 
@@ -160,7 +164,16 @@ class Berita_model extends CI_Model {
 		}
 	}
 
-	private function _apply_admin_filters($filters)
+	private function _resolve_bidang_filter_values($filters)
+	{
+		if (empty($filters['bidang'])) {
+			return null;
+		}
+		$this->load->helper('berita');
+		return bidang_match_values($filters['bidang']);
+	}
+
+	private function _apply_admin_filters($filters, $bidang_values = null)
 	{
 		$q = trim($filters['q'] ?? '');
 		if ($q !== '') {
@@ -169,9 +182,8 @@ class Berita_model extends CI_Model {
 			$this->db->or_like('penulis', $q);
 			$this->db->group_end();
 		}
-		if (!empty($filters['bidang'])) {
-			$this->load->helper('berita');
-			$this->db->where_in('bidang', bidang_match_values($filters['bidang']));
+		if ($bidang_values !== null) {
+			$this->db->where_in('bidang', $bidang_values);
 		}
 		if (!empty($filters['status']) && in_array($filters['status'], array('published', 'draft'), TRUE)) {
 			$this->db->where('status', $filters['status']);
