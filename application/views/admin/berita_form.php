@@ -26,9 +26,10 @@
                         <div class="input-box">
                             <select name="bidang" required>
                                 <option value="">-- Pilih Bidang --</option>
+                                <?php $selected_bidang = isset($berita) ? resolve_bidang_kode($berita['bidang']) : ''; ?>
                                 <?php foreach ($bidang_list as $key => $val): ?>
                                     <option value="<?php echo html_escape($key); ?>"
-                                        <?php echo (isset($berita) && $berita['bidang'] === $key) ? 'selected' : ''; ?>>
+                                        <?php echo ($selected_bidang === $key) ? 'selected' : ''; ?>>
                                         <?php echo html_escape($val['label']); ?>
                                     </option>
                                 <?php endforeach; ?>

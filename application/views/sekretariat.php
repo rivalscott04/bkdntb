@@ -9,16 +9,7 @@
                         <div class="blog-post">
                             <?php $this->load->view('partials/bidang_berita_posts', array('berita_list' => $berita_list ?? array())); ?>
                         </div>
-                        <!-- <div class="row">
-                            <div class="col-md-12">
-                                <ul class="post-pagination text-center">
-                                    <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div> -->
+                        <?php $this->load->view('partials/bidang_berita_pagination', array('pagination' => $pagination ?? '')); ?>
                     </div>
 
                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">

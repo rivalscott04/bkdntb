@@ -9,6 +9,8 @@
                         <div class="blog-post">
                             <?php $this->load->view('partials/bidang_berita_posts', array('berita_list' => $berita_list ?? array())); ?>
                         </div>
+
+                        <?php $this->load->view('partials/bidang_berita_pagination', array('pagination' => $pagination ?? '')); ?>
                         
                     </div>
 

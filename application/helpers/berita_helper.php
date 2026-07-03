@@ -246,6 +246,34 @@ if (!function_exists('bidang_match_values')) {
 	}
 }
 
+if (!function_exists('bidang_berita_pagination_config')) {
+	function bidang_berita_pagination_config($base_url, $total, $per_page)
+	{
+		return array(
+			'base_url'             => $base_url,
+			'total_rows'           => $total,
+			'per_page'             => $per_page,
+			'use_page_numbers'     => TRUE,
+			'page_query_string'    => TRUE,
+			'query_string_segment' => 'page',
+			'first_link'             => FALSE,
+			'last_link'              => FALSE,
+			'full_tag_open'        => '<ul class="post-pagination text-center">',
+			'full_tag_close'       => '</ul>',
+			'num_tag_open'         => '<li>',
+			'num_tag_close'        => '</li>',
+			'cur_tag_open'         => '<li class="active"><a href="#">',
+			'cur_tag_close'        => '</a></li>',
+			'next_tag_open'        => '<li>',
+			'next_tag_close'       => '</li>',
+			'prev_tag_open'        => '<li>',
+			'prev_tag_close'       => '</li>',
+			'prev_link'            => '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+			'next_link'            => '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+		);
+	}
+}
+
 if (!function_exists('url_bidang')) {
 	function url_bidang($bidang)
 	{

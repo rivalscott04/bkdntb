@@ -82,12 +82,25 @@ class Bidang_model extends CI_Model {
 			return array($kode);
 		}
 		$values = array($row['kode']);
+		if (!empty($row['label']) && !in_array($row['label'], $values, TRUE)) {
+			$values[] = $row['label'];
+		}
 		foreach (self::parse_aliases($row['aliases'] ?? '') as $alias) {
 			if (!in_array($alias, $values, TRUE)) {
 				$values[] = $alias;
 			}
 		}
 		return $values;
+	}
+
+	public function resolve_id($value)
+	{
+		$kode = $this->resolve_kode($value);
+		if ($kode === '') {
+			return null;
+		}
+		$row = $this->get_by_kode($kode);
+		return $row ? (int) $row['id'] : null;
 	}
 
 	public function get_by_id($id)
@@ -126,10 +139,17 @@ class Bidang_model extends CI_Model {
 
 	public function count_berita($kode)
 	{
-		$values = $this->get_match_values($kode);
+		$row = $this->get_by_kode($kode);
+		if (!$row) {
+			return 0;
+		}
 		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->db->where_in('bidang', $values);
+		if ($this->db->field_exists('bidang_id', 'berita')) {
+			$this->db->where('bidang_id', (int) $row['id']);
+		} else {
+			$this->db->where_in('bidang', $this->get_match_values($kode));
+		}
 		return $this->db->count_all_results();
 	}
 

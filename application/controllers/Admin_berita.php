@@ -210,9 +210,9 @@ class Admin_berita extends Admin_Controller {
 			'isi_berita'   => $isi,
 			'penulis'      => $penulis,
 			'tanggal'      => date('Y-m-d 00:00:00', $tanggal_ts),
-			'bidang'       => $bidang,
 			'status'       => $status,
 		);
+		$data = array_merge($data, $this->Berita_model->prepare_bidang_data($bidang));
 
 		if ($id) {
 			$existing = $this->Berita_model->get_by_id($id);

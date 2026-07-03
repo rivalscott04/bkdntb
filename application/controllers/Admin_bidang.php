@@ -107,11 +107,22 @@ class Admin_bidang extends Admin_Controller {
 			if (!$existing) {
 				show_404();
 			}
-			if ($existing['kode'] !== $kode && $this->Bidang_model->count_berita($existing['kode']) > 0) {
-				$this->session->set_flashdata('error', 'Kode tidak dapat diubah karena sudah dipakai berita.');
-				redirect($redirect_form);
+			if ($existing['kode'] !== $kode) {
+				$alias_list = Bidang_model::parse_aliases($aliases);
+				if (!in_array($existing['kode'], $alias_list, TRUE)) {
+					array_unshift($alias_list, $existing['kode']);
+					$data['aliases'] = implode(', ', $alias_list);
+				}
 			}
 			$this->Bidang_model->update($id, $data);
+			$this->load->model('Berita_model');
+			$match_values = array_unique(array_merge(
+				array($existing['kode'], $kode),
+				Bidang_model::parse_aliases($existing['aliases'] ?? ''),
+				Bidang_model::parse_aliases($data['aliases'] ?? '')
+			));
+			$this->Berita_model->relink_bidang_berita($id, $match_values, $kode);
+			$this->Berita_model->sync_bidang_kode($id, $kode);
 			$this->session->set_flashdata('success', 'Bidang berhasil diperbarui.');
 		} else {
 			$this->Bidang_model->insert($data);

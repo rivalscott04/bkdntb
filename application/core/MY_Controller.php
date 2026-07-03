@@ -60,12 +60,14 @@ class Bidang_Controller extends CI_Controller {
 	protected $url_slug = '';
 	protected $bidang_key = '';
 	protected $view_name = '';
+	protected $per_page = 5;
 
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->model(array('Berita_model', 'Bidang_model'));
 		$this->load->helper('berita');
+		$this->load->library('pagination');
 		berita_bidang_list(TRUE);
 		berita_bidang_list();
 
@@ -89,10 +91,32 @@ class Bidang_Controller extends CI_Controller {
 			);
 		}
 
+		$page = max(1, (int) $this->input->get('page'));
+		$offset = ($page - 1) * $this->per_page;
+		$berita_list = array();
+		$pagination = '';
+
+		if ($this->bidang_key !== '') {
+			$total = $this->Berita_model->count_by_bidang($this->bidang_key, 'published');
+			if ($total > $this->per_page) {
+				$this->pagination->initialize(bidang_berita_pagination_config(
+					site_url($this->url_slug),
+					$total,
+					$this->per_page
+				));
+				$pagination = $this->pagination->create_links();
+			}
+			$berita_list = $this->Berita_model->get_by_bidang(
+				$this->bidang_key,
+				$this->per_page,
+				$offset,
+				'published'
+			);
+		}
+
 		$data = array(
-			'berita_list' => $this->bidang_key !== ''
-				? $this->Berita_model->get_by_bidang($this->bidang_key)
-				: array(),
+			'berita_list' => $berita_list,
+			'pagination'  => $pagination,
 			'bidang_key'  => $this->bidang_key,
 			'bidang'      => $bidang,
 		);

@@ -15,13 +15,12 @@
                 <label>Kode Bidang <span class="required">*</span></label>
                 <div class="input-box">
                     <input type="text" name="kode" required maxlength="100"
-                           value="<?php echo html_escape($bidang['kode'] ?? ''); ?>"
-                           <?php echo (!empty($berita_count)) ? 'readonly' : ''; ?>>
+                           value="<?php echo html_escape($bidang['kode'] ?? ''); ?>">
                 </div>
                 <p class="admin-muted">
-                    Identifier internal, dipakai di data berita.
+                    Identifier internal. Berita terhubung lewat ID bidang, jadi kode/nama tampilan bisa diubah tanpa kehilangan berita.
                     <?php if (!empty($berita_count)): ?>
-                        Tidak dapat diubah karena dipakai <?php echo (int) $berita_count; ?> berita.
+                        Bidang ini memiliki <?php echo (int) $berita_count; ?> berita.
                     <?php endif; ?>
                 </p>
             </div>
