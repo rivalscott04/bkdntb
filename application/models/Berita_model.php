@@ -25,10 +25,11 @@ class Berita_model extends CI_Model {
 
 	public function get_by_bidang($bidang, $limit = null, $offset = 0, $status = 'published')
 	{
+		$filter = $this->_resolve_bidang_filter($bidang);
 		$this->db->reset_query();
 		$this->_select_list_columns();
 		$this->db->from('berita');
-		$this->_apply_bidang_filter($bidang);
+		$this->_apply_resolved_bidang_filter($filter);
 		$this->_apply_status_filter($status);
 		$this->db->order_by('tanggal', 'DESC');
 		if ($limit !== null) {
@@ -62,20 +63,21 @@ class Berita_model extends CI_Model {
 
 	public function count_by_bidang($bidang, $status = 'published')
 	{
+		$filter = $this->_resolve_bidang_filter($bidang);
 		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->_apply_bidang_filter($bidang);
+		$this->_apply_resolved_bidang_filter($filter);
 		$this->_apply_status_filter($status);
 		return $this->db->count_all_results();
 	}
 
 	public function search_admin($filters = array(), $limit = 10, $offset = 0)
 	{
-		$bidang = $this->_resolve_bidang_filter_values($filters);
+		$bidang_filter = $this->_resolve_bidang_filter_from_filters($filters);
 		$this->db->reset_query();
 		$this->_select_list_columns();
 		$this->db->from('berita');
-		$this->_apply_admin_filters($filters, $bidang);
+		$this->_apply_admin_filters($filters, $bidang_filter);
 		$this->db->order_by('tanggal', 'DESC');
 		$this->db->limit($limit, $offset);
 		return $this->db->get()->result_array();
@@ -83,10 +85,10 @@ class Berita_model extends CI_Model {
 
 	public function count_search_admin($filters = array())
 	{
-		$bidang = $this->_resolve_bidang_filter_values($filters);
+		$bidang_filter = $this->_resolve_bidang_filter_from_filters($filters);
 		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->_apply_admin_filters($filters, $bidang);
+		$this->_apply_admin_filters($filters, $bidang_filter);
 		return $this->db->count_all_results();
 	}
 
@@ -163,29 +165,63 @@ class Berita_model extends CI_Model {
 		}
 	}
 
-	private function _resolve_bidang_filter_values($filters)
+	private function _resolve_bidang_filter_from_filters($filters)
 	{
 		if (empty($filters['bidang'])) {
 			return null;
 		}
-		return $filters['bidang'];
+		return $this->_resolve_bidang_filter($filters['bidang']);
 	}
 
-	private function _apply_bidang_filter($bidang)
+	private function _resolve_bidang_filter($bidang)
 	{
-		if ($this->db->field_exists('bidang_id', 'berita')) {
-			$this->load->model('Bidang_model');
-			$bidang_id = $this->Bidang_model->resolve_id($bidang);
-			if ($bidang_id !== null) {
-				$this->db->where('berita.bidang_id', $bidang_id);
-				return;
-			}
+		$this->load->helper('berita');
+		$filter = array(
+			'bidang_id'     => null,
+			'match_values'  => array(),
+		);
+
+		$kode = resolve_bidang_kode($bidang);
+		if ($kode === '') {
+			return $filter;
 		}
 
-		$this->load->helper('berita');
-		$match_values = bidang_match_values($bidang);
-		if (!empty($match_values)) {
-			$this->db->where_in('berita.bidang', $match_values);
+		$row = bidang_row($kode);
+		if ($row) {
+			if ($this->db->field_exists('bidang_id', 'berita')) {
+				$filter['bidang_id'] = (int) $row['id'];
+			}
+			$filter['match_values'] = $this->_bidang_match_values_from_row($row);
+			return $filter;
+		}
+
+		$filter['match_values'] = array($kode);
+		return $filter;
+	}
+
+	private function _bidang_match_values_from_row(array $row)
+	{
+		$values = array($row['kode']);
+		if (!empty($row['label']) && !in_array($row['label'], $values, TRUE)) {
+			$values[] = $row['label'];
+		}
+		$this->load->model('Bidang_model');
+		foreach (Bidang_model::parse_aliases($row['aliases'] ?? '') as $alias) {
+			if (!in_array($alias, $values, TRUE)) {
+				$values[] = $alias;
+			}
+		}
+		return $values;
+	}
+
+	private function _apply_resolved_bidang_filter(array $filter)
+	{
+		if (!empty($filter['bidang_id'])) {
+			$this->db->where('berita.bidang_id', $filter['bidang_id']);
+			return;
+		}
+		if (!empty($filter['match_values'])) {
+			$this->db->where_in('berita.bidang', $filter['match_values']);
 		}
 	}
 
@@ -239,7 +275,7 @@ class Berita_model extends CI_Model {
 		));
 	}
 
-	private function _apply_admin_filters($filters, $bidang = null)
+	private function _apply_admin_filters($filters, $bidang_filter = null)
 	{
 		$q = trim($filters['q'] ?? '');
 		if ($q !== '') {
@@ -248,8 +284,8 @@ class Berita_model extends CI_Model {
 			$this->db->or_like('penulis', $q);
 			$this->db->group_end();
 		}
-		if ($bidang !== null && $bidang !== '') {
-			$this->_apply_bidang_filter($bidang);
+		if ($bidang_filter !== null) {
+			$this->_apply_resolved_bidang_filter($bidang_filter);
 		}
 		if (!empty($filters['status']) && in_array($filters['status'], array('published', 'draft'), TRUE)) {
 			$this->db->where('status', $filters['status']);

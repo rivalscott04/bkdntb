@@ -143,12 +143,13 @@ class Bidang_model extends CI_Model {
 		if (!$row) {
 			return 0;
 		}
+		$match_values = $this->get_match_values($kode);
 		$this->db->reset_query();
 		$this->db->from('berita');
 		if ($this->db->field_exists('bidang_id', 'berita')) {
 			$this->db->where('bidang_id', (int) $row['id']);
 		} else {
-			$this->db->where_in('bidang', $this->get_match_values($kode));
+			$this->db->where_in('bidang', $match_values);
 		}
 		return $this->db->count_all_results();
 	}
