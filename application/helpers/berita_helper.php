@@ -61,18 +61,183 @@ if (!function_exists('format_tanggal_kartu')) {
 }
 
 if (!function_exists('berita_bidang_list')) {
-	function berita_bidang_list()
+	function berita_bidang_list($active_only = FALSE)
 	{
-		static $list = null;
-		if ($list === null) {
-			$CI =& get_instance();
+		static $cache = array();
+		static $loaded_version = -1;
+		$version = $GLOBALS['_berita_bidang_list_version'] ?? 0;
+		if ($loaded_version !== $version) {
+			$cache = array();
+			$loaded_version = $version;
+		}
+
+		$key = $active_only ? 'active' : 'all';
+		if (isset($cache[$key])) {
+			return $cache[$key];
+		}
+
+		$CI =& get_instance();
+		$list = array();
+
+		if ($CI->db->table_exists('bidang')) {
+			$CI->load->model('Bidang_model');
+			$list = $CI->Bidang_model->get_list_map($active_only);
+		}
+
+		if (empty($list)) {
 			$CI->config->load('bidang', TRUE);
 			$list = $CI->config->item('bidang_list', 'bidang');
 			if (!is_array($list)) {
 				$list = array();
 			}
+			if ($active_only) {
+				$list = array_filter($list, function ($item) {
+					return !isset($item['aktif']) || (int) $item['aktif'] === 1;
+				});
+			}
 		}
+
+		$cache[$key] = $list;
 		return $list;
+	}
+}
+
+if (!function_exists('berita_bidang_list_reset')) {
+	function berita_bidang_list_reset()
+	{
+		$GLOBALS['_berita_bidang_list_version'] = ($GLOBALS['_berita_bidang_list_version'] ?? 0) + 1;
+	}
+}
+
+if (!function_exists('bidang_rows_all')) {
+	function bidang_rows_all($active_only = FALSE)
+	{
+		static $cache = array();
+		static $loaded_version = -1;
+		$version = $GLOBALS['_berita_bidang_list_version'] ?? 0;
+		if ($loaded_version !== $version) {
+			$cache = array();
+			$loaded_version = $version;
+		}
+
+		$key = $active_only ? 'active' : 'all';
+		if (isset($cache[$key])) {
+			return $cache[$key];
+		}
+
+		$CI =& get_instance();
+		$rows = array();
+		if ($CI->db->table_exists('bidang')) {
+			$CI->load->model('Bidang_model');
+			$rows = $CI->Bidang_model->get_all(!$active_only);
+		}
+		$cache[$key] = $rows;
+		return $rows;
+	}
+}
+
+if (!function_exists('bidang_row')) {
+	function bidang_row($kode)
+	{
+		$kode = resolve_bidang_kode($kode);
+		if ($kode === '') {
+			return null;
+		}
+		foreach (bidang_rows_all() as $row) {
+			if ($row['kode'] === $kode) {
+				return $row;
+			}
+		}
+		return null;
+	}
+}
+
+if (!function_exists('bidang_judul_display')) {
+	function bidang_judul_display($kode)
+	{
+		$row = bidang_row($kode);
+		if ($row && !empty($row['judul_halaman'])) {
+			return $row['judul_halaman'];
+		}
+		return label_bidang($kode);
+	}
+}
+
+if (!function_exists('bidang_field')) {
+	function bidang_field($kode, $field, $default = '')
+	{
+		$row = bidang_row($kode);
+		if (!$row || !isset($row[$field]) || $row[$field] === '') {
+			return $default;
+		}
+		return $row[$field];
+	}
+}
+
+if (!function_exists('layanan_bidang_kode_for_page')) {
+	function layanan_bidang_kode_for_page($page = null)
+	{
+		static $map = null;
+		if ($map === null) {
+			$CI =& get_instance();
+			$CI->config->load('layanan_bidang', TRUE);
+			$map = $CI->config->item('layanan_bidang_map', 'layanan_bidang');
+			if (!is_array($map)) {
+				$map = array();
+			}
+		}
+		if ($page === null) {
+			$CI =& get_instance();
+			$page = $CI->uri->segment(1);
+		}
+		return $map[$page] ?? null;
+	}
+}
+
+if (!function_exists('resolve_bidang_kode')) {
+	function resolve_bidang_kode($bidang)
+	{
+		$bidang = trim($bidang);
+		if ($bidang === '') {
+			return '';
+		}
+
+		$list = berita_bidang_list();
+		if (isset($list[$bidang])) {
+			return $bidang;
+		}
+		foreach ($list as $kode => $item) {
+			$aliases = $item['aliases'] ?? array();
+			if (in_array($bidang, $aliases, TRUE)) {
+				return $kode;
+			}
+		}
+
+		$CI =& get_instance();
+		if ($CI->db->table_exists('bidang')) {
+			$CI->load->model('Bidang_model');
+			return $CI->Bidang_model->resolve_kode($bidang);
+		}
+
+		return $bidang;
+	}
+}
+
+if (!function_exists('bidang_match_values')) {
+	function bidang_match_values($kode)
+	{
+		$kode = resolve_bidang_kode($kode);
+		if ($kode === '') {
+			return array();
+		}
+
+		$CI =& get_instance();
+		if ($CI->db->table_exists('bidang')) {
+			$CI->load->model('Bidang_model');
+			return $CI->Bidang_model->get_match_values($kode);
+		}
+
+		return array($kode);
 	}
 }
 
@@ -80,8 +245,9 @@ if (!function_exists('url_bidang')) {
 	function url_bidang($bidang)
 	{
 		$list = berita_bidang_list();
-		if (isset($list[$bidang]['url'])) {
-			return site_url($list[$bidang]['url']);
+		$kode = resolve_bidang_kode($bidang);
+		if (isset($list[$kode]['url'])) {
+			return site_url($list[$kode]['url']);
 		}
 		return '#';
 	}
@@ -91,8 +257,9 @@ if (!function_exists('label_bidang')) {
 	function label_bidang($bidang)
 	{
 		$list = berita_bidang_list();
-		if (isset($list[$bidang]['label'])) {
-			return $list[$bidang]['label'];
+		$kode = resolve_bidang_kode($bidang);
+		if (isset($list[$kode]['label'])) {
+			return $list[$kode]['label'];
 		}
 		return $bidang;
 	}

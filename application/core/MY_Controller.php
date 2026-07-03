@@ -57,21 +57,42 @@ class Admin_Controller extends MY_Controller {
 
 class Bidang_Controller extends CI_Controller {
 
+	protected $url_slug = '';
 	protected $bidang_key = '';
 	protected $view_name = '';
 
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Berita_model');
+		$this->load->model(array('Berita_model', 'Bidang_model'));
 		$this->load->helper('berita');
+
+		if ($this->url_slug !== '' && $this->db->table_exists('bidang')) {
+			$row = $this->Bidang_model->get_by_url_slug($this->url_slug);
+			if ($row) {
+				$this->bidang_key = $row['kode'];
+			}
+		}
 	}
 
 	public function index()
 	{
+		$bidang = $this->bidang_key !== ''
+			? $this->Bidang_model->get_by_kode($this->bidang_key)
+			: null;
+		if (!$bidang && $this->bidang_key !== '') {
+			$bidang = array(
+				'kode'  => $this->bidang_key,
+				'label' => $this->bidang_key,
+			);
+		}
+
 		$data = array(
-			'berita_list' => $this->Berita_model->get_by_bidang($this->bidang_key),
+			'berita_list' => $this->bidang_key !== ''
+				? $this->Berita_model->get_by_bidang($this->bidang_key)
+				: array(),
 			'bidang_key'  => $this->bidang_key,
+			'bidang'      => $bidang,
 		);
 		$this->load->view('header');
 		$this->load->view($this->view_name, $data);

@@ -75,16 +75,7 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="title">
-                                                <h3 class="static">Bidang Pelaksana</h3>
-                                                <div class="overlay-title">
-                                                    <h3>UPTB UPPK</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
+                                    <?php $this->load->view('partials/layanan_bidang_pelaksana'); ?>
                                     <li>
                                         <a href="#">
                                             <div class="title">

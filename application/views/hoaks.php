@@ -50,7 +50,7 @@
                                         <ul class="meta-info">
                                             <li>Oleh <a href="#">Admin</a></li>
                                             <li><a href="#">03 October 2025</a></li>
-                                            <li>Bidang <a href="#">PPI</a></li>
+                                            <li>Bidang <a href="<?php echo url_bidang('PPI'); ?>"><?php echo html_escape(label_bidang('PPI')); ?></a></li>
                                         </ul>
                                     </div>
                                     <div class="text">
@@ -81,7 +81,7 @@
                                         <ul class="meta-info">
                                             <li>Oleh <a href="#">Admin</a></li>
                                             <li><a href="#">29 September 2025</a></li>
-                                            <li>Bidang <a href="#">PPI</a></li>
+                                            <li>Bidang <a href="<?php echo url_bidang('PPI'); ?>"><?php echo html_escape(label_bidang('PPI')); ?></a></li>
                                         </ul>
                                     </div>
                                     <div class="text">
@@ -117,7 +117,7 @@
                                         <ul class="meta-info">
                                             <li>Oleh <a href="#">Admin</a></li>
                                             <li><a href="#">11 September 2025</a></li>
-                                            <li>Bidang <a href="#">PPI</a></li>
+                                            <li>Bidang <a href="<?php echo url_bidang('PPI'); ?>"><?php echo html_escape(label_bidang('PPI')); ?></a></li>
                                         </ul>
                                     </div>
                                     <div class="text">
@@ -153,26 +153,11 @@ Rangkaian kegiatan mencakup sosialisasi dari PT Taspen (Persero) Cabang Mataram,
                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
                         <div class="single-service-sidebar">
                             <!--Start Single sidebar-->
-                             <div class="sidebar-contact-box text-center">
-                                <div class="inner-content">
-                                    <img src="<?php echo base_url().'assets/'?>images/team/ppi.png" alt="Awesome Image">
-                                  
-                                    <div class="bottom-box">
-                                        <h3>Kepala Bidang PPI</h3>
-                                        <span>Rian Priandana, S.IP, MM</span><br>
-                                         <span>NIP. 198804062007011001</span>
-                                    </div>
-                                    <div class="button">
-                                        <a class="btn-one wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms" href="#">Informasi LHKPN
-                                    <span class="flaticon-next"></span>
-                                </a>
-                                    </div>
-                                </div>
-                            </div>
+                             <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
                             <div class="single-sidebar">
                                 <div class="title">
-                                <h5>Layanan Bidang PPI</h5>
+                                <h5><?php echo html_escape(!empty($bidang['layanan_judul']) ? $bidang['layanan_judul'] : ('Layanan ' . ($bidang['label'] ?? ''))); ?></h5>
                             </div><br>
                                 <ul class="service-pages">
                                     <li>

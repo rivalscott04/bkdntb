@@ -22,13 +22,7 @@
         <section class="main-project-area style2">
             <div class="container">
                 <ul class="project-filter post-filter has-dynamic-filters-counter">
-                    <li data-filter=".filter-item" class="active"><span class="filter-text">Semua Bidang</span></li>
-                    <li data-filter=".sek"><span class="filter-text">Sekretariat</span></li>
-                    <li data-filter=".ppi"><span class="filter-text">Bidang PPI</span></li>
-                    <li data-filter=".mutasi"><span class="filter-text">Bidang Mutasi</span></li>
-                    <li data-filter=".pengembangan"><span class="filter-text">Bidang Pengembangan</span></li>
-                    <li data-filter=".penilaian"><span class="filter-text">Bidang Penilaian</span></li>
-                    <li data-filter=".uppk"><span class="filter-text">UPTB UPPK</span></li>
+                    <?php $this->load->view('partials/inspirasi_bidang_filters'); ?>
                 </ul>
                 <div class="row filter-layout masonary-layout">
 					<!-- Start single project item-->

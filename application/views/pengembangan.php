@@ -1,26 +1,4 @@
-  <!--Start breadcrumb area-->
-        <section class="breadcrumb-area style2" style="background-image: url(<?php echo base_url().'assets/'?>images/resources/breadcrumb-bg.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="inner-content-box clearfix">
-                            <div class="title-s2 text-center">
-                               
-                                <h1>Bidang Pengembangan Aparatur</h1>
-                                 <span>BKD Provinsi Nusa Tenggara Barat</span>
-                            </div>
-                            <div class="breadcrumb-menu float-left">
-                                <ul class="clearfix">
-                                    <li><a href="#"></a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End breadcrumb area-->
+<?php $this->load->view('partials/bidang_breadcrumb', array('bidang' => $bidang ?? array())); ?>
 
         
         <!--Start blog area-->
@@ -47,26 +25,11 @@
                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
                         <div class="single-service-sidebar">
                             <!--Start Single sidebar-->
-                             <div class="sidebar-contact-box text-center">
-                                <div class="inner-content">
-                                    <img src="<?php echo base_url().'assets/'?>images/team/fajar.png" alt="Awesome Image">
-                                  
-                                    <div class="bottom-box">
-                                        <h3>Kepala Bidang <br>Pengembangan Aparatur</h3>
-                                        <span>Akhmad Fajar Karya</span><br>
-                                         <span>NIP. 197106161998031008</span>
-                                    </div>
-                                    <div class="button">
-                                        <a class="btn-one wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms" href="#">Informasi LHKPN
-                                    <span class="flaticon-next"></span>
-                                </a>
-                                    </div>
-                                </div>
-                            </div>
+                             <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
                             <div class="single-sidebar">
                                 <div class="title">
-                                <h5>Layanan Bidang Pengembangan</h5>
+                                <h5><?php echo html_escape(!empty($bidang['layanan_judul']) ? $bidang['layanan_judul'] : ('Layanan ' . ($bidang['label'] ?? ''))); ?></h5>
                             </div><br>
                                 <ul class="service-pages">
                                     <li>

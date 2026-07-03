@@ -49,6 +49,7 @@
 		</section>
 
         <br><br>
+<?php $this->load->helper('berita'); ?>
 		<section>
 		<div class="container">
 		<div class="row">
@@ -73,7 +74,7 @@
                                 <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Ringkasan Tugas - Sekretaris Badan</h4>
+                                        <h4><?php echo html_escape(bidang_field('Sekretariat', 'ringkasan_tugas_judul', 'Ringkasan Tugas - Sekretaris Badan')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                        <p align="justify">
@@ -86,7 +87,7 @@
                                  <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Ringkasan Tugas - Kepala Bidang Pengadaan, Pemberhentian & Informasi (PPI)</h4>
+                                        <h4><?php echo html_escape(bidang_field('PPI', 'ringkasan_tugas_judul', 'Ringkasan Tugas - Kepala Bidang PPI')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                        <p align="justify">
@@ -99,7 +100,7 @@
                                  <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Ringkasan Tugas - Kepala Bidang Mutasi & Promosi</h4>
+                                        <h4><?php echo html_escape(bidang_field('Mutasi & Promosi', 'ringkasan_tugas_judul', 'Ringkasan Tugas - Kepala Bidang Mutasi & Promosi')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                        <p align="justify">
@@ -125,7 +126,7 @@ Pemberhentian.</p>
                                  <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Ringkasan Tugas - Kepala Bidang Pengembangan Aparatur</h4>
+                                        <h4><?php echo html_escape(bidang_field('Pengembangan Aparatur', 'ringkasan_tugas_judul', 'Ringkasan Tugas - Kepala Bidang Pengembangan Aparatur')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                        <p align="justify">
@@ -151,7 +152,7 @@ Pembinaan.</p>
                                   <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Ringkasan Tugas - Kepala Bidang Penilaian Kinerja Aparatur & Penghargaan</h4>
+                                        <h4><?php echo html_escape(bidang_field('Penilaian Kinerja Aparatur & Penghargaan', 'ringkasan_tugas_judul', 'Ringkasan Tugas - Kepala Bidang Penilaian Kinerja Aparatur & Penghargaan')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                        <p align="justify">

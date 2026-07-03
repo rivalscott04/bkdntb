@@ -25,10 +25,11 @@ class Berita_model extends CI_Model {
 
 	public function get_by_bidang($bidang, $limit = null, $offset = 0, $status = 'published')
 	{
+		$this->load->helper('berita');
 		$this->db->reset_query();
 		$this->_select_list_columns();
 		$this->db->from('berita');
-		$this->db->where('bidang', $bidang);
+		$this->db->where_in('bidang', bidang_match_values($bidang));
 		$this->_apply_status_filter($status);
 		$this->db->order_by('tanggal', 'DESC');
 		if ($limit !== null) {
@@ -62,9 +63,10 @@ class Berita_model extends CI_Model {
 
 	public function count_by_bidang($bidang, $status = 'published')
 	{
+		$this->load->helper('berita');
 		$this->db->reset_query();
 		$this->db->from('berita');
-		$this->db->where('bidang', $bidang);
+		$this->db->where_in('bidang', bidang_match_values($bidang));
 		$this->_apply_status_filter($status);
 		return $this->db->count_all_results();
 	}
@@ -168,7 +170,8 @@ class Berita_model extends CI_Model {
 			$this->db->group_end();
 		}
 		if (!empty($filters['bidang'])) {
-			$this->db->where('bidang', $filters['bidang']);
+			$this->load->helper('berita');
+			$this->db->where_in('bidang', bidang_match_values($filters['bidang']));
 		}
 		if (!empty($filters['status']) && in_array($filters['status'], array('published', 'draft'), TRUE)) {
 			$this->db->where('status', $filters['status']);

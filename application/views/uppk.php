@@ -1,26 +1,4 @@
-  <!--Start breadcrumb area-->
-        <section class="breadcrumb-area style2" style="background-image: url(<?php echo base_url().'assets/'?>images/resources/breadcrumb-bg.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="inner-content-box clearfix">
-                            <div class="title-s2 text-center">
-                               
-                                <h1>UPTB UPPK</h1>
-                                 <span>Unit Pelayanan Penilaian Kompetensi</span>
-                            </div>
-                            <div class="breadcrumb-menu float-left">
-                                <ul class="clearfix">
-                                    <li><a href="#"></a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End breadcrumb area-->
+<?php $this->load->view('partials/bidang_breadcrumb', array('bidang' => $bidang ?? array())); ?>
 
         
         <!--Start blog area-->
@@ -51,26 +29,11 @@
                             </div>
                             <!--End Single sidebar-->
                             <!--Start Single sidebar-->
-                             <div class="sidebar-contact-box text-center">
-                                <div class="inner-content">
-                                    <img src="<?php echo base_url().'assets/'?>images/team/erwin-min.png" alt="Awesome Image">
-                                  
-                                    <div class="bottom-box">
-                                        <h3>Kepala UPTB UPPK</h3>
-                                        <span>Erwin Rahadi, S.Psi.,MM</span><br>
-                                         <span>NIP. 197403081999031010</span>
-                                    </div>
-                                    <div class="button">
-                                        <a class="btn-one wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms" href="#">Informasi LHKPN
-                                    <span class="flaticon-next"></span>
-                                </a>
-                                    </div>
-                                </div>
-                            </div>
+                             <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
                             <div class="single-sidebar">
                                 <div class="title">
-                                <h5>Layanan UPTB UPPK</h5>
+                                <h5><?php echo html_escape(!empty($bidang['layanan_judul']) ? $bidang['layanan_judul'] : ('Layanan ' . ($bidang['label'] ?? ''))); ?></h5>
                             </div><br>
                                 <ul class="service-pages">
                                     <li>

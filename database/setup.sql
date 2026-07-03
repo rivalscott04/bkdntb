@@ -7,3 +7,6 @@ USE `bkdntbprov_admin`;
 
 SOURCE database/migrations/001_create_berita_table.sql;
 SOURCE database/migrations/002_create_cms_user_table.sql;
+SOURCE database/migrations/003_create_bidang_table.sql;
+SOURCE database/migrations/004_bidang_aliases.sql;
+SOURCE database/migrations/005_bidang_page_fields.sql;

@@ -165,13 +165,10 @@
                                                
                                                 <li class="dropdown"><a href="">Bidang</a>
                                                 <ul>
-                                                        <li><a href="/sekretariat">Sekretariat</a></li>
-                                                        <li><a href="/ppi">Pengadaan, Pemberhentian & Informasi (PPI)</a></li>
-                                                        <li><a href="/mutasi">Mutasi & Promosi</a></li>
-                                                        <li><a href="/pengembangan">Pengembangan Aparatur</a></li>
-                                                        <li><a href="/evaluasi">Penilaian Kinerja Aparatur & Penghargaan</a></li>
-                                                        <li><a href="/uppk">UPTB UPPK</a></li>
-                                                       
+                                                        <?php $this->load->helper('berita'); ?>
+                                                        <?php foreach (berita_bidang_list(TRUE) as $key => $val): ?>
+                                                        <li><a href="<?php echo site_url($val['url']); ?>"><?php echo html_escape($val['label']); ?></a></li>
+                                                        <?php endforeach; ?>
                                                     </ul>
                                                 </li>
 

@@ -43,6 +43,7 @@
 		</div>
 		
 <br>
+<?php $this->load->helper('berita'); ?>
 	
 <section>
     
@@ -56,7 +57,7 @@
 						 <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Layanan Bidang Pengadaan, Pemberhentian & Informasi (PPI)</h4>
+                                        <h4>Layanan Bidang <?php echo html_escape(bidang_field('PPI', 'label', 'PPI')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                     
@@ -124,7 +125,7 @@
                                  <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Layanan Bidang Mutasi & Promosi ASN</h4>
+                                        <h4>Layanan Bidang <?php echo html_escape(bidang_field('Mutasi & Promosi', 'label', 'Mutasi & Promosi')); ?> ASN</h4>
                                     </div>
                                     <div class="accord-content">
                                     
@@ -145,7 +146,7 @@
                                  <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Layanan Bidang Pengembangan Aparatur Sipil Negara</h4>
+                                        <h4>Layanan Bidang <?php echo html_escape(bidang_field('Pengembangan Aparatur', 'label', 'Pengembangan Aparatur')); ?> Sipil Negara</h4>
                                     </div>
                                     <div class="accord-content">
                                     
@@ -207,7 +208,7 @@
                              <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Layanan Bidang Penilaian Kinerja Aparatur & Penghargaan</h4>
+                                        <h4>Layanan Bidang <?php echo html_escape(bidang_field('Penilaian Kinerja Aparatur & Penghargaan', 'label', 'Penilaian Kinerja Aparatur & Penghargaan')); ?></h4>
                                     </div>
                                     <div class="accord-content">
                                     

@@ -1,26 +1,4 @@
-  <!--Start breadcrumb area-->
-        <section class="breadcrumb-area style2" style="background-image: url(<?php echo base_url().'assets/'?>images/resources/breadcrumb-bg.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="inner-content-box clearfix">
-                            <div class="title-s2 text-center">
-                               
-                                <h1>Sekretariat BKD NTB</h1>
-                                 <span>PPID BKD Provinsi NTB</span>
-                            </div>
-                            <div class="breadcrumb-menu float-left">
-                                <ul class="clearfix">
-                                    <li><a href="#"></a></li>
-                                   
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End breadcrumb area-->
+<?php $this->load->view('partials/bidang_breadcrumb', array('bidang' => $bidang ?? array())); ?>
 
         
         <!--Start blog area-->
@@ -46,22 +24,7 @@
                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
                         <div class="single-service-sidebar">
                             <!--Start Single sidebar-->
-                             <div class="sidebar-contact-box text-center">
-                                <div class="inner-content">
-                                    <img src="<?php echo base_url().'assets/'?>images/team/sekban.png" alt="Awesome Image">
-                                  
-                                    <div class="bottom-box">
-                                        <h3>Sekretaris Badan</h3>
-                                        <span>Ida Bagus Arnawa, SE</span><br>
-                                         <span>NIP. 197406121993031003</span>
-                                    </div>
-                                    <div class="button">
-                                        <a class="btn-one wow slideInUp" data-wow-delay="0ms" data-wow-duration="1500ms" href="#">Informasi LHKPN
-                                    <span class="flaticon-next"></span>
-                                </a>
-                                    </div>
-                                </div>
-                            </div>
+                             <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
                           
                            

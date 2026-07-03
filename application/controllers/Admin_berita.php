@@ -12,7 +12,6 @@ class Admin_berita extends Admin_Controller {
 		$this->load->helper(array('url', 'form', 'berita'));
 		$this->load->library('pagination');
 		$this->load->library('upload');
-		$this->config->load('bidang', TRUE);
 	}
 
 	private function _pagination_config($base_url, $total)
@@ -45,7 +44,7 @@ class Admin_berita extends Admin_Controller {
 
 	private function _admin_filters_from_input()
 	{
-		$bidang_list = $this->config->item('bidang_list', 'bidang');
+		$bidang_list = berita_bidang_list();
 		$bidang = $this->input->get('bidang', TRUE);
 		$status = $this->input->get('status', TRUE);
 		$tanggal_dari = $this->_parse_filter_date($this->input->get('tanggal_dari', TRUE));
@@ -105,7 +104,7 @@ class Admin_berita extends Admin_Controller {
 			'title'         => 'Kelola Berita',
 			'active_menu'   => 'berita',
 			'use_list_ajax' => TRUE,
-			'bidang_list'   => $this->config->item('bidang_list', 'bidang'),
+			'bidang_list'   => berita_bidang_list(),
 			'filters'       => $filters,
 			'berita_list'   => $list['berita_list'],
 			'pagination'    => $list['pagination'],
@@ -142,7 +141,7 @@ class Admin_berita extends Admin_Controller {
 			'title'       => 'Tambah Berita',
 			'active_menu' => 'berita',
 			'use_editor'  => TRUE,
-			'bidang_list' => $this->config->item('bidang_list', 'bidang'),
+			'bidang_list' => berita_bidang_list(),
 		));
 	}
 
@@ -157,7 +156,7 @@ class Admin_berita extends Admin_Controller {
 			'active_menu' => 'berita',
 			'use_editor'  => TRUE,
 			'berita'      => $berita,
-			'bidang_list' => $this->config->item('bidang_list', 'bidang'),
+			'bidang_list' => berita_bidang_list(),
 		));
 	}
 
@@ -174,7 +173,7 @@ class Admin_berita extends Admin_Controller {
 		$status = $this->input->post('status', TRUE) === 'draft' ? 'draft' : 'published';
 		$redirect_form = $id ? 'admin/berita/edit/' . $id : 'admin/berita/tambah';
 
-		$bidang_list = $this->config->item('bidang_list', 'bidang');
+		$bidang_list = berita_bidang_list();
 
 		if ($judul === '' || $bidang === '' || $tanggal === '' || trim(strip_tags($isi)) === '') {
 			$this->session->set_flashdata('error', 'Judul, bidang, tanggal, dan narasi wajib diisi.');

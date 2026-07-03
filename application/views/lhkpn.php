@@ -57,7 +57,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                           
+                            <?php $this->load->helper('berita'); ?>
                                 <tr>
                                 <td>1.</td>
                                     <td>Drs. Tri Budiprayitno, M.Si</td>
@@ -68,51 +68,13 @@
 
                                   <tr>
                                 <td>2.</td>
-                                    <td>Ida Bagus Arnawa, SE</td>
-                                   <td>Sekretaris Badan</td> 
+                                    <td><?php echo html_escape(bidang_field('Sekretariat', 'kepala_nama', 'Ida Bagus Arnawa, SE')); ?></td>
+                                   <td><?php echo html_escape(bidang_field('Sekretariat', 'kepala_judul', 'Sekretaris Badan')); ?></td> 
                                    
                                    <td><a href="#" class="btn-three" target="_blank">Lihat LHKPN</a></td>
                                 </tr>
 
-                                  <tr>
-                                <td>3.</td>
-                                    <td>Rian Priandana, S.IP, MM</td>
-                                   <td>Kepala Bidang PPI</td> 
-                                   
-                                   <td><a href="#" class="btn-three" target="_blank">Lihat LHKPN</a></td>
-                                </tr>
-
-                                  <tr>
-                                <td>4.</td>
-                                    <td>Savitri, S.T, M.Eng</td>
-                                   <td>Kepala Bidang Mutasi & Promosi</td> 
-                                   
-                                   <td><a href="#" class="btn-three" target="_blank">Lihat LHKPN</a></td>
-                                </tr>
-
-                                  <tr>
-                                <td>5.</td>
-                                    <td>Akhmad Fajar Karya, S.Sos.,MM</td>
-                                   <td>Kepala Bidang Pengembangan Aparatur</td> 
-                                   
-                                   <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman_Harta_Kekayaan_LHKPN_199513 Fajar.pdf" class="btn-three" target="_blank">Lihat LHKPN</a></td>
-                                </tr>
-
-                                  <tr>
-                                <td>6.</td>
-                                    <td>Sry Wahyuningsih, S.STP, M.H.</td>
-                                   <td>Kepala Bidang Penilaian Kinerja Aparatur</td> 
-                                   
-                                   <td><a href="#" class="btn-three" target="_blank">Lihat LHKPN</a></td>
-                                </tr>
-
-                                  <tr>
-                                <td>7.</td>
-                                    <td>Erwin Rahadi, S.Psi.,MM</td>
-                                   <td>Kepala UPTB UPPK</td> 
-                                   
-                                   <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman_Harta_Kekayaan_LHKPN_171575 Erwin.pdf" class="btn-three" target="_blank">Lihat LHKPN</a></td>
-                                </tr>
+                                <?php $lhkpn_no = 3; $this->load->view('partials/lhkpn_bidang_rows'); ?>
 
                                
 
