@@ -41,3 +41,10 @@
 		
 		</div>
 		</section>
+<br><br>
+        <div class="container">
+		<div class="row">
+            <img src="<?php echo base_url().'assets/'?>images/komposisi ASN.png" alt="Awesome Image">
+</div>
+</div></div>
+
