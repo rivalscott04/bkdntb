@@ -210,68 +210,111 @@
                         </div>
                     </div>
                 </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-carousel-v2 owl-carousel owl-theme">
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/1.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/2.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/3.jpg" alt="Awesome Image"></a>
+                                    
+                                  
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/4.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/5.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/7.jpg" alt="Awesome Image"></a>
+                                    
+                                  
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/8.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/9.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/10.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
-              <div class="row filter-layout masonary-layout">
-                      <!-- Start single project item-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 filter-item mutasi">
-                        <div class="single-project-style5">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?php echo base_url().'assets/'?>images/1.jpg" alt="projects" data-pagespeed-url-hash="86693198" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                    <div class="overlay-box">
-                                        <div class="box">
-                                            <div class="link">
-                                                <a href="<?php echo base_url().'assets/'?>images/"><span class="icon-out"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <!--End single project item -->
-                    <!--Start single project item-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 filter-item sek">
-                        <div class="single-project-style5">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?php echo base_url().'assets/'?>images/2.jpg" alt="projects" data-pagespeed-url-hash="381193119" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                    <div class="overlay-box">
-                                        <div class="box">
-                                            <div class="link">
-                                                <a href="<?php echo base_url().'assets/'?>images/2.jpg"><span class="icon-out"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--End single project item-->
-                    <!--Start single project item-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 filter-item mutasi">
-                        <div class="single-project-style5">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?php echo base_url().'assets/'?>images/6.jpg" alt="projects" data-pagespeed-url-hash="675693040" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                    <div class="overlay-box">
-                                        <div class="box">
-                                            <div class="link">
-                                                <a href="<?php echo base_url().'assets/'?>images/6.jpg"><span class="icon-out"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--End single project item-->
-                    
-                </div>
+              
         </section>
         <!--End Featured Area-->
 
@@ -393,6 +436,7 @@
                     </div>
                 </div>
             </div>
+                    </div>
         </section>
         <!--End blog area-->
 
