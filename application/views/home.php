@@ -196,14 +196,14 @@
         <section class="featured-area">
             <br><br><br>
             <div class="container about-style3-content">
-                <div class="about-style3-bg banner-animate" style="background-image: url(<?php echo base_url().'assets/'?>images/pattern/about-style3-bg.jpg);"></div>
+                <div class="about-style3-bg" style="background-image: url(<?php echo base_url().'assets/'?>images/pattern/about-style3-bg.jpg);"></div>
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="sec-title text-center">
                             
-                            <!-- <p>Data & Informasi Kepegawaian</p> -->
+                            <p>Potret Data & Informasi Kepegawaian</p>
                             <div class="title">Postur Kepegawaian<br>ASN Pemerintah Provinsi NTB</div>
-                            <br><em>Pembaharuan Data Terakhir : 02 Juni 2026</em>
+                            
                         </div>
                         <div class="button text-center">
                             
@@ -274,6 +274,7 @@
                           
                       
                         </div>
+                        <br><center><em>Pembaharuan Data : 02 Juni 2026</em></center>
                     </div>
                 </div>
 
@@ -370,8 +371,8 @@
                     <div class="col-xl-12">
                         <div class="inner-content-box clearfix">
                             <div class="title-s2 text-center">
-                                <span>Informasi Kegiatan Bidang di BKD NTB</span>
-                                <h1>Berita & Informasi</h1>
+                                <span>BKD Provinsi Nusa Tenggara Barat</span>
+                                <h1>Berita & Informasi Kegiatan</h1>
                             </div>
                             <div class="breadcrumb-menu float-left">
                                 <ul class="clearfix">
@@ -589,170 +590,7 @@
         <!--End Working Area-->
         
 
-        <div class="container inner-content">
-        <div class="concept-design-pricing-box">
-                            <div class="title">
-                                <h2>Alokasi Formasi CPNS & PPPK Tahun 2024</h2>
-                            </div>
-                            <div class="inner-content">
-                                <div class="row">
-
-                                     <!--Start Single Flexible box-->
-                                     <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi CPNS</h3>
-                                                            <span>Tenaga Kesehatan & Teknis</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>140</b><span>org</span></h1>
-                                                            <p>Formasi CPNS</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasi">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Alokasi Formasi CPNS :  
-                                                        <li>Kesehatan : 70 Org;</li>
-                                                        <li>Teknis : 70 Org;</li>
-                                                        
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasi">Lihat Formasi CPNS<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-
-                                    <!--Start Single Flexible box-->
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi PPPK</h3>
-                                                            <span>Tenaga Pendidik (Guru)</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>130</b><span>org</span></h1>
-                                                            <p>PPPK Guru</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasipppk">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Pelamar yang dapat melamar 
-                                                        <li>Pelamar Prioritas;</li>
-                                                        <li>eks THK-II;</li>
-                                                        <li>Guru Non ASN di NTB </li>
-                                                        <li>Lulusan PPG</li>
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasipppk">Lihat Formasi Guru<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-                                    <!--Start Single Flexible box-->
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi PPPK</h3>
-                                                            <span>Tenaga Kesehatan</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>55</b><span>org</span></h1>
-                                                            <p>PPPK Kesehatan</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasipppk">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Pelamar yang dapat melamar 
-                                                        <li>eks THK-II yang aktif bekerja;</li>
-                                                        <li>Tenaga Non ASN yang aktif bekerja;</li>
-                                                        
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasipppk">Lihat Formasi PPPK Kesehatan<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-
-                                     <!--Start Single Flexible box-->
-                                     <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi PPPK</h3>
-                                                            <span>Tenaga Teknis</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>175</b><span>org</span></h1>
-                                                            <p>PPPK Teknis</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasipppk">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Pelamar yang dapat melamar 
-                                                        <li>eks THK-II yang aktif bekerja;</li>
-                                                        <li>Tenaga Non ASN yang aktif bekerja;</li>
-                                                        
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasipppk">Lihat Formasi Teknis<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-
-
-                                </div>
-                            </div>
-                        </div>
-                        </div> 
-        <br><br>
-
-      
+    
 
       
 
