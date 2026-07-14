@@ -48,7 +48,7 @@ $img = url_gambar_berita_featured($berita['gambar_berita'] ?? '');
                                         <?php echo render_isi_berita($berita['isi_berita']); ?>
                                     </div>
                                     <div class="mt-4">
-                                        <a class="btn-two" href="<?php echo site_url('berita'); ?>">Kembali ke Berita<span class="flaticon-next"></span></a>
+                                        <a class="btn-one" href="<?php echo site_url('berita'); ?>">Kembali ke Berita<span class="flaticon-next"></span></a>
                                     </div>
                                 </div>
                             </div>
