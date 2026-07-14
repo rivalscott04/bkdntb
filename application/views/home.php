@@ -201,12 +201,12 @@
                     <div class="col-xl-12">
                         <div class="sec-title text-center">
                             
-                            <p>Transformasi Budaya Kerja ASN Pemerintah Provinsi NTB</p>
-                            <div class="title"><em>Work From Home</em> Setiap Hari Jumat <br>Layanan Tetap Maksimal</div>
+                            <!-- <p>Data & Informasi Kepegawaian</p> -->
+                            <div class="title">Postur Kepegawaian<br>ASN Pemerintah Provinsi NTB</div>
                         </div>
                         <div class="button text-center">
                             
-                            <a class="btn-one" href="/wfh">Helpdesk Layanan Online Selama WFH Setiap Hari Jumat<span class="flaticon-next"></span></a>
+                            <a class="btn-one" href="/pegawai">Informasi Data Kepegawaian<span class="flaticon-next"></span></a>
                         </div>
                     </div>
                 </div>
@@ -490,7 +490,7 @@
             <div class="container">
                 <div class="sec-title with-text max-width text-center wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1200ms">
                     <p>Pemerintah Provinsi NTB</p>
-                    <div class="title clr-white">Postur <span>Kepegawaian</span></div>
+                    <div class="title clr-white">Aparatur <span>Sipil Negara</span></div>
                </div>
                 <div class="row">
                     <!--Start Single Working Box-->
@@ -514,7 +514,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>Pegawai Negeri Sipil</h3>
-                                        <p>Jumlah PNS : 12.108 Orang</p>
+                                        <p>Jumlah PNS : 11.436 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -542,7 +542,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>Tenaga PPPK</h3>
-                                        <p>Jumlah PPPK : 6.795 Orang</p>
+                                        <p>Jumlah PPPK : 7.079 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -570,7 +570,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>PPPK Paruh Waktu</h3>
-                                        <p>Jumlah Total : 9.411 Orang</p>
+                                        <p>Jumlah Total : 9.392 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -578,7 +578,7 @@
                        
                     </div>
                    <div class="sec-title with-text max-width text-center wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1200ms">
-                    <p>Sumber Data : Bidang Pengadaan, Pemberhentian & Informasi Tahun 2025</p>
+                    <p>Sumber Data : Bidang Pengadaan, Pemberhentian & Informasi</p>
                    
                </div>
                     <!--End Single Working Box-->
