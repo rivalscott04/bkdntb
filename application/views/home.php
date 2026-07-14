@@ -5,17 +5,17 @@
                     <ul>
 
                       <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default"
-                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/pelantikansekda.jpg"
+                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/konsolidasi.jpg"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/pelantikansekda.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/konsolidasi.jpg">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','700','500']" data-whitespace="normal"
                              data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="big-title">
-                                   Lantik Sekda, Gubernur NTB <br>Ajak Bangun NTB secara Berjamaah
+                                   Gubernur NTB Perkuat Sinergi dengan BKN RI Untuk Jabatan Berbasis Kompetensi
                                 </div>
                             </div>
                         </div>
@@ -23,7 +23,7 @@
                              data-hoffset="['15','15','15','15']" data-voffset="['-75','-10','-25','-30']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
-                                <div class="text"><br><br><br>Gubernur NTB Dr. H. Lalu Muhamad Iqbal secara resmi melantik Abul Chair, Ak sebagai Sekretaris Daerah (Sekda) Provinsi NTB yang berlangsung di Pendopo Gubernur, Kamis 09 April 2026. Pelantikan ini dilakukan berdasarkan Keputusan Presiden Republik Indonesia <br>Nomor 29/TPA Tahun 2026 yang ditetapkan pada 17 Maret 2026.
+                                <div class="text"><br><br><br>Pemerintah Provinsi Nusa Tenggara Barat resmi memulai reformasi besar dalam tata kelola Aparatur Sipil Negara (ASN) melalui penerapan Manajemen Talenta berbasis sistem merit sebagai dasar pengembangan karier dan pengisian jabatan.
 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="btn-box">
-                                    <a class="btn-one" href="/berita">Selengkapnya<span class="flaticon-next"></span></a>
+                                    <a class="btn-one" href="/berita/jalin-konsolidasi-dengan-bkn-ri-gubernur-ntb-pastikan-jabatan-berbasis-kompetensi">Selengkapnya<span class="flaticon-next"></span></a>
                                     <!-- <a class="project-view-button" href="/seleksijpt">Informasi Pengumuman Selengkapnya</a> -->
                                 </div>
                             </div>
@@ -78,17 +78,17 @@
                         </li>
 
                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
-                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="<?php echo base_url().'assets/'?>images/slides/mutasijabatanadministrator.jpg"
+                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="<?php echo base_url().'assets/'?>images/slides/sumpahjanjipns.jpg"
                             data-title="Slide Title" data-transition="parallaxvertical">
 
-                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/mutasijabatanadministrator.jpg">
+                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/sumpahjanjipns.jpg">
 
                             <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
                                 data-hoffset="['15','15','15','15']" data-voffset="['-145','-100','-100','-90']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                                 style="z-index: 7; white-space: nowrap;">
                                  <div class="slide-content left-slide">
                                 <div class="big-title">
-                                Gubernur NTB Lantik 392 Pejabat<br>Administrator & Pengawas
+                               146 PNS Formasi 2025 Resmi Disumpah, Siap Mengabdi untuk NTB
                                 </div>
                             </div>
                                
@@ -97,7 +97,7 @@
                                 data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
-                               <div class="text"><br>Gubernur NTB melantik dan mengambil sumpah jabatan 392 pejabat eselon III dan IV lingkup Pemprov NTB di Ruang Rapat Tambora, Gedung Kantor Gubernur, Jumat sore (20/2). </div>
+                               <div class="text"><br>Pemerintah Provinsi Nusa Tenggara Barat (NTB) menggelar kegiatan Pengambilan Sumpah/Janji Pegawai Negeri Sipil (PNS) bagi peserta yang telah lulus seleksi formasi tahun 2025 dan menyelesaikan masa percobaan sebagai Calon Pegawai Negeri Sipil (CPNS).</div>
 </div>
                             </div>
                            
@@ -106,7 +106,7 @@
                                 style="z-index: 7; white-space: nowrap;">
                                  <div class="slide-content left-slide">
                                 <div class="btn-box">
-                                    <a class="btn-one" href="/berita">Selengkapnya<span class="flaticon-next"></span></a>
+                                    <a class="btn-one" href="/berita/146-pns-formasi-tahun-2025-resmi-diambil-sumpah-janjinya-siap-mengabdi-untuk-masyarakat-ntb">Selengkapnya<span class="flaticon-next"></span></a>
                                    
                                 </div>
                             </div>
