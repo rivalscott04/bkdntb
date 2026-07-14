@@ -203,7 +203,7 @@
                             
                             <!-- <p>Data & Informasi Kepegawaian</p> -->
                             <div class="title">Postur Kepegawaian<br>ASN Pemerintah Provinsi NTB</div>
-                            <br><em>Status Pembaharuan Data : 30 Juni 2026</em>
+                            <br><em>Status Pembaharuan Data : 2 Juni 2026</em>
                         </div>
                         <div class="button text-center">
                             
