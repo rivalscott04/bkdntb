@@ -17,7 +17,7 @@ $img = url_gambar_berita_featured($berita['gambar_berita'] ?? '');
                         <div class="inner-content-box clearfix">
                             <div class="title-s2 text-center">
                                 <span>BKD Provinsi Nusa Tenggara Barat</span>
-                                <h1><?php echo html_escape($berita['judul_berita']); ?></h1>
+                                <h1>Berita & Informasi Kegiatan</h1>
                             </div>
                         </div>
                     </div>
@@ -36,6 +36,7 @@ $img = url_gambar_berita_featured($berita['gambar_berita'] ?? '');
                                     <img src="<?php echo $img; ?>" alt="<?php echo html_escape($berita['judul_berita']); ?>">
                                 </div>
                                 <div class="text-holder">
+                                    <h3><?php echo html_escape($berita['judul_berita']); ?></h3>
                                     <div class="meta-box">
                                         <ul class="meta-info">
                                             <li>Oleh <?php echo html_escape($berita['penulis']); ?></li>

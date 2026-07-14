@@ -6,8 +6,8 @@
                         <div class="inner-content-box clearfix">
                             <div class="title-s2 text-center">
                                
-                                <h1>Profil Pimpinan OPD</h1>
-                                 <span>Provinsi Nusa Tenggara Barat</span>
+                                <h1>Profil Pejabat OPD</h1>
+                                 <span>Pemerintah Provinsi Nusa Tenggara Barat</span>
                             </div>
                             <div class="breadcrumb-menu float-left">
                                 <ul class="clearfix">
@@ -24,7 +24,7 @@
  
 
 
-        <br>
+        <br>    <br>
 		<section>
 		<div class="container">
 		<div class="row">
@@ -75,7 +75,9 @@
                                 
                             </div>
                         </div>
-						
+						<br>
+        <em>Pembaharuan Data : 30 Juni 2026</em>
+
                     </div>
 					
         </div>
@@ -83,4 +85,4 @@
 		</div>
 		</section>	
 		
-		<br><br>
+		<br>
