@@ -146,6 +146,7 @@
                                                 <ul>
                                                         <li><a href="/kaban">Kepala Badan</a></li>
                                                         <li><a href="/sekban">Sekretaris Badan</a></li>
+                                                        <li><a href="/pimpinan">Pimpinan OPD</a></li>
                                                         <li><a href="/pegawai">Data Kepegawaian</a></li>
                                                         <li><a href="/lhkpn">Informasi LHKPN</a></li>
                                                         <li><a href="/struktur">Struktur Organisasi</a></li>
