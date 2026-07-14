@@ -270,42 +270,8 @@
                             </div>
                             <!--End single project style1-->
 
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/7.jpg" alt="Awesome Image"></a>
-                                    
-                                  
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/8.jpg" alt="Awesome Image"></a>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/9.jpg" alt="Awesome Image"></a>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/10.jpg" alt="Awesome Image"></a>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
+                          
+                      
                         </div>
                     </div>
                 </div>
