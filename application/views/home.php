@@ -261,15 +261,7 @@
                                 </div>
                             </div>
                             <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
-                                    
-                                   
-                                </div>
-                            </div>
-                            <!--End single project style1-->
+                          
 
                           
                       
