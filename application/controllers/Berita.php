@@ -66,6 +66,6 @@ class Berita extends CI_Controller {
 		}
 		$this->load->view('header');
 		$this->load->view('berita_detail', array('berita' => $berita));
-		$this->load->view('footer');
+		$this->load->view('footer-berita');
 	}
 }
