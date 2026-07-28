@@ -23,8 +23,8 @@
                     <div class="col-xl-12">
                         <div class="intro-box clearfix">
                             <div class="sec-title">
-                              
-                                <div class="title">Jejak Pimpinan<br> <span>BKD Provinsi NTB</span></div>
+                              <p>Profil BKD Provinsi NTB</p>
+                                <div class="title">Sejarah Singkat<br> <span>BKD Provinsi NTB</span></div>
                             </div>
                             <div class="text">
                                  <p>Badan Kepegawaian Daerah (BKD) Provinsi NTB lahir dari penataan perangkat daerah otonom untuk mengelola aparatur sipil negara, yang kemudian mengalami pemisahan fungsi diklat dan manajemen kepegawaian melalui Peraturan Gubernur NTB Nomor 42 Tahun 2017, guna menjalankan kebijakan manajemen kepegawaian secara profesional. Kantor BKD Provinsi NTB berlokasi di Jalan Pejanggik Nomor 14, Kota Mataram.</p>
@@ -39,7 +39,7 @@
         </section>
         <!--End Company Overview Area-->
 
-
+<br><br>
  <section class="featured-area">
             <br><br><br>
             <div class="container about-style3-content">
@@ -47,8 +47,8 @@
                     <div class="col-xl-12">
                         <div class="sec-title text-center">
                             
-                            <p>Profil Singkat BKD Provinsi NTB</p>
-                            <div class="title">Kepala Badan<br>Dari Dar Masa ke Masa</div>
+                           
+                            <div class="title">Jejak Pimpinan BKD NTB<br>Dari Masa ke Masa</div>
                             
                         </div>
                        
@@ -104,12 +104,21 @@
                                 </div>
                             </div>
                             <!--End single project style1-->
+                             <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
                           
 
                           
                       
                         </div>
-                        <br><center><em>Pembaharuan Data : 02 Juni 2026</em></center>
+                       
                     </div>
                 </div>
 
