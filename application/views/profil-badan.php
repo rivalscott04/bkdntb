@@ -61,7 +61,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/1.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/1.png" alt="Awesome Image"></a>
                                     
                                     
                                 </div>
@@ -70,7 +70,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/2.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/2.png" alt="Awesome Image"></a>
                                     
                                     
                                 </div>
@@ -79,7 +79,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/3.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/3.png" alt="Awesome Image"></a>
                                     
                                   
                                 </div>
@@ -89,7 +89,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/4.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/4.png" alt="Awesome Image"></a>
                                     
                                    
                                 </div>
@@ -98,7 +98,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/5.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/5.png" alt="Awesome Image"></a>
                                     
                                    
                                 </div>
@@ -107,7 +107,7 @@
                              <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/6.png" alt="Awesome Image"></a>
                                     
                                    
                                 </div>
