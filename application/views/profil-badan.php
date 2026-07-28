@@ -130,6 +130,151 @@
         </section>
 
 
+        <section>
+		<div class="container">
+		<div class="row">
+                    <div class="col-xl-12">
+
+
+                        <div class="sec-title">
+                            <p>Sejarah Singkat BKD Provinsi NTB</p>
+                            <div class="title">Dasar Pembentukan & Perkembangan</div>
+                        </div>
+                    
+                        
+                    <div class="faq-content-box">
+                            <div class="accordion-box">
+
+
+                              <!--Start single accordion box-->
+                                <div class="accordion accordion-block">
+                                    <div class="accord-btn active">
+                                        <h4>Daftar Nama Bidang/Bagian</h4>
+                                    </div>
+                                    <div class="accord-content collapsed">
+                                 <br>
+        <table id="datatable" class="table table-striped">
+                        <thead>
+                            <tr>
+                            <td><b>No.</b></td>
+                                <td><b>Nama Bidang/Bagian</b></td>
+                               <td><b>OPD</b></td>
+                               
+                               <td><b>Aksi</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                <td>1.</td>
+                                    <td>Bidang PPI (Pengadaan, Pemberhentian & Informasi)</td>
+                                   <td>BKD Provinsi NTB</td> 
+                                   
+                                   <td><a href="/ppi" class="btn-three" target="_blank">Lihat Informasi</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>2.</td>
+                                    <td>Bidang Penilaian Kinerja Aparatur & Penghargaan</td>
+                                   <td>BKD Provinsi NTB</td> 
+                                   
+                                   <td><a href="/evaluasi" class="btn-three" target="_blank">Lihat Informasi</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>3.</td>
+                                    <td>Bidang Promosi & Mutasi</td>
+                                   <td>BKD Provinsi NTB</td> 
+                                   
+                                   <td><a href="/mutasi" class="btn-three" target="_blank">Lihat Informasi</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>4.</td>
+                                    <td>Bidang Pengembangan Aparatur</td>
+                                   <td>BKD Provinsi NTB</td> 
+                                   
+                                   <td><a href="/pengembangan" class="btn-three" target="_blank">Lihat Informasi</a></td>
+                                </tr>
+
+                                <tr>
+                                <td>5.</td>
+                                    <td>UPTB Unit Pelayanan Penilaian Kompetensi</td>
+                                   <td>BKD Provinsi NTB</td> 
+                                   
+                                   <td><a href="/uppk" class="btn-three" target="_blank">Lihat Informasi</a></td>
+                                </tr>
+
+                                  
+
+                               
+
+                                
+                               
+                        </tbody>
+                    </table> 
+                                </div>
+                                </div>
+                                <!--End single accordion box-->
+                                
+
+                                
+                                <!--Start single accordion box-->
+                                <div class="accordion accordion-block">
+                                    <div class="accord-btn">
+                                        <h4>Pemisahan Kelembagaan</h4>
+                                    </div>
+                                    <div class="accord-content">
+                                   <p>Sempat bergabung dalam bentuk Badan Kepegawaian Daerah dan Diklat (BKD Diklat), instansi ini kemudian dibagi menjadi dua badan terpisah berdasarkan kebijakan penataan perangkat daerah, yakni BKD dan Badan Pengembangan Sumber Daya Manusia Daerah (BPSDMD) Provinsi NTB.</p>
+                                
+                                </div>
+                                </div>
+                                <!--End single accordion box-->
+
+                                 <!--Start single accordion box-->
+                                <div class="accordion accordion-block">
+                                    <div class="accord-btn">
+                                        <h4>Landasan Hukum Operasional</h4>
+                                    </div>
+                                    <div class="accord-content">
+                                   <p> Tugas pokok dan fungsi instansi ini diatur lebih lanjut melalui regulasi turunan seperti <b>Peraturan Gubernur NTB Nomor 42 Tahun 2017</b>, guna menjalankan kebijakan manajemen kepegawaian secara profesional.</p>
+                                
+                                </div>
+                                </div>
+                                <!--End single accordion box-->
+
+                                    <!--Start single accordion box-->
+                                <div class="accordion accordion-block">
+                                    <div class="accord-btn">
+                                        <h4>Manajemen Kepegawaian</h4>
+                                    </div>
+                                    <div class="accord-content">
+                                   <p> Manajemen Kepegawaian: Mengurus pembinaan karier, mutasi, administrasi, hingga pengadaan seleksi Calon Pegawai Negeri Sipil (CPNS) dan Pegawai Pemerintah dengan Perjanjian Kerja (PPPK).</p>
+                                
+                                </div>
+                                </div>
+                                <!--End single accordion box-->
+
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+						<br>
+      
+
+                    </div>
+					
+        </div>
+		
+		</div>
+		</section>	
+
+
+      
+
+<br><br><br><br>
 
          <!--Start Testimonial Style3 Area-->
 		 <section class="testimonial-style3-area">

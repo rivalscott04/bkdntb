@@ -144,6 +144,7 @@
                                                 
                                                 <li class="dropdown"><a href="#">Profil</a>
                                                 <ul>
+                                                        <li><a href="/profilbadan">BKD Provinsi NTB</a></li>
                                                         <li><a href="/kaban">Kepala Badan</a></li>
                                                         <li><a href="/sekban">Sekretaris Badan</a></li>
                                                         <li><a href="/pimpinan">Pejabat OPD</a></li>
