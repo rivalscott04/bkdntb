@@ -180,6 +180,31 @@
                         </div>
                     </div>
                     <!--End single project item-->
+
+                     <!--Start single project item-->
+                    <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 filter-item mod paruh">
+                        <div class="single-project-style4">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image">
+                                    <div class="overlay-box">
+                                        <div class="box">
+                                            <div class="link">
+                                                <a href="#"><span class="icon-out"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="title">
+                                        <span>Pemprov NTB</span>
+                                        <h3><a href="#">Data Akurat Kebijakan Tepat</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single project item-->
                    
 
                     

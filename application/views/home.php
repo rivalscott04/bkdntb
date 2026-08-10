@@ -4,21 +4,57 @@
                 <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                     <ul>
 
+
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
+                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/kantorbkd.jpg"
+                            data-title="Slide Title" data-transition="parallaxvertical">
+
+                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/kantorbkd.jpg">
+
+
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                                data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                style="z-index: 7; white-space: nowrap;">
+                                <div class="slide-content left-slide">
+                                    <div class="big-title">
+                                        Selamat Datang di Situs Resmi<br>BKD Provinsi NTB
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                                data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
+                        {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
+                                <div class="slide-content left-slide">
+                                    <div class="text">Badan Kepegawaian Daerah (BKD) Provinsi NTB lahir dari penataan perangkat daerah otonom untuk mengelola aparatur sipil negara guna menjalankan kebijakan manajemen kepegawaian secara profesional.</div>
+                                </div>
+                            </div>
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                                data-hoffset="['15','15','15','15']" data-voffset="['25','90','100','85']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                style="z-index: 7; white-space: nowrap;">
+                                <div class="slide-content left-slide">
+                                    <div class="btn-box">
+                                        <a class="btn-one" href="/profilbadan">Selengkapnya <span class="flaticon-next"></span></a>
+                                        <a class="project-view-button" href="/ppid">Layanan PPID BKD NTB</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
                         
 
 
                       <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default"
-                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/konsolidasi.jpg"
+                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/eksposesimata.jpg"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/konsolidasi.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/eksposesimata.jpg">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','700','500']" data-whitespace="normal"
                              data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="big-title">
-                                   Gubernur NTB Perkuat Sinergi dengan BKN RI Untuk Jabatan Berbasis Kompetensi
+                                  NTB Siap Terapkan Manajemen Talenta Untuk Menuju Birokrasi Berbasis Sistem Merit
                                 </div>
                             </div>
                         </div>
@@ -26,7 +62,7 @@
                              data-hoffset="['15','15','15','15']" data-voffset="['-75','-10','-25','-30']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
-                                <div class="text"><br><br><br>Pemerintah Provinsi Nusa Tenggara Barat resmi memulai reformasi besar dalam tata kelola Aparatur Sipil Negara (ASN) melalui penerapan Manajemen Talenta berbasis sistem merit sebagai dasar pengembangan karier dan pengisian jabatan.
+                                <div class="text"><br><br><br>Pemerintah Provinsi Nusa Tenggara Barat (NTB) selangkah lagi menerapkan Sistem Manajemen Talenta sebagai dasar pengembangan karier Aparatur Sipil Negara (ASN). 
 </div>
                             </div>
                         </div>
@@ -35,7 +71,7 @@
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="btn-box">
-                                    <a class="btn-one" href="/berita/jalin-konsolidasi-dengan-bkn-ri-gubernur-ntb-pastikan-jabatan-berbasis-kompetensi">Selengkapnya<span class="flaticon-next"></span></a>
+                                    <a class="btn-one" href="berita/bkn-sebut-kesiapan-sangat-baik-ntb-siap-terapkan-manajemen-talenta-untuk-menuju-birokrasi-berbasis-sistem-merit">Selengkapnya<span class="flaticon-next"></span></a>
                                     <!-- <a class="project-view-button" href="/seleksijpt">Informasi Pengumuman Selengkapnya</a> -->
                                 </div>
                             </div>
@@ -79,53 +115,6 @@
                             </div>
 
                         </li>
-
-                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
-                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="<?php echo base_url().'assets/'?>images/slides/sumpahjanjipns.jpg"
-                            data-title="Slide Title" data-transition="parallaxvertical">
-
-                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/sumpahjanjipns.jpg">
-
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
-                                data-hoffset="['15','15','15','15']" data-voffset="['-145','-100','-100','-90']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                style="z-index: 7; white-space: nowrap;">
-                                 <div class="slide-content left-slide">
-                                <div class="big-title">
-                               146 PNS Formasi 2025 Resmi Disumpah, Siap Mengabdi untuk NTB
-                                </div>
-                            </div>
-                               
-                            </div>
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
-                                data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
-                        {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
-                                <div class="slide-content left-slide">
-                               <div class="text"><br>Pemerintah Provinsi Nusa Tenggara Barat (NTB) menggelar kegiatan Pengambilan Sumpah/Janji Pegawai Negeri Sipil (PNS) bagi peserta yang telah lulus seleksi formasi tahun 2025 dan menyelesaikan masa percobaan sebagai Calon Pegawai Negeri Sipil (CPNS).</div>
-</div>
-                            </div>
-                           
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
-                                data-hoffset="['15','15','15','15']" data-voffset="['35','115','90','90']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                style="z-index: 7; white-space: nowrap;">
-                                 <div class="slide-content left-slide">
-                                <div class="btn-box">
-                                    <a class="btn-one" href="/berita/146-pns-formasi-tahun-2025-resmi-diambil-sumpah-janjinya-siap-mengabdi-untuk-masyarakat-ntb">Selengkapnya<span class="flaticon-next"></span></a>
-                                   
-                                </div>
-                            </div>
-                            </div>
-
-                        </li>
-
-             
-
-
-						
-
-                   
-                    	
-
-                     
                            
                     </ul>
                 </div>
@@ -264,12 +253,22 @@
                                 </div>
                             </div>
                             <!--End single project style1-->
+
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
                           
 
                           
                       
                         </div>
-                        <br><center><em>Pembaharuan Data : 02 Juni 2026</em></center>
+                        <br><center><em>Pembaharuan Data : 01 Agustus 2026</em></center>
                     </div>
                 </div>
 
@@ -341,7 +340,7 @@
                     <div class="about-style2-image-box">
                         <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                         <div class="image">
-                            <img src="<?php echo base_url().'assets/'?>images/resources/about-style2-image.jpg" alt="Awesome Image">
+                            <img src="<?php echo base_url().'assets/'?>images/resources/skm.jpg" alt="Awesome Image">
                             <!--div class="overlay-box">
                                 <div class="title">
                                     <h1>24 <span>Hours<br> Services</span></h1>
