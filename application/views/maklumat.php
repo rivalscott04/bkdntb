@@ -51,7 +51,7 @@
                     <div class="about-style2-image-box">
                         <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                         <div class="image">
-                            <img src="<?php echo base_url().'assets/'?>images/Maklumat-Pelayanan.jpg.jpg" alt="Maklumat">
+                            <img src="<?php echo base_url().'assets/'?>images/Maklumat-Pelayanan.jpg" alt="Maklumat">
                             <!--div class="overlay-box">
                                 <div class="title">
                                     <h1>24 <span>Hours<br> Services</span></h1>
