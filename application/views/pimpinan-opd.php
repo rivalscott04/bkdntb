@@ -76,7 +76,7 @@
                             </div>
                         </div>
 						<br>
-        <em>Pembaharuan Data : 30 Juni 2026</em>
+        <em>Pembaharuan Data : 01 Agustus 2026</em>
 
                     </div>
 					
