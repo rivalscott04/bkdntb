@@ -132,7 +132,7 @@ serta Keuangan.
                                                 </div>
                                                 <div class="text">
                                                     <span>Informasi LHKPN</span><br>
-                                                    <a class="btn-one black" href="#">Lihat LHKPN Kepala Badan</a>
+                                                    <a class="btn-one black" href="/lhkpn">Lihat LHKPN Kepala Badan</a>
                                                 </div>
                                             </li>
 
