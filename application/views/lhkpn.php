@@ -29,7 +29,7 @@
                             <div class="text">
                                 <p>
                                    LHKPN merupakan laporan yang wajib diisi dan disampaikan oleh penyelenggara negara kepada Komisi Pemberantasan Korupsi (KPK), berisi data tentang seluruh harta kekayaan yang dimiliki, baik atas nama sendiri maupun pasangan dan anak yang masih menjadi tanggungan.</p><br>
-                            	<a href="<?php echo base_url().'assets/'?>download/Laporan LHKPN NTB 2025.pdf" class="btn-three" target="_blank">Informasi Jumlah & Prosentase Yang Wajib LHKPN</a>
+                            	<a href="<?php echo base_url().'assets/'?>download/Daftar Wajib Lapor 110826908_olahan.pdf" class="btn-three" target="_blank">Informasi Jumlah & Prosentase Yang Wajib LHKPN</a>
 							</div>
 							
                         </div>
