@@ -97,13 +97,13 @@
                                 </li>
                             </ul>
 
-                            <div class="float-right">
+                            <!-- <div class="float-right">
                                 <a href="#"><img src="<?php echo base_url().'assets/'?>images/Logo_BerAKHLAK.svg.png" width="270x" height="40px" alt="Logo HUT NTB"></a>
-                            </div>
+                            </div> -->
 							
-							 <!--div class="float-right">
-                                <a href="#"><img src="<?php echo base_url().'assets/'?>images/hutntb67.png" width="280x" height="40px" alt="Logo HUT NTB"></a>
-                            </div-->
+							 <div class="float-right">
+                                <a href="#"><img src="<?php echo base_url().'assets/'?>images/hutridanntb-01.png" width="260x" height="40px" alt="Logo HUT NTB"></a>
+                            </div>
 
                             <!-- <div class="header-call-button float-right">
                                 <a href="/konseling"><div class="inner">
