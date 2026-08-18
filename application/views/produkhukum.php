@@ -34,6 +34,15 @@
                         </thead>
                         <tbody>
 
+                          <tr>
+                              
+                                   <td><b>Surat Keputusan Kepala BKN Republik Indonesia Nomor 863 Tahun 2026</b><br> Tentang Persetujuan Penerapan Manajemen Talenta di Lingkungan Pemerintah Provinsi NTB                                  
+                                    <td>2026</td>
+                                   
+                                   
+                                    <td><a href="<?php echo base_url().'assets/'?>download/SK MANAJEMEN TALENTA PEMERINTAH PROVINSI NTB-1.pdf" class="btn-three" target="_blank">Download</a></td>
+                          </tr>
+
                          <tr>
                               
                                    <td><b>Surat Edaran Gubernur NTB Nomor 100.3.4.1/1501/BKD/2026</b><br> Tentang Pelaksanaan Layanan <em>Feedback</em> Penilaian Kompetensi, Konseling Karier & Konseling Psikis Bagi ASN
