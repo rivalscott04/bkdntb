@@ -467,13 +467,12 @@
                     <div class="col-xl-6 col-lg-4 col-md-4">
                         <div class="single-team-member">
                             <div class="img-holder">
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/wVVnlXApGqA?si=m5Cg3mh9WWfajph5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                               
+                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Aldarzx8emw?si=65hYRTShhGn615Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
                                
                             </div>
                             <div class="name text-center">
-                                <p><span>Dirgahayu RI ke 80</span></p>
-                                <h3>Semarak Peringatan HUT RI</h3>
+                                <p><span>PPID BKD NTB</span></p>
+                                <h3>Alur Permohonan Informasi Publik</h3>
                             </div>
                         </div>
                     </div>
