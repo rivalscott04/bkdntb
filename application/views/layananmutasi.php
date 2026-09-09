@@ -92,21 +92,8 @@
                             </div>
                             <!--End Single sidebar-->
                             
-                            <!--Start Single sidebar-->
-                            <div class="single-sidebar">
-                                  
-                                <ul class="service-pack-download">
-                                    <li class="clearfix">
-                                      
-                                        <div class="title-holder">
-                                            <a href="#">Unduh SOP Pelayanan <span>(PDF)</span></a>
-                                        </div>
-                                        <div class="icon-holder">
-                                            <i class="fa fa-download" aria-hidden="true"></i>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                             <!--Start Single sidebar-->
+                            <?php $this->load->view('partials/layanan_sop_download'); ?>
                             <!--End Single sidebar-->
                             <!--Start Single sidebar-->
                             <div class="single-sidebar">

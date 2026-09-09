@@ -65,7 +65,7 @@ class Bidang_Controller extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model(array('Berita_model', 'Bidang_model'));
+		$this->load->model(array('Berita_model', 'Bidang_model', 'Bidang_layanan_model'));
 		$this->load->helper('berita');
 		$this->load->library('pagination');
 		berita_bidang_list(TRUE);
@@ -95,6 +95,7 @@ class Bidang_Controller extends CI_Controller {
 		$offset = ($page - 1) * $this->per_page;
 		$berita_list = array();
 		$pagination = '';
+		$layanan_list = array();
 
 		if ($this->bidang_key !== '') {
 			$total = $this->Berita_model->count_by_bidang($this->bidang_key, 'published');
@@ -114,11 +115,16 @@ class Bidang_Controller extends CI_Controller {
 			);
 		}
 
+		if (!empty($bidang['id'])) {
+			$layanan_list = $this->Bidang_layanan_model->get_by_bidang_id($bidang['id'], TRUE);
+		}
+
 		$data = array(
-			'berita_list' => $berita_list,
-			'pagination'  => $pagination,
-			'bidang_key'  => $this->bidang_key,
-			'bidang'      => $bidang,
+			'berita_list'   => $berita_list,
+			'pagination'    => $pagination,
+			'bidang_key'    => $this->bidang_key,
+			'bidang'        => $bidang,
+			'layanan_list'  => $layanan_list,
 		);
 		$this->load->view('header');
 		$this->load->view($this->view_name, $data);

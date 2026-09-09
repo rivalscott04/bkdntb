@@ -18,65 +18,10 @@
                             <!--Start Single sidebar-->
                              <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
-                            <div class="single-sidebar">
-                                <div class="title">
-                                <h5><?php echo html_escape(!empty($bidang['layanan_judul']) ? $bidang['layanan_judul'] : ('Layanan ' . ($bidang['label'] ?? ''))); ?></h5>
-                            </div><br>
-                                <ul class="service-pages">
-                                    <li>
-                                        <a href="/kenaikanpangkat">
-                                            <div class="title">
-                                                <h3 class="static">Kenaikan Pangkat</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Kenaikan Pangkat</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="title">
-                                                <h3 class="static">Ujian Dinas</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Ujian Dinas</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="title">
-                                                <h3 class="static">Peninjauan Masa Kerja</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Masa Kerja</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/layananmutasi">
-                                            <div class="title">
-                                                <h3 class="static">Mutasi & Promosi ASN</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Mutasi & Promosi</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="title">
-                                                <h3 class="static">Penerbitan Plt/Plh</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Penerbitan Plt/Plh</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    
-
-                                </ul>
-                            </div>
+                            <?php $this->load->view('partials/bidang_sidebar_layanan', array(
+                                'bidang' => $bidang ?? array(),
+                                'layanan_list' => $layanan_list ?? array(),
+                            )); ?>
                             <!--End Single sidebar-->
                            
                             <!--Start Single sidebar-->
@@ -101,4 +46,4 @@
         </section>
         <!--End blog area-->
  
-       
+        

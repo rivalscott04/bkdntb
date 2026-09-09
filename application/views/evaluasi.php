@@ -18,67 +18,10 @@
                             <!--Start Single sidebar-->
                              <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
-                            <div class="single-sidebar">
-                                <div class="title">
-                                <h5><?php echo html_escape(!empty($bidang['layanan_judul']) ? $bidang['layanan_judul'] : ('Layanan ' . ($bidang['label'] ?? ''))); ?></h5>
-                            </div><br>
-                                <ul class="service-pages">
-                                    <li>
-                                        <a href="/pengajuancuti">
-                                            <div class="title">
-                                                <h3 class="static">Pengajuan Cuti ASN</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Pengajuan Cuti</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://asndigital.bkn.go.id/">
-                                            <div class="title">
-                                                <h3 class="static">E-Kinerja & E-Sensi</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Ekin & Esensi</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a href="/kawin">
-                                            <div class="title">
-                                                <h3 class="static">Izin Perkawinan, Cerai & Poligami</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Izin Perkawinan</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/disiplin">
-                                            <div class="title">
-                                                <h3 class="static">Kasus Disiplin ASN</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Disiplin ASN</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                     <li>
-                                        <a href="#">
-                                            <div class="title">
-                                                <h3 class="static">Satya Lencana Karya Satya</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Satya Lencana Karya Satya</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    
-
-                                </ul>
-                            </div>
+                            <?php $this->load->view('partials/bidang_sidebar_layanan', array(
+                                'bidang' => $bidang ?? array(),
+                                'layanan_list' => $layanan_list ?? array(),
+                            )); ?>
                             <!--End Single sidebar-->
                            
                             <!--Start Single sidebar-->
@@ -103,4 +46,4 @@
         </section>
         <!--End blog area-->
  
-       
+        

@@ -12,6 +12,9 @@
     <li class="<?php echo ($active_menu ?? '') === 'bidang' ? 'active' : ''; ?>">
         <a href="<?php echo site_url('admin/bidang'); ?>">Kelola Bidang</a>
     </li>
+    <li class="<?php echo ($active_menu ?? '') === 'pengaturan' ? 'active' : ''; ?>">
+        <a href="<?php echo site_url('admin/pengaturan'); ?>">Pengaturan</a>
+    </li>
     <li class="<?php echo ($active_menu ?? '') === 'akun' ? 'active' : ''; ?>">
         <a href="<?php echo site_url('admin/akun'); ?>">Ubah Akun</a>
     </li>

@@ -177,6 +177,10 @@ class Bidang_model extends CI_Model {
 		if ($this->count_berita($row['kode']) > 0) {
 			return false;
 		}
+		if ($this->db->table_exists('bidang_layanan')) {
+			$this->load->model('Bidang_layanan_model');
+			$this->Bidang_layanan_model->delete_by_bidang_id($id);
+		}
 		$this->db->reset_query();
 		$this->db->where('id', (int) $id);
 		return $this->db->delete('bidang');

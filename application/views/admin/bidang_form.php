@@ -188,6 +188,9 @@
             <div class="admin-actions">
                 <button type="submit" class="btn-one">Simpan<span class="flaticon-next"></span></button>
                 <a href="<?php echo site_url('admin/bidang'); ?>" class="admin-btn-secondary">Batal</a>
+                <?php if (isset($bidang['id'])): ?>
+                    <a href="<?php echo site_url('admin/bidang/layanan/' . (int) $bidang['id']); ?>" class="admin-btn-secondary">Kelola Layanan Sidebar</a>
+                <?php endif; ?>
             </div>
         <?php echo form_close(); ?>
     </div>

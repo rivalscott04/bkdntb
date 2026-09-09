@@ -44,6 +44,7 @@
                         </td>
                         <td>
                             <div class="admin-action-group">
+                                <a href="<?php echo site_url('admin/bidang/layanan/' . $item['id']); ?>" class="btn-one">Layanan</a>
                                 <a href="<?php echo site_url('admin/bidang/edit/' . $item['id']); ?>" class="btn-one">Edit</a>
                                 <?php echo form_open('admin/bidang/hapus', array(
                                     'class' => 'admin-inline-form',

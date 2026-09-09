@@ -194,6 +194,81 @@ if (!function_exists('layanan_bidang_kode_for_page')) {
 	}
 }
 
+if (!function_exists('bidang_layanan_href')) {
+	function bidang_layanan_href($url)
+	{
+		$url = trim((string) $url);
+		if ($url === '' || $url === '#') {
+			return '#';
+		}
+		if (preg_match('#^(https?:)?//#i', $url) || preg_match('#^(mailto:|tel:)#i', $url)) {
+			return $url;
+		}
+		if (isset($url[0]) && $url[0] === '/') {
+			return base_url(ltrim($url, '/'));
+		}
+		return site_url($url);
+	}
+}
+
+if (!function_exists('bidang_layanan_sop_relpath')) {
+	function bidang_layanan_sop_relpath($filename = '')
+	{
+		$path = 'assets/download/layanan/';
+		if ($filename !== '') {
+			$path .= ltrim($filename, '/');
+		}
+		return $path;
+	}
+}
+
+if (!function_exists('fcpath_bidang_layanan_sop')) {
+	function fcpath_bidang_layanan_sop($filename = '')
+	{
+		return FCPATH . bidang_layanan_sop_relpath($filename);
+	}
+}
+
+if (!function_exists('bidang_layanan_sop_url')) {
+	function bidang_layanan_sop_url($sop_file)
+	{
+		$sop_file = trim((string) $sop_file);
+		if ($sop_file === '') {
+			return '';
+		}
+		if (preg_match('#^(https?:)?//#i', $sop_file)) {
+			return $sop_file;
+		}
+		return base_url('assets/' . ltrim($sop_file, '/'));
+	}
+}
+
+if (!function_exists('bidang_layanan_sop_fcpath')) {
+	function bidang_layanan_sop_fcpath($sop_file)
+	{
+		$sop_file = trim((string) $sop_file);
+		if ($sop_file === '') {
+			return '';
+		}
+		if (preg_match('#^(https?:)?//#i', $sop_file)) {
+			return '';
+		}
+		return FCPATH . 'assets/' . ltrim($sop_file, '/');
+	}
+}
+
+if (!function_exists('bidang_layanan_for_page')) {
+	function bidang_layanan_for_page($page = null)
+	{
+		$CI =& get_instance();
+		if ($page === null) {
+			$page = $CI->uri->segment(1);
+		}
+		$CI->load->model('Bidang_layanan_model');
+		return $CI->Bidang_layanan_model->get_by_page_url($page);
+	}
+}
+
 if (!function_exists('resolve_bidang_kode')) {
 	function resolve_bidang_kode($bidang)
 	{

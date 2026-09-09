@@ -18,65 +18,10 @@
                             <!--Start Single sidebar-->
                              <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
-                            <div class="single-sidebar">
-                                <div class="title">
-                                <h5><?php echo html_escape(!empty($bidang['layanan_judul']) ? $bidang['layanan_judul'] : ('Layanan ' . ($bidang['label'] ?? ''))); ?></h5>
-                            </div><br>
-                                <ul class="service-pages">
-                                    <li>
-                                        <a href="https://asndigital.bkn.go.id/">
-                                            <div class="title">
-                                                <h3 class="static">Perencanaan Kebutuhan ASN</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Perencanaan Kebutuhan ASN</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/rekrutmen">
-                                            <div class="title">
-                                                <h3 class="static">Seleksi Pengadaan ASN</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Seleksi Pengadaan ASN</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/karpeg">
-                                            <div class="title">
-                                                <h3 class="static">Pengurusan KARIS, KARPEG & KARSU</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Pengurusan Kartu ASN</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/pensiun">
-                                            <div class="title">
-                                                <h3 class="static">Pemberhentian & Pensiun ASN</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Pemberhentian & Pensiun</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://asndigital.bkn.go.id/">
-                                            <div class="title">
-                                                <h3 class="static">Data & Informasi Kepegawaian</h3>
-                                                <div class="overlay-title">
-                                                    <h3>Data & Informasi</h3>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    
-
-                                </ul>
-                            </div>
+                            <?php $this->load->view('partials/bidang_sidebar_layanan', array(
+                                'bidang' => $bidang ?? array(),
+                                'layanan_list' => $layanan_list ?? array(),
+                            )); ?>
                             <!--End Single sidebar-->
                            
                             <!--Start Single sidebar-->
@@ -101,4 +46,4 @@
         </section>
         <!--End blog area-->
  
-       
+        

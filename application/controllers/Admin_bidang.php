@@ -6,8 +6,9 @@ class Admin_bidang extends Admin_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Bidang_model');
+		$this->load->model(array('Bidang_model', 'Bidang_layanan_model', 'Setting_model'));
 		$this->load->helper(array('url', 'form', 'berita'));
+		$this->load->library('upload');
 	}
 
 	public function index()
@@ -158,5 +159,206 @@ class Admin_bidang extends Admin_Controller {
 		berita_bidang_list_reset();
 		$this->session->set_flashdata('success', 'Bidang berhasil dihapus.');
 		redirect('admin/bidang');
+	}
+
+	public function layanan($bidang_id)
+	{
+		$bidang = $this->Bidang_model->get_by_id($bidang_id);
+		if (!$bidang) {
+			show_404();
+		}
+		if (!$this->Bidang_layanan_model->table_ready()) {
+			$this->session->set_flashdata('error', 'Tabel layanan bidang belum tersedia. Jalankan migrasi database terlebih dahulu.');
+			redirect('admin/bidang');
+		}
+
+		$this->render('admin/bidang_layanan_index', array(
+			'title'        => 'Layanan Bidang',
+			'active_menu'  => 'bidang',
+			'bidang'       => $bidang,
+			'layanan_list' => $this->Bidang_layanan_model->get_by_bidang_id($bidang['id']),
+			'sop_max_mb'   => $this->Setting_model->sop_max_size_mb(),
+		));
+	}
+
+	public function layanan_tambah($bidang_id)
+	{
+		$bidang = $this->Bidang_model->get_by_id($bidang_id);
+		if (!$bidang) {
+			show_404();
+		}
+		if (!$this->Bidang_layanan_model->table_ready()) {
+			$this->session->set_flashdata('error', 'Tabel layanan bidang belum tersedia. Jalankan migrasi database terlebih dahulu.');
+			redirect('admin/bidang');
+		}
+
+		$this->render('admin/bidang_layanan_form', array(
+			'title'       => 'Tambah Layanan',
+			'active_menu' => 'bidang',
+			'bidang'      => $bidang,
+			'sop_max_mb'  => $this->Setting_model->sop_max_size_mb(),
+		));
+	}
+
+	public function layanan_edit($id)
+	{
+		$layanan = $this->Bidang_layanan_model->get_by_id($id);
+		if (!$layanan) {
+			show_404();
+		}
+		$bidang = $this->Bidang_model->get_by_id($layanan['bidang_id']);
+		if (!$bidang) {
+			show_404();
+		}
+
+		$this->render('admin/bidang_layanan_form', array(
+			'title'       => 'Edit Layanan',
+			'active_menu' => 'bidang',
+			'bidang'      => $bidang,
+			'layanan'     => $layanan,
+			'sop_max_mb'  => $this->Setting_model->sop_max_size_mb(),
+		));
+	}
+
+	public function layanan_simpan()
+	{
+		$this->require_post();
+
+		$id = (int) $this->input->post('id');
+		$bidang_id = (int) $this->input->post('bidang_id');
+		$judul = trim($this->input->post('judul', TRUE));
+		$judul_overlay = trim($this->input->post('judul_overlay', TRUE));
+		$url = trim($this->input->post('url', TRUE));
+		$urutan = (int) $this->input->post('urutan');
+		$aktif = $this->input->post('aktif') ? 1 : 0;
+		$hapus_sop = $this->input->post('hapus_sop') ? 1 : 0;
+
+		$bidang = $this->Bidang_model->get_by_id($bidang_id);
+		if (!$bidang) {
+			show_404();
+		}
+
+		$redirect_form = $id
+			? 'admin/bidang/layanan_edit/' . $id
+			: 'admin/bidang/layanan_tambah/' . $bidang_id;
+
+		if ($judul === '') {
+			$this->session->set_flashdata('error', 'Judul layanan wajib diisi.');
+			redirect($redirect_form);
+		}
+		if (mb_strlen($judul) > 255 || mb_strlen($judul_overlay) > 255 || mb_strlen($url) > 500) {
+			$this->session->set_flashdata('error', 'Panjang judul/URL melebihi batas.');
+			redirect($redirect_form);
+		}
+		if ($url === '') {
+			$url = '#';
+		}
+
+		$existing = null;
+		if ($id) {
+			$existing = $this->Bidang_layanan_model->get_by_id($id);
+			if (!$existing || (int) $existing['bidang_id'] !== $bidang_id) {
+				show_404();
+			}
+		}
+
+		$data = array(
+			'bidang_id'     => $bidang_id,
+			'judul'         => $judul,
+			'judul_overlay' => $judul_overlay !== '' ? $judul_overlay : null,
+			'url'           => $url,
+			'urutan'        => max(0, $urutan),
+			'aktif'         => $aktif,
+		);
+
+		$sop_uploaded = null;
+		if (!empty($_FILES['sop_file']['name'])) {
+			$sop_uploaded = $this->_upload_sop();
+			if ($sop_uploaded === false) {
+				redirect($redirect_form);
+			}
+			$data['sop_file'] = $sop_uploaded;
+		} elseif ($hapus_sop && $existing) {
+			$data['sop_file'] = null;
+		}
+
+		if ($id) {
+			$this->Bidang_layanan_model->update($id, $data);
+			if (!empty($existing['sop_file']) && (
+				($sop_uploaded !== null && $sop_uploaded !== $existing['sop_file'])
+				|| ($hapus_sop && empty($sop_uploaded))
+			)) {
+				$this->_unlink_sop_owned($existing['sop_file']);
+			}
+			$this->session->set_flashdata('success', 'Layanan berhasil diperbarui.');
+		} else {
+			$this->Bidang_layanan_model->insert($data);
+			$this->session->set_flashdata('success', 'Layanan berhasil ditambahkan.');
+		}
+
+		redirect('admin/bidang/layanan/' . $bidang_id);
+	}
+
+	public function layanan_hapus()
+	{
+		$this->require_post();
+
+		$id = (int) $this->input->post('id');
+		if ($id < 1) {
+			show_404();
+		}
+
+		$layanan = $this->Bidang_layanan_model->get_by_id($id);
+		if (!$layanan) {
+			show_404();
+		}
+
+		$bidang_id = (int) $layanan['bidang_id'];
+		if (!$this->Bidang_layanan_model->delete($id)) {
+			$this->session->set_flashdata('error', 'Gagal menghapus layanan.');
+			redirect('admin/bidang/layanan/' . $bidang_id);
+		}
+
+		if (!empty($layanan['sop_file'])) {
+			$this->_unlink_sop_owned($layanan['sop_file']);
+		}
+
+		$this->session->set_flashdata('success', 'Layanan berhasil dihapus.');
+		redirect('admin/bidang/layanan/' . $bidang_id);
+	}
+
+	private function _upload_sop()
+	{
+		$path = fcpath_bidang_layanan_sop();
+		if (!is_dir($path)) {
+			mkdir($path, 0755, TRUE);
+		}
+
+		$max_kb = $this->Setting_model->sop_max_size_kb();
+		$config = array(
+			'upload_path'   => $path,
+			'allowed_types' => 'pdf',
+			'max_size'      => $max_kb,
+			'encrypt_name'  => TRUE,
+		);
+		$this->upload->initialize($config);
+		if (!$this->upload->do_upload('sop_file')) {
+			$this->session->set_flashdata('error', strip_tags($this->upload->display_errors('', '')));
+			return false;
+		}
+
+		return 'download/layanan/' . $this->upload->data('file_name');
+	}
+
+	private function _unlink_sop_owned($sop_file)
+	{
+		$sop_file = ltrim((string) $sop_file, '/');
+		if (strpos($sop_file, 'download/layanan/') !== 0) {
+			return;
+		}
+		$full = bidang_layanan_sop_fcpath($sop_file);
+		if ($full !== '' && is_file($full)) {
+			@unlink($full);
+		}
 	}
 }
