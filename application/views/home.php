@@ -4,18 +4,19 @@
                 <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                     <ul>
 
-                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default"
-                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/pelantikansekda.jpg"
+
+                       <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default"
+                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/ipdn26.jpg"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/pelantikansekda.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/ipdn26.jpg">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','700','500']" data-whitespace="normal"
                              data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="big-title">
-                                   Lantik Sekda, Gubernur NTB <br>Ajak Bangun NTB secara Berjamaah
+                                  Seleksi Penerimaan Calon Praja IPDN Tahun 2026 Resmi Dibuka
                                 </div>
                             </div>
                         </div>
@@ -23,7 +24,7 @@
                              data-hoffset="['15','15','15','15']" data-voffset="['-75','-10','-25','-30']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
-                                <div class="text"><br><br><br>Gubernur NTB Dr. H. Lalu Muhamad Iqbal secara resmi melantik Abul Chair, Ak sebagai Sekretaris Daerah (Sekda) Provinsi NTB yang berlangsung di Pendopo Gubernur, Kamis 09 April 2026. Pelantikan ini dilakukan berdasarkan Keputusan Presiden Republik Indonesia <br>Nomor 29/TPA Tahun 2026 yang ditetapkan pada 17 Maret 2026.
+                                <div class="text"><br><br><br>Pendaftaran calon Praja IPDN Tahun 2026 dilaksanakan secara bersamaan dengan pendaftaran calon siswa-siswi/taruna-taruni pendidikan tinggi lainnya mulai pada tanggal 18 s.d 30 Agustus 2026 dengan mekanisme online melalui link dibawah ini : 
 </div>
                             </div>
                         </div>
@@ -32,7 +33,8 @@
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="btn-box">
-                                    <a class="btn-one" href="/berita">Selengkapnya<span class="flaticon-next"></span></a>
+                                    <a class="btn-one" href="https://spcp.ipdn.ac.id/">Daftar Sekarang<span class="flaticon-next"></span></a>
+                                    <a class="project-view-button" href="<?php echo base_url().'assets/'?>download/SE Pelaksanaan SPCP IPDN TA. 2026.pdf">Unduh Surat Pengumuman Penerimaan Calon Praja IPDN</a>
                                     <!-- <a class="project-view-button" href="/seleksijpt">Informasi Pengumuman Selengkapnya</a> -->
                                 </div>
                             </div>
@@ -42,18 +44,58 @@
 
 
 
-                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default"
-                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="<?php echo base_url().'assets/'?>images/slides/wfh.jpg"
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
+                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/kantorbkd.jpg"
                             data-title="Slide Title" data-transition="parallaxvertical">
 
-                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/wfh.jpg">
+                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/kantorbkd.jpg">
+
+
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                                data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                style="z-index: 7; white-space: nowrap;">
+                                <div class="slide-content left-slide">
+                                    <div class="big-title">
+                                        Selamat Datang di Situs Resmi<br>BKD Provinsi NTB
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                                data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
+                        {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
+                                <div class="slide-content left-slide">
+                                    <div class="text">Badan Kepegawaian Daerah (BKD) Provinsi NTB lahir dari penataan perangkat daerah otonom untuk mengelola aparatur sipil negara guna menjalankan kebijakan manajemen kepegawaian secara profesional.</div>
+                                </div>
+                            </div>
+                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                                data-hoffset="['15','15','15','15']" data-voffset="['25','90','100','85']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                style="z-index: 7; white-space: nowrap;">
+                                <div class="slide-content left-slide">
+                                    <div class="btn-box">
+                                        <a class="btn-one" href="/profilbadan">Selengkapnya <span class="flaticon-next"></span></a>
+                                        <a class="project-view-button" href="/ppid">Layanan PPID BKD NTB</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        
+
+
+
+
+                      <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default"
+                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="<?php echo base_url().'assets/'?>images/slides/eksposesimata.jpg"
+                            data-title="Slide Title" data-transition="parallaxvertical">
+
+                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/eksposesimata.jpg">
 
                             <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['900','800','500','400']" data-whitespace="normal"
                                 data-hoffset="['15','15','15','15']" data-voffset="['-145','-100','-100','-90']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                                 style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
                                     <div class="big-title">
-                                    Work From Home Setiap Jumat<br>Layanan Tetap Maksimal
+                                   NTB Siap Terapkan Manajemen Talenta Menuju Birokrasi Berbasis Sistem Merit
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +103,7 @@
                                 data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
-                                   <div class="text"><br>Penyesuaian tugas kedinasan bagi ASN di Pemerintah Provinsi NTB dilakukan melalui pola WORK FROM HOME (WFH) setiap hari JUMAT. BKD Provinsi NTB tetap berkomitmen memberikan pelayanan terbaik kepada masyarakat melalui layanan konsultasi online dengan admin layanan kami
+                                   <div class="text"><br>Pemerintah Provinsi Nusa Tenggara Barat (NTB) selangkah lagi menerapkan Sistem Manajemen Talenta sebagai dasar pengembangan karier Aparatur Sipil Negara (ASN).
 </div>
                                 </div>
                             </div>
@@ -70,59 +112,13 @@
                                 style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
                                     <div class="btn-box">
-                                       <br> <a class="btn-one" href="/wfh">Selengkapnya<span class="flaticon-next"></span></a>
+                                       <br>   <a class="btn-one" href="berita/bkn-sebut-kesiapan-sangat-baik-ntb-siap-terapkan-manajemen-talenta-untuk-menuju-birokrasi-berbasis-sistem-merit">Selengkapnya<span class="flaticon-next"></span></a>
+                                 
                                     </div>
                                 </div>
                             </div>
 
                         </li>
-
-                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
-                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="<?php echo base_url().'assets/'?>images/slides/mutasijabatanadministrator.jpg"
-                            data-title="Slide Title" data-transition="parallaxvertical">
-
-                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/mutasijabatanadministrator.jpg">
-
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
-                                data-hoffset="['15','15','15','15']" data-voffset="['-145','-100','-100','-90']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                style="z-index: 7; white-space: nowrap;">
-                                 <div class="slide-content left-slide">
-                                <div class="big-title">
-                                Gubernur NTB Lantik 392 Pejabat<br>Administrator & Pengawas
-                                </div>
-                            </div>
-                               
-                            </div>
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
-                                data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
-                        {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
-                                <div class="slide-content left-slide">
-                               <div class="text"><br>Gubernur NTB melantik dan mengambil sumpah jabatan 392 pejabat eselon III dan IV lingkup Pemprov NTB di Ruang Rapat Tambora, Gedung Kantor Gubernur, Jumat sore (20/2). </div>
-</div>
-                            </div>
-                           
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
-                                data-hoffset="['15','15','15','15']" data-voffset="['35','115','90','90']" data-x="['right','right','right','right']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-                                style="z-index: 7; white-space: nowrap;">
-                                 <div class="slide-content left-slide">
-                                <div class="btn-box">
-                                    <a class="btn-one" href="/berita">Selengkapnya<span class="flaticon-next"></span></a>
-                                   
-                                </div>
-                            </div>
-                            </div>
-
-                        </li>
-
-             
-
-
-						
-
-                   
-                    	
-
-                     
                            
                     </ul>
                 </div>
@@ -143,9 +139,9 @@
                             <div class="inner-content">
                                 <div class="text">
                                     <h3>Pengumuman</h3>
-                                    <p>Informasi Hasil Seleksi Administrasi JPT Pratama Lingkup Pemprov NTB</p>
+                                    <p>Informasi Seleksi Penerimaan Calon Praja IPDN Tahun 2026</p>
                                 </div>
-                                <a class="btn-one" href="/seleksijpt">Selengkapnya<span class="flaticon-next"></span></a>
+                                <a class="btn-one" href="<?php echo base_url().'assets/'?>download/SE Pelaksanaan SPCP IPDN TA. 2026.pdf">Selengkapnya<span class="flaticon-next"></span></a>
                             </div>
                         </div>
                     </div>
@@ -196,82 +192,95 @@
         <section class="featured-area">
             <br><br><br>
             <div class="container about-style3-content">
-                <div class="about-style3-bg banner-animate" style="background-image: url(<?php echo base_url().'assets/'?>images/pattern/about-style3-bg.jpg);"></div>
+                <div class="about-style3-bg" style="background-image: url(<?php echo base_url().'assets/'?>images/pattern/about-style3-bg.jpg);"></div>
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="sec-title text-center">
                             
-                            <p>Transformasi Budaya Kerja ASN Pemerintah Provinsi NTB</p>
-                            <div class="title"><em>Work From Home</em> Setiap Hari Jumat <br>Layanan Tetap Maksimal</div>
+                            <p>Potret Data & Informasi Kepegawaian</p>
+                            <div class="title">Postur Kepegawaian<br>ASN Pemerintah Provinsi NTB</div>
+                            
                         </div>
                         <div class="button text-center">
                             
-                            <a class="btn-one" href="/wfh">Helpdesk Layanan Online Selama WFH Setiap Hari Jumat<span class="flaticon-next"></span></a>
+                            <a class="btn-one" href="/pegawai">Informasi Data Kepegawaian<span class="flaticon-next"></span></a>
                         </div>
                     </div>
                 </div>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-carousel-v2 owl-carousel owl-theme">
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/1.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/2.jpg" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/3.jpg" alt="Awesome Image"></a>
+                                    
+                                  
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/4.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/5.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                          
+
+                          
+                      
+                        </div>
+                        <br><center><em>Pembaharuan Data : 01 September 2026</em></center>
+                    </div>
+                </div>
+
+
+
             </div>
 
-              <div class="row filter-layout masonary-layout">
-                      <!-- Start single project item-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 filter-item mutasi">
-                        <div class="single-project-style5">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?php echo base_url().'assets/'?>images/1.jpg" alt="projects" data-pagespeed-url-hash="86693198" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                    <div class="overlay-box">
-                                        <div class="box">
-                                            <div class="link">
-                                                <a href="<?php echo base_url().'assets/'?>images/"><span class="icon-out"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                    <!--End single project item -->
-                    <!--Start single project item-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 filter-item sek">
-                        <div class="single-project-style5">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?php echo base_url().'assets/'?>images/2.jpg" alt="projects" data-pagespeed-url-hash="381193119" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                    <div class="overlay-box">
-                                        <div class="box">
-                                            <div class="link">
-                                                <a href="<?php echo base_url().'assets/'?>images/2.jpg"><span class="icon-out"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--End single project item-->
-                    <!--Start single project item-->
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 filter-item mutasi">
-                        <div class="single-project-style5">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?php echo base_url().'assets/'?>images/6.jpg" alt="projects" data-pagespeed-url-hash="675693040" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-                                    <div class="overlay-box">
-                                        <div class="box">
-                                            <div class="link">
-                                                <a href="<?php echo base_url().'assets/'?>images/6.jpg"><span class="icon-out"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <!--End single project item-->
-                    
-                </div>
+              
         </section>
         <!--End Featured Area-->
 
@@ -335,7 +344,7 @@
                     <div class="about-style2-image-box">
                         <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                         <div class="image">
-                            <img src="<?php echo base_url().'assets/'?>images/resources/about-style2-image.jpg" alt="Awesome Image">
+                            <img src="<?php echo base_url().'assets/'?>images/resources/skm.jpg" alt="Awesome Image">
                             <!--div class="overlay-box">
                                 <div class="title">
                                     <h1>24 <span>Hours<br> Services</span></h1>
@@ -360,8 +369,8 @@
                     <div class="col-xl-12">
                         <div class="inner-content-box clearfix">
                             <div class="title-s2 text-center">
-                                <span>Informasi Kegiatan Bidang di BKD NTB</span>
-                                <h1>Berita & Informasi</h1>
+                                <span>BKD Provinsi Nusa Tenggara Barat</span>
+                                <h1>Berita & Informasi Kegiatan</h1>
                             </div>
                             <div class="breadcrumb-menu float-left">
                                 <ul class="clearfix">
@@ -393,6 +402,7 @@
                     </div>
                 </div>
             </div>
+                    </div>
         </section>
         <!--End blog area-->
 
@@ -457,13 +467,12 @@
                     <div class="col-xl-6 col-lg-4 col-md-4">
                         <div class="single-team-member">
                             <div class="img-holder">
-                              <iframe width="560" height="315" src="https://www.youtube.com/embed/wVVnlXApGqA?si=m5Cg3mh9WWfajph5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                               
+                             <iframe width="560" height="315" src="https://www.youtube.com/embed/Aldarzx8emw?si=65hYRTShhGn615Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
                                
                             </div>
                             <div class="name text-center">
-                                <p><span>Dirgahayu RI ke 80</span></p>
-                                <h3>Semarak Peringatan HUT RI</h3>
+                                <p><span>PPID BKD NTB</span></p>
+                                <h3>Alur Permohonan Informasi Publik</h3>
                             </div>
                         </div>
                     </div>
@@ -480,7 +489,7 @@
             <div class="container">
                 <div class="sec-title with-text max-width text-center wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1200ms">
                     <p>Pemerintah Provinsi NTB</p>
-                    <div class="title clr-white">Postur <span>Kepegawaian</span></div>
+                    <div class="title clr-white">Aparatur <span>Sipil Negara</span></div>
                </div>
                 <div class="row">
                     <!--Start Single Working Box-->
@@ -504,7 +513,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>Pegawai Negeri Sipil</h3>
-                                        <p>Jumlah PNS : 12.108 Orang</p>
+                                        <p>Jumlah PNS : 11.436 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -532,7 +541,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>Tenaga PPPK</h3>
-                                        <p>Jumlah PPPK : 6.795 Orang</p>
+                                        <p>Jumlah PPPK : 7.079 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -560,7 +569,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>PPPK Paruh Waktu</h3>
-                                        <p>Jumlah Total : 9.411 Orang</p>
+                                        <p>Jumlah Total : 9.392 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -568,7 +577,7 @@
                        
                     </div>
                    <div class="sec-title with-text max-width text-center wow fadeInDown" data-wow-delay="100ms" data-wow-duration="1200ms">
-                    <p>Sumber Data : Bidang Pengadaan, Pemberhentian & Informasi Tahun 2025</p>
+                    <p>Sumber Data : Bidang Pengadaan, Pemberhentian & Informasi</p>
                    
                </div>
                     <!--End Single Working Box-->
@@ -578,170 +587,7 @@
         <!--End Working Area-->
         
 
-        <div class="container inner-content">
-        <div class="concept-design-pricing-box">
-                            <div class="title">
-                                <h2>Alokasi Formasi CPNS & PPPK Tahun 2024</h2>
-                            </div>
-                            <div class="inner-content">
-                                <div class="row">
-
-                                     <!--Start Single Flexible box-->
-                                     <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi CPNS</h3>
-                                                            <span>Tenaga Kesehatan & Teknis</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>140</b><span>org</span></h1>
-                                                            <p>Formasi CPNS</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasi">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Alokasi Formasi CPNS :  
-                                                        <li>Kesehatan : 70 Org;</li>
-                                                        <li>Teknis : 70 Org;</li>
-                                                        
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasi">Lihat Formasi CPNS<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-
-                                    <!--Start Single Flexible box-->
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi PPPK</h3>
-                                                            <span>Tenaga Pendidik (Guru)</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>130</b><span>org</span></h1>
-                                                            <p>PPPK Guru</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasipppk">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Pelamar yang dapat melamar 
-                                                        <li>Pelamar Prioritas;</li>
-                                                        <li>eks THK-II;</li>
-                                                        <li>Guru Non ASN di NTB </li>
-                                                        <li>Lulusan PPG</li>
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasipppk">Lihat Formasi Guru<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-                                    <!--Start Single Flexible box-->
-                                    <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi PPPK</h3>
-                                                            <span>Tenaga Kesehatan</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>55</b><span>org</span></h1>
-                                                            <p>PPPK Kesehatan</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasipppk">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Pelamar yang dapat melamar 
-                                                        <li>eks THK-II yang aktif bekerja;</li>
-                                                        <li>Tenaga Non ASN yang aktif bekerja;</li>
-                                                        
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasipppk">Lihat Formasi PPPK Kesehatan<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-
-                                     <!--Start Single Flexible box-->
-                                     <div class="col-xl-3 col-lg-6 col-md-6">
-                                        <div class="single-pricing-box wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                                            <div class="inner">
-                                                <div class="img-box">
-                                                    <img src="<?php echo base_url().'assets/'?>images/services/service-single/pricing-1.jpg" alt="Awesome Image">
-                                                </div>
-                                                <div class="static-content text-center">
-                                                    <div class="table-header">
-                                                        <div class="top">
-                                                            <h3>Formasi PPPK</h3>
-                                                            <span>Tenaga Teknis</span>
-                                                        </div>
-                                                        <div class="package">
-                                                            <h1><b>175</b><span>org</span></h1>
-                                                            <p>PPPK Teknis</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="button">
-                                                        <a class="btn-one" href="/rekrutmen/formasipppk">Selengkapnya<span class="flaticon-next"></span></a>
-                                                    </div>
-                                                </div>
-                                                <div class="overlay-content">
-                                                    <ul>
-                                                    Pelamar yang dapat melamar 
-                                                        <li>eks THK-II yang aktif bekerja;</li>
-                                                        <li>Tenaga Non ASN yang aktif bekerja;</li>
-                                                        
-                                                        
-                                                    </ul>
-                                                    <a class="btn-two" href="/rekrutmen/formasipppk">Lihat Formasi Teknis<span class="flaticon-next"></span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Single Flexible box-->
-
-
-                                </div>
-                            </div>
-                        </div>
-                        </div> 
-        <br><br>
-
-      
+    
 
       
 

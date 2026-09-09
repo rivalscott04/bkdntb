@@ -97,13 +97,13 @@
                                 </li>
                             </ul>
 
-                            <div class="float-right">
+                            <!-- <div class="float-right">
                                 <a href="#"><img src="<?php echo base_url().'assets/'?>images/Logo_BerAKHLAK.svg.png" width="270x" height="40px" alt="Logo HUT NTB"></a>
-                            </div>
+                            </div> -->
 							
-							 <!--div class="float-right">
-                                <a href="#"><img src="<?php echo base_url().'assets/'?>images/hutntb67.png" width="280x" height="40px" alt="Logo HUT NTB"></a>
-                            </div-->
+							 <div class="float-right">
+                                <a href="#"><img src="<?php echo base_url().'assets/'?>images/hutridanntb-01.png" width="260x" height="40px" alt="Logo HUT NTB"></a>
+                            </div>
 
                             <!-- <div class="header-call-button float-right">
                                 <a href="/konseling"><div class="inner">
@@ -144,8 +144,10 @@
                                                 
                                                 <li class="dropdown"><a href="#">Profil</a>
                                                 <ul>
+                                                        <li><a href="/profilbadan">BKD Provinsi NTB</a></li>
                                                         <li><a href="/kaban">Kepala Badan</a></li>
                                                         <li><a href="/sekban">Sekretaris Badan</a></li>
+                                                        <li><a href="/pimpinan">Pejabat OPD</a></li>
                                                         <li><a href="/pegawai">Data Kepegawaian</a></li>
                                                         <li><a href="/lhkpn">Informasi LHKPN</a></li>
                                                         <li><a href="/struktur">Struktur Organisasi</a></li>
@@ -174,7 +176,9 @@
 
                                                 <li class="dropdown"><a href="#">Layanan Kepegawaian</a>
                                                 <ul>
-                                                         <li><a href="/proasn"><em>Profilling</em> ASN (ProASN)</a></li>
+                                                         
+                                                <li><a href="/wfh"><em>Work From Home</em> Setiap Jumat</a></li>
+                                                <li><a href="/proasn"><em>Profilling</em> ASN (ProASN)</a></li>
                                                          <li><a href="/konseling">Konseling Psikologi ASN</a></li>
                                                         <li><a href="/tugasbelajar">Penerbitan SK Tugas Belajar</a></li>
                                                         <li><a href="/pengajuancuti">Pengajuan Cuti Bagi ASN</a></li>

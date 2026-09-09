@@ -2,7 +2,9 @@
 <?php if (!empty($pagination)): ?>
     <div class="row">
         <div class="col-md-12">
-            <?php echo $pagination; ?>
+            <div class="blog-post">
+                <?php echo $pagination; ?>
+            </div>
         </div>
     </div>
 <?php endif; ?>

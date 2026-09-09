@@ -29,7 +29,7 @@ $img = url_gambar_berita_featured($item['gambar_berita'] ?? '');
                 </div>
                 <div class="text">
                     <p><?php echo html_escape(ringkas_teks($item['isi_berita'], 120)); ?></p>
-                    <a class="btn-two" href="<?php echo site_url('berita/' . $item['slug']); ?>">Selengkapnya<span class="flaticon-next"></span></a>
+                    <a class="btn-three" href="<?php echo site_url('berita/' . $item['slug']); ?>">Selengkapnya<span class="flaticon-next"></span></a>
                 </div>
             </div>
         </div>
