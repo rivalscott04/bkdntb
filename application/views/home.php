@@ -272,7 +272,7 @@
                           
                       
                         </div>
-                        <br><center><em>Pembaharuan Data : 01 Agustus 2026</em></center>
+                        <br><center><em>Pembaharuan Data : 01 September 2026</em></center>
                     </div>
                 </div>
 
