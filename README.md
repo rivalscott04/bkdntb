@@ -12,6 +12,23 @@ Panduan instalasi database, migration, dan admin CMS Berita.
 
 ---
 
+## Ubah CSS (penting)
+
+Jangan edit `assets/css/bundle.css` langsung. Edit file sumber, lalu rebuild.
+
+Panduan lengkap: [`assets/css/README.md`](assets/css/README.md)
+
+Ringkas:
+
+```bash
+# 1) edit style.css / responsive.css / admin.css
+# 2) rebuild bundle (wajib jika ubah style.css atau file @import)
+python3 scripts/rebuild-css-bundle.py
+# 3) commit sumber + bundle.css, push, lalu git pull di server
+```
+
+---
+
 ## Deploy Setelah Push Kode (Live Server)
 
 Ikuti langkah ini **di server** setelah kode sudah di-push dari lokal dan di-pull di server.

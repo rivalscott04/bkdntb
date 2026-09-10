@@ -1,4 +1,7 @@
-/* AUTO-GENERATED bundle: do not edit by hand. Source: style.css + imports */
+/* AUTO-GENERATED: assets/css/bundle.css
+ * Jangan edit file ini. Edit style.css / file sumber, lalu jalankan:
+ *   python3 scripts/rebuild-css-bundle.py
+ */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
 
@@ -15198,7 +15201,7 @@ opacity:1
 }
 
 
-/* ===== style.css (without imports) ===== */
+/* ===== style.css (tanpa @import) ===== */
 /***************************************************************************************************************
 ||||||||||||||||||||||||||       MASTER STYLESHEET FOR INTEXURE             ||||||||||||||||||||||||||||||||||||
 ****************************************************************************************************************
