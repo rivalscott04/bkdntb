@@ -513,7 +513,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>Pegawai Negeri Sipil</h3>
-                                        <p>Jumlah PNS : 11.436 Orang</p>
+                                        <p>Jumlah PNS : 11.369 Orang</p>
                                     </div>
                                 </div>
                             </div>
@@ -569,7 +569,7 @@
                                     </div>
                                     <div class="text">
                                         <h3>PPPK Paruh Waktu</h3>
-                                        <p>Jumlah Total : 9.392 Orang</p>
+                                        <p>Jumlah Total : 9.386 Orang</p>
                                     </div>
                                 </div>
                             </div>
