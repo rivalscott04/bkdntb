@@ -8,6 +8,8 @@
     RewriteRule ^admin/bidang/?(.*)$ index.php/admin_bidang/$1 [L,QSA]
     RewriteRule ^admin/pengaturan/?(.*)$ index.php/admin_pengaturan/$1 [L,QSA]
     RewriteRule ^admin/akun/?(.*)$ index.php/admin_akun/$1 [L,QSA]
+    # Serve /media/* via CI (bypass broken nginx static /assets parallel resets)
+    RewriteRule ^media/?(.*)$ index.php/media/$1 [L,QSA]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
