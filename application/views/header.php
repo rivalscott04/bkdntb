@@ -10,8 +10,8 @@
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- master stylesheet -->
-    <link rel="stylesheet" href="<?php echo base_url().'assets/'?>css/style.css">
+    <!-- master stylesheet (bundle: style + imports, fewer requests for shared hosting) -->
+    <link rel="stylesheet" href="<?php echo base_url().'assets/'?>css/bundle.css">
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="<?php echo base_url().'assets/'?>css/responsive.css">
     <!-- Favicon -->
