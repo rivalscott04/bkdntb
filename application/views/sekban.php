@@ -69,12 +69,12 @@ serta Keuangan.
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="image-box">
-                                        <img src="<?php echo base_url().'assets/'?>images/services/service-single/sekban-01.jpg" alt="Kaban">
+                                        <img src="<?php echo base_url().'assets/'?>images/services/service-single/sekban-02.jpg" alt="Kaban">
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="how-works-content">
-                                        <h2>Profil Sekretaris Badan</h2>
+                                        <h2>Profil Plt. Sekretaris Badan</h2>
                                         <ul>
                                             <li>
                                                 <div class="icon">
@@ -82,7 +82,7 @@ serta Keuangan.
                                                 </div>
                                                 <div class="text">
                                                     <span>Nama Lengkap :</span>
-                                                    <h4>Ida Bagus Arnawa, SE</h4>
+                                                    <h4>Sry Wahyuningsih, S.STP, M.H.</h4>
                                                  
                                                 </div>
                                             </li>
@@ -92,7 +92,7 @@ serta Keuangan.
                                                 </div>
                                                 <div class="text">
                                                     <span>Pangkat / Golongan</span>
-                                                    <h5>Penata Tingkat I (III/d)</h5>
+                                                    <h5>Pembina Tingkat I (IV/b)</h5>
                                                 </div>
                                             </li>
                                             <li>
@@ -101,7 +101,7 @@ serta Keuangan.
                                                 </div>
                                                 <div class="text">
                                                     <span>Tempat & Tanggal Lahir</span>
-                                                    <h5>Mataram, 12 Juni 1974</h5>
+                                                    <h5>Mataram, 28 Juni 1981</h5>
                                                 </div>
                                             </li>
 											<li>
@@ -109,8 +109,8 @@ serta Keuangan.
                                                     <span class="icon-tick"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <span>Pendidikan</span>
-                                                    <h5>S1 Ekonomi Pembangunan</h5>
+                                                    <span>Pendidikan Terakhir</span>
+                                                    <h5>S2 Hukum Pemerintahan</h5>
                                                 </div>
                                             </li>
 											<li>
@@ -119,7 +119,8 @@ serta Keuangan.
                                                 </div>
                                                 <div class="text">
                                                     <span>Riwayat Jabatan</span><br>
-													KASUBAG UMUM DINAS PERTANIAN<br>
+													Plt. Sekretaris BKD NTB<br>
+                                                    Kepala Bidang PKAP BKD NTB
 													
 
 														
