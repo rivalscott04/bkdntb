@@ -6,17 +6,17 @@
 
 
                        <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default"
-                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/ipdn26.jpg"
+                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/slides/siagadisiplin.jpg"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/ipdn26.jpg">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url().'assets/'?>images/slides/siagadisiplin.jpg">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','700','500']" data-whitespace="normal"
                              data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="big-title">
-                                  Seleksi Penerimaan Calon Praja IPDN Tahun 2026 Resmi Dibuka
+                                  Kepala BKN Pimpin Apel Siaga Disiplin ASN di Pemprov NTB
                                 </div>
                             </div>
                         </div>
@@ -24,7 +24,7 @@
                              data-hoffset="['15','15','15','15']" data-voffset="['-75','-10','-25','-30']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
-                                <div class="text"><br><br><br>Pendaftaran calon Praja IPDN Tahun 2026 dilaksanakan secara bersamaan dengan pendaftaran calon siswa-siswi/taruna-taruni pendidikan tinggi lainnya mulai pada tanggal 18 s.d 30 Agustus 2026 dengan mekanisme online melalui link dibawah ini : 
+                                <div class="text"><br><br><br>Kepala Badan Kepegawaian Negara (BKN) Prof. Dr. Zudan Arif Fakrulloh, S.H., M.H., menyerukan kepada seluruh Aparatur Sipil Negara (ASN) di lingkungan Pemerintah Provinsi Nusa Tenggara Barat (NTB) untuk melakukan perubahan mendasar dalam cara berpikir dan cara bekerja menghadapi tuntutan pelayanan publik di era digital.
 </div>
                             </div>
                         </div>
@@ -33,9 +33,9 @@
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="btn-box">
-                                    <a class="btn-one" href="https://spcp.ipdn.ac.id/">Daftar Sekarang<span class="flaticon-next"></span></a>
-                                    <a class="project-view-button" href="<?php echo base_url().'assets/'?>download/SE Pelaksanaan SPCP IPDN TA. 2026.pdf">Unduh Surat Pengumuman Penerimaan Calon Praja IPDN</a>
-                                    <!-- <a class="project-view-button" href="/seleksijpt">Informasi Pengumuman Selengkapnya</a> -->
+                                    <!-- <a class="btn-one" href="https://spcp.ipdn.ac.id/">Daftar Sekarang<span class="flaticon-next"></span></a>
+                                    <a class="project-view-button" href="<?php echo base_url().'assets/'?>download/SE Pelaksanaan SPCP IPDN TA. 2026.pdf">Unduh Surat Pengumuman Penerimaan Calon Praja IPDN</a> -->
+                                    <a class="btn-one" href="/berita/apel-siaga-disiplin-asn-kepala-bkn-serukan-asn-ntb-bergerak-cepat-dengan-ubah-cara-berpikir-percepat-pelayanan-bagi-masyarakat">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
