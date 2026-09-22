@@ -100,12 +100,15 @@
             <div class="admin-field">
                 <label>Video Layanan (YouTube)</label>
                 <div class="input-box">
-                    <input type="text" name="video_youtube" maxlength="500"
+                    <input type="text" name="video_youtube" maxlength="2000"
                            value="<?php echo html_escape($bidang['video_youtube'] ?? ''); ?>"
-                           placeholder="https://www.youtube.com/watch?v=... atau tempel kode embed iframe">
+                           placeholder="https://www.youtube.com/watch?v=XXXXXXXXXXX">
                 </div>
                 <p class="admin-muted">
-                    Satu video di sidebar halaman bidang. Boleh URL YouTube biasa, youtu.be, atau kode embed iframe.
+                    Tempel URL YouTube biasa (paling aman), contoh
+                    <code>https://www.youtube.com/watch?v=...</code> atau
+                    <code>https://youtu.be/...</code>.
+                    Kode embed iframe juga diterima. Sistem akan menyimpan versi singkatnya.
                     Kosongkan jika belum ada video.
                 </p>
             </div>
