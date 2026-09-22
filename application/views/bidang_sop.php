@@ -115,10 +115,6 @@ if ($active_bidang_id > 0) {
             <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
                 <div class="single-service-sidebar">
                     <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
-                    <?php $this->load->view('partials/bidang_sidebar_layanan', array(
-                        'bidang' => $bidang ?? array(),
-                        'layanan_list' => $layanan_list ?? array(),
-                    )); ?>
                 </div>
             </div>
         </div>
