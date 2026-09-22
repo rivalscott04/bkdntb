@@ -3346,3 +3346,12 @@ li .single-footer-contact-info .inner {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .bidang-sidebar-block {
+        margin-bottom: 22px;
+    }
+    .bidang-sidebar-lead {
+        font-size: 12px;
+    }
+}
+

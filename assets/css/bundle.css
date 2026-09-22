@@ -26767,6 +26767,56 @@ li .single-footer-contact-info .text p span{
     line-height: 1;
 }
 
+/***
+=============================================
+    Bidang sidebar hierarchy + video
+=============================================
+***/
+.bidang-sidebar-block {
+    margin-bottom: 28px;
+}
+.bidang-sidebar-block .title {
+    margin-bottom: 0;
+}
+.bidang-sidebar-block .title h5 {
+    margin-bottom: 0;
+    line-height: 1.35;
+}
+.bidang-sidebar-lead {
+    margin: 6px 0 14px;
+    color: #6b6f76;
+    font-size: 13px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.bidang-sidebar-more {
+    margin: 12px 0 0;
+    text-align: center;
+}
+.bidang-sidebar-more a {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.bidang-sidebar-video-frame {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #1b1b1b;
+    border-radius: 2px;
+}
+.bidang-sidebar-video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .review-box-holder {
     position: relative;
     display: block;

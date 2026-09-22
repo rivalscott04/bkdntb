@@ -109,9 +109,11 @@ class Bidang_Controller extends CI_Controller {
 		}
 
 		if (!empty($bidang['id'])) {
-			$layanan_list = $this->Bidang_layanan_model->get_by_bidang_id($bidang['id'], TRUE);
-			$sop_total = $this->Bidang_layanan_model->count_sop_by_bidang_id($bidang['id']);
-			$sop_list = $this->Bidang_layanan_model->get_sop_by_bidang_id($bidang['id'], 5);
+			$all_layanan = $this->Bidang_layanan_model->get_by_bidang_id($bidang['id'], TRUE);
+			$layanan_list = bidang_layanan_filter_page_nav($all_layanan);
+			$sop_all = bidang_layanan_filter_sop_download($all_layanan);
+			$sop_total = count($sop_all);
+			$sop_list = array_slice($sop_all, 0, 5);
 		}
 
 		$data = array(

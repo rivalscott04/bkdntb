@@ -211,6 +211,86 @@ if (!function_exists('bidang_layanan_href')) {
 	}
 }
 
+if (!function_exists('bidang_layanan_is_page_nav')) {
+	/** Layanan yang punya URL halaman (bukan sekadar unduhan SOP). */
+	function bidang_layanan_is_page_nav($item)
+	{
+		$href = bidang_layanan_href(is_array($item) ? ($item['url'] ?? '#') : $item);
+		return $href !== '#' && $href !== '';
+	}
+}
+
+if (!function_exists('bidang_layanan_is_sop_download')) {
+	/** Item yang ditampilkan di blok File SOP (punya file, tanpa halaman sendiri). */
+	function bidang_layanan_is_sop_download($item)
+	{
+		if (!is_array($item) || empty($item['sop_file'])) {
+			return false;
+		}
+		return !bidang_layanan_is_page_nav($item);
+	}
+}
+
+if (!function_exists('bidang_layanan_filter_page_nav')) {
+	function bidang_layanan_filter_page_nav($items)
+	{
+		$out = array();
+		foreach ((array) $items as $item) {
+			if (bidang_layanan_is_page_nav($item)) {
+				$out[] = $item;
+			}
+		}
+		return $out;
+	}
+}
+
+if (!function_exists('bidang_layanan_filter_sop_download')) {
+	function bidang_layanan_filter_sop_download($items, $limit = null)
+	{
+		$out = array();
+		foreach ((array) $items as $item) {
+			if (!bidang_layanan_is_sop_download($item)) {
+				continue;
+			}
+			$out[] = $item;
+			if ($limit !== null && count($out) >= (int) $limit) {
+				break;
+			}
+		}
+		return $out;
+	}
+}
+
+if (!function_exists('youtube_embed_src')) {
+	/**
+	 * Ubah URL / kode embed YouTube menjadi URL embed aman untuk iframe.
+	 */
+	function youtube_embed_src($input)
+	{
+		$input = trim((string) $input);
+		if ($input === '') {
+			return '';
+		}
+
+		if (preg_match('/<iframe[^>]+src=["\']([^"\']+)["\']/i', $input, $m)) {
+			$input = html_entity_decode($m[1], ENT_QUOTES, 'UTF-8');
+		}
+
+		$id = '';
+		if (preg_match('#(?:youtube\.com/(?:watch\?(?:[^#]*&)?v=|embed/|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{6,})#i', $input, $m)) {
+			$id = $m[1];
+		} elseif (preg_match('/^[A-Za-z0-9_-]{6,}$/', $input)) {
+			$id = $input;
+		}
+
+		if ($id === '') {
+			return '';
+		}
+
+		return 'https://www.youtube.com/embed/' . rawurlencode($id);
+	}
+}
+
 if (!function_exists('bidang_layanan_sop_relpath')) {
 	function bidang_layanan_sop_relpath($filename = '')
 	{

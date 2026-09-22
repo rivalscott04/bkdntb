@@ -40,9 +40,10 @@
                            placeholder="/kenaikanpangkat atau https://...">
                 </div>
                 <p class="admin-muted">
+                    Isi URL jika item ini masuk <strong>Menu Layanan</strong> (tautan halaman).
                     Path lokal diawali slash (mis. <code>/kenaikanpangkat</code>),
                     tautan eksternal lengkap (<code>https://...</code>),
-                    atau <code>#</code> jika belum ada halaman.
+                    atau biarkan <code>#</code> / kosong jika item hanya untuk unduhan SOP.
                 </p>
             </div>
 
@@ -52,6 +53,8 @@
                     <input type="file" name="sop_file" accept=".pdf,application/pdf">
                 </div>
                 <p class="admin-muted">
+                    Jika URL kosong/<code>#</code> dan ada file SOP, item tampil di blok
+                    <strong>Dokumen SOP</strong> sidebar (bukan di menu).
                     Maksimal <?php echo html_escape($sop_max_mb); ?> MB (atur di
                     <a href="<?php echo site_url('admin/pengaturan'); ?>">Pengaturan</a>).
                     <?php if (!empty($layanan['sop_file'])): ?>

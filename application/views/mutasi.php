@@ -15,6 +15,9 @@
                     <?php $this->load->view('partials/bidang_sidebar_stack', array(
                         'bidang' => $bidang ?? array(),
                         'layanan_list' => $layanan_list ?? array(),
+                        'sop_list' => $sop_list ?? array(),
+                        'sop_total' => $sop_total ?? 0,
+                        'sop_limit' => $sop_limit ?? 5,
                     )); ?>
                 </div>
             </div>

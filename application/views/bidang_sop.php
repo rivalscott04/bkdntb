@@ -24,7 +24,7 @@ if ($active_bidang_id > 0) {
 ?>
 <?php $this->load->view('partials/bidang_breadcrumb', array(
 	'bidang' => array_merge($bidang ?? array(), array(
-		'judul_halaman' => 'File SOP',
+		'judul_halaman' => 'Dokumen SOP',
 		'subjudul' => $judul_bidang,
 	)),
 )); ?>
@@ -36,16 +36,16 @@ if ($active_bidang_id > 0) {
                 <div class="blog-post">
                     <div class="single-blog-post">
                         <div class="text-holder">
-                            <h3>Daftar File SOP</h3>
+                            <h3>Dokumen SOP per Bidang</h3>
                             <p>
-                                Pilih tab bidang untuk melihat file SOP.
+                                Pilih tab bidang di bawah untuk melihat daftar file SOP yang dapat diunduh.
                                 <a href="<?php echo html_escape($back_url); ?>">Kembali ke halaman bidang</a>
                             </p>
                         </div>
                     </div>
 
                     <?php if (empty($sop_groups)): ?>
-                        <p style="margin-top: 1.5rem;">Belum ada file SOP yang diunggah.</p>
+                        <p style="margin-top: 1.5rem;">Belum ada dokumen SOP yang diunggah.</p>
                     <?php else: ?>
                         <div class="product-tab-box tabs-box sop-file-tabs" style="margin-top: 1.5rem;">
                             <div class="tab-btns tab-buttons clearfix">

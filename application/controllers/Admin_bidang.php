@@ -58,6 +58,7 @@ class Admin_bidang extends Admin_Controller {
 		$kepala_nip = trim($this->input->post('kepala_nip', TRUE));
 		$kepala_foto = trim($this->input->post('kepala_foto', TRUE));
 		$layanan_judul = trim($this->input->post('layanan_judul', TRUE));
+		$video_youtube = trim($this->input->post('video_youtube', TRUE));
 		$ringkasan_tugas_judul = trim($this->input->post('ringkasan_tugas_judul', TRUE));
 		$filter_class = trim($this->input->post('filter_class', TRUE));
 		$urutan = (int) $this->input->post('urutan');
@@ -70,6 +71,14 @@ class Admin_bidang extends Admin_Controller {
 		}
 		if (mb_strlen($kode) > 100 || mb_strlen($label) > 255 || mb_strlen($url_slug) > 100) {
 			$this->session->set_flashdata('error', 'Panjang kode/label/URL melebihi batas.');
+			redirect($redirect_form);
+		}
+		if (mb_strlen($video_youtube) > 500) {
+			$this->session->set_flashdata('error', 'Link video YouTube terlalu panjang (maksimal 500 karakter).');
+			redirect($redirect_form);
+		}
+		if ($video_youtube !== '' && youtube_embed_src($video_youtube) === '') {
+			$this->session->set_flashdata('error', 'Link video YouTube tidak valid. Tempel URL YouTube atau kode embed iframe.');
 			redirect($redirect_form);
 		}
 		if (!preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $url_slug)) {
@@ -102,6 +111,9 @@ class Admin_bidang extends Admin_Controller {
 			'urutan'                => max(0, $urutan),
 			'aktif'                 => $aktif,
 		);
+		if ($this->db->field_exists('video_youtube', 'bidang')) {
+			$data['video_youtube'] = $video_youtube !== '' ? $video_youtube : null;
+		}
 
 		if ($id) {
 			$existing = $this->Bidang_model->get_by_id($id);

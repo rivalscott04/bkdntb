@@ -29,6 +29,36 @@ python3 scripts/rebuild-css-bundle.py
 
 ---
 
+## File mana yang diedit (halaman bidang)
+
+Semua laman bidang (Mutasi, Pengembangan, PPI, Evaluasi, Sekretariat, UPPK) memakai **satu stack sidebar**.
+Biasanya cukup edit partial di bawah, bukan copy-paste ke tiap view bidang.
+
+Urutan sidebar (atas ke bawah):
+
+1. Foto kepala bidang
+2. **Video YouTube** (langsung di bawah foto)
+3. Menu Layanan (link halaman)
+4. File SOP (unduh upload admin)
+5. Dokumen Pendukung (Pergub / tupoksi)
+
+| Mau ubah | Edit file ini | Catatan |
+|----------|---------------|---------|
+| Urutan blok sidebar | `application/views/partials/bidang_sidebar_stack.php` | Satu file untuk semua bidang |
+| Foto / nama / NIP kepala | Admin → Bidang, atau `bidang_sidebar_kepala.php` | Data dari tabel `bidang` |
+| Video YouTube di bawah foto | Admin → Bidang → field `video_youtube`, tampilan di `bidang_sidebar_video.php` | Kosong = blok video tidak tampil |
+| Menu Layanan | Admin → Bidang → Layanan (item ber-URL), tampilan `bidang_sidebar_layanan.php` | Hanya item yang punya URL halaman |
+| File SOP di sidebar | Admin upload SOP, tampilan `bidang_sidebar_sop.php` | Maks 5 di sidebar + link “lihat lebih banyak” |
+| Halaman daftar semua SOP | `application/views/bidang_sop.php` + `Bidang_Controller::sop()` | Route `/nama-bidang/sop` |
+| Layout isi berita kiri / sidebar kanan | View bidang: `mutasi.php`, `pengembangan.php`, `ppi.php`, `evaluasi.php`, `sekretariat.php`, `uppk.php` | Hampir semua hanya load `bidang_sidebar_stack` |
+| Khusus UPPK (SiKOPI fallback) | `application/views/uppk.php` | Logic tambahan sebelum stack |
+| Filter Layanan vs SOP | `application/helpers/berita_helper.php` | `bidang_layanan_filter_page_nav` / `bidang_layanan_filter_sop_download` |
+| Query data layanan / SOP | `application/models/Bidang_layanan_model.php` + `application/core/MY_Controller.php` (`Bidang_Controller`) | Controller memisahkan `layanan_list` dan `sop_list` |
+
+Form admin bidang (termasuk URL YouTube): `application/views/admin/bidang_form.php`.
+
+---
+
 ## Deploy Setelah Push Kode (Live Server)
 
 Ikuti langkah ini **di server** setelah kode sudah di-push dari lokal dan di-pull di server.

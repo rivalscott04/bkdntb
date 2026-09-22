@@ -86,14 +86,28 @@
                 </div>
                 <div class="col-md-6">
                     <div class="admin-field">
-                        <label>Judul Layanan (sidebar)</label>
+                        <label>Judul Menu Layanan (sidebar)</label>
                         <div class="input-box">
                             <input type="text" name="layanan_judul" maxlength="255"
                                    value="<?php echo html_escape($bidang['layanan_judul'] ?? ''); ?>"
-                                   placeholder="Layanan Bidang PPI">
+                                   placeholder="Menu Layanan Bidang PPI">
                         </div>
+                        <p class="admin-muted">Judul blok menu tautan halaman layanan di sidebar (bukan daftar file SOP).</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="admin-field">
+                <label>Video Layanan (YouTube)</label>
+                <div class="input-box">
+                    <input type="text" name="video_youtube" maxlength="500"
+                           value="<?php echo html_escape($bidang['video_youtube'] ?? ''); ?>"
+                           placeholder="https://www.youtube.com/watch?v=... atau tempel kode embed iframe">
+                </div>
+                <p class="admin-muted">
+                    Satu video di sidebar halaman bidang. Boleh URL YouTube biasa, youtu.be, atau kode embed iframe.
+                    Kosongkan jika belum ada video.
+                </p>
             </div>
 
             <div class="row">

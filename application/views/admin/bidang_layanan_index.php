@@ -11,11 +11,16 @@
 </div>
 
 <p class="admin-muted" style="margin-bottom: 1.5rem;">
-    Item ini tampil di sidebar halaman bidang
+    Item aktif tampil di sidebar halaman bidang
     (<a href="<?php echo site_url($bidang['url_slug']); ?>" target="_blank">/<?php echo html_escape($bidang['url_slug']); ?></a>).
-    Judul blok sidebar diatur di Edit Bidang (Judul Layanan).
-    Upload SOP PDF maksimal <?php echo html_escape($sop_max_mb); ?> MB
-    (<a href="<?php echo site_url('admin/pengaturan'); ?>">ubah di Pengaturan</a>).
+    <br>
+    <strong>Menu Layanan:</strong> isi URL halaman (contoh <code>/kenaikanpangkat</code>).
+    <br>
+    <strong>Dokumen SOP:</strong> upload file PDF dan biarkan URL kosong atau <code>#</code> agar muncul di blok unduhan SOP (bukan di menu).
+    <br>
+    Judul menu diatur di Edit Bidang. Ukuran SOP maksimal <?php echo html_escape($sop_max_mb); ?> MB
+    (<a href="<?php echo site_url('admin/pengaturan'); ?>">Pengaturan</a>).
+    Video YouTube layanan juga diatur di Edit Bidang.
 </p>
 
 <div class="admin-actions" style="margin-bottom: 1rem;">
