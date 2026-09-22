@@ -32,3 +32,6 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 # Database config — jangan ikut deploy, edit manual per server
 application/config/database.php
+
+# Graphify knowledge graph (local generated)
+graphify-out/

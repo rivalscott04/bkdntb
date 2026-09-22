@@ -257,6 +257,44 @@ if (!function_exists('bidang_layanan_sop_fcpath')) {
 	}
 }
 
+if (!function_exists('bidang_layanan_sop_size_label')) {
+	function bidang_layanan_sop_size_label($sop_file)
+	{
+		$path = bidang_layanan_sop_fcpath($sop_file);
+		if ($path === '' || !is_file($path)) {
+			return '';
+		}
+		$bytes = @filesize($path);
+		if ($bytes === false || $bytes < 0) {
+			return '';
+		}
+		if ($bytes < 1024) {
+			return $bytes . ' B';
+		}
+		$kb = $bytes / 1024;
+		if ($kb < 1024) {
+			return round($kb) . ' kb';
+		}
+		return round($kb / 1024, 1) . ' MB';
+	}
+}
+
+if (!function_exists('bidang_sop_list_url')) {
+	function bidang_sop_list_url($bidang)
+	{
+		$slug = '';
+		if (is_array($bidang)) {
+			$slug = trim((string) ($bidang['url_slug'] ?? ''));
+		} else {
+			$slug = trim((string) $bidang);
+		}
+		if ($slug === '') {
+			return '';
+		}
+		return site_url(rtrim($slug, '/') . '/sop');
+	}
+}
+
 if (!function_exists('bidang_layanan_for_page')) {
 	function bidang_layanan_for_page($page = null)
 	{

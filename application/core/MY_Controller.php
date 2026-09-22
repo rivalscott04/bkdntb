@@ -81,21 +81,14 @@ class Bidang_Controller extends CI_Controller {
 
 	public function index()
 	{
-		$bidang = $this->bidang_key !== ''
-			? $this->Bidang_model->get_by_kode($this->bidang_key)
-			: null;
-		if (!$bidang && $this->bidang_key !== '') {
-			$bidang = array(
-				'kode'  => $this->bidang_key,
-				'label' => $this->bidang_key,
-			);
-		}
-
+		$bidang = $this->_resolve_bidang();
 		$page = max(1, (int) $this->input->get('page'));
 		$offset = ($page - 1) * $this->per_page;
 		$berita_list = array();
 		$pagination = '';
 		$layanan_list = array();
+		$sop_list = array();
+		$sop_total = 0;
 
 		if ($this->bidang_key !== '') {
 			$total = $this->Berita_model->count_by_bidang($this->bidang_key, 'published');
@@ -117,6 +110,8 @@ class Bidang_Controller extends CI_Controller {
 
 		if (!empty($bidang['id'])) {
 			$layanan_list = $this->Bidang_layanan_model->get_by_bidang_id($bidang['id'], TRUE);
+			$sop_total = $this->Bidang_layanan_model->count_sop_by_bidang_id($bidang['id']);
+			$sop_list = $this->Bidang_layanan_model->get_sop_by_bidang_id($bidang['id'], 5);
 		}
 
 		$data = array(
@@ -125,9 +120,48 @@ class Bidang_Controller extends CI_Controller {
 			'bidang_key'    => $this->bidang_key,
 			'bidang'        => $bidang,
 			'layanan_list'  => $layanan_list,
+			'sop_list'      => $sop_list,
+			'sop_total'     => $sop_total,
+			'sop_limit'     => 5,
 		);
 		$this->load->view('header');
 		$this->load->view($this->view_name, $data);
 		$this->load->view('footer-bidang');
+	}
+
+	public function sop()
+	{
+		$bidang = $this->_resolve_bidang();
+		if (empty($bidang['id'])) {
+			show_404();
+			return;
+		}
+
+		$layanan_list = $this->Bidang_layanan_model->get_by_bidang_id($bidang['id'], TRUE);
+		$sop_groups = $this->Bidang_layanan_model->get_sop_grouped_by_bidang($bidang['id']);
+
+		$data = array(
+			'bidang_key'   => $this->bidang_key,
+			'bidang'       => $bidang,
+			'layanan_list' => $layanan_list,
+			'sop_groups'   => $sop_groups,
+		);
+		$this->load->view('header');
+		$this->load->view('bidang_sop', $data);
+		$this->load->view('footer-bidang');
+	}
+
+	protected function _resolve_bidang()
+	{
+		$bidang = $this->bidang_key !== ''
+			? $this->Bidang_model->get_by_kode($this->bidang_key)
+			: null;
+		if (!$bidang && $this->bidang_key !== '') {
+			$bidang = array(
+				'kode'  => $this->bidang_key,
+				'label' => $this->bidang_key,
+			);
+		}
+		return $bidang;
 	}
 }

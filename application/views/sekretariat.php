@@ -17,7 +17,17 @@
                             <!--Start Single sidebar-->
                              <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
 
-                          
+                            <?php $this->load->view('partials/bidang_sidebar_layanan', array(
+                                'bidang' => $bidang ?? array(),
+                                'layanan_list' => $layanan_list ?? array(),
+                            )); ?>
+
+                            <?php $this->load->view('partials/bidang_sidebar_sop', array(
+                                'bidang' => $bidang ?? array(),
+                                'sop_list' => $sop_list ?? array(),
+                                'sop_total' => $sop_total ?? 0,
+                                'sop_limit' => $sop_limit ?? 5,
+                            )); ?>
                            
                             <!--Start Single sidebar-->
                             <div class="single-sidebar">
