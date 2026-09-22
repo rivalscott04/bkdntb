@@ -1,16 +1,12 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <?php
 /**
- * Stack sidebar halaman bidang (hierarki jelas, tanpa dobel):
- * kepala → video layanan → menu layanan → dokumen SOP → dokumen pendukung.
+ * Stack sidebar halaman bidang:
+ * kepala (+ video YouTube langsung di bawah foto) → menu layanan → dokumen SOP → dokumen pendukung.
  */
 $show_pergub = isset($show_pergub) ? (bool) $show_pergub : TRUE;
 ?>
 <?php $this->load->view('partials/bidang_sidebar_kepala', array('bidang' => $bidang ?? array())); ?>
-
-<?php $this->load->view('partials/bidang_sidebar_video', array(
-	'bidang' => $bidang ?? array(),
-)); ?>
 
 <?php $this->load->view('partials/bidang_sidebar_layanan', array(
 	'bidang' => $bidang ?? array(),
