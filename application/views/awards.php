@@ -30,8 +30,8 @@
                                     </div><p></p>
                                     <div class="col-lg-5">
                                         <div class="content-box">
-                                            <span class="price">Pengumuman 3 Besar</span>
-                                            <h2>ASN NTB Awards Tahun 2025</h2>
+                                            <span class="price">Anugerah Bagi ASN Berprestasi</span>
+                                            <h2>ASN NTB Awards Tahun 2026</h2>
                                             <div class="review-box">
                                                 <ul>
                                                     <li><i class="fa fa-star"></i></li>
@@ -42,12 +42,12 @@
                                                 </ul>
                                             </div>
                                             <div class="text">
-                                                <p align="justify">ASN NTB Awards merupakan program penghargaan tahunan yang bertujuan untuk mendorong terciptanya ASN yang profesional, berintegritas, berorientasi pada pelayanan, serta mampu menjadi teladan bagi masyarakat dan rekan kerja. Kegiatan ini merupakan salah satu pondasi utama menuju birokrasi kelas dunia yang kita cita-citakan melalui NTB Makmur Mendunia.</p>
+                                                <p align="justify">ASN NTB Awards merupakan program penghargaan tahunan bagi ASN di Pemerintah Provinsi NTB yang bertujuan untuk mendorong terciptanya Aparatur Sipil Negara yang profesional, berintegritas, berorientasi pada pelayanan, serta mampu menjadi teladan bagi masyarakat dan rekan kerja. Kegiatan ini merupakan salah satu pondasi utama menuju birokrasi kelas dunia yang kita cita-citakan melalui NTB Makmur Mendunia.</p>
                                             </div>
                                             
                                             <div>
                                                 <br>
-                                              <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman 3 Besar Seleksi ASN NTB Awards 2025.pdf">Pengumuman 3 Besar ASN NTB Awards<span class="flaticon-next"></span></a>
+                                              <a class="btn-one" href="https://asnntb.my.id">Pendaftaran ASN NTB Awards 2026<span class="flaticon-next"></span></a>
                                                 
                             
                              
@@ -67,92 +67,7 @@
         </section>
         <!--End shop area-->
 
-        <section class="recently-project-style2-area">
-            <div class="container">
-               
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="project-carousel-v2 owl-carousel owl-theme">
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/11.jpg" alt="Awesome Image">
-                                   
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/22.jpg" alt="Awesome Image">
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/33.jpg" alt="Awesome Image">
-                                  
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/44.jpg" alt="Awesome Image">
-                                   
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/55.jpg" alt="Awesome Image">
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/11.jpg" alt="Awesome Image">
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/22.jpg" alt="Awesome Image">
-                                   
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/33.jpg" alt="Awesome Image">
-                                   
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/44.jpg" alt="Awesome Image">
-                                    
-                                </div>
-                            </div>
-                            <!--End single project style1-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+       
         
 <section>
 		<div class="container">
@@ -162,43 +77,35 @@
                     <div class="faq-content-box">
                             <div class="accordion-box">
 
-                                  <!--Start single accordion box-->
+                               <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Pengumuman ASN NTB Awards</h4>
+                                        <h4>Materi Sosialisasi ASN NTB Awards Tahun 2026</h4>
                                     </div>
                                     <div class="accord-content">
                                     
                                          <table id="datatable" class="table table-striped">
                       
                         <tbody>
-							
-							  <tr>
-                                
-                                   
-                                    <td>Pengumuman Hasil Seleksi FGD ASN NTB Awards</td>
-                                     <td><a href="<?php echo base_url().'assets/'?>download/PENGUMUMAN SELEKSI ASN NTB AWARDS - 24 Nov 2025.pdf" class="btn-three" target="_blank">Lihat Informasi</a>
-</td>
-                                </tr>
-							
-							  <tr>
-                                
-                                   
-                                    <td>Pengumuman Hasil Seleksi Administrasi ASN NTB Awards</td>
-                                     <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman Seleksi ASN NTB Awards 2025.pdf" class="btn-three" target="_blank">Lihat Informasi</a>
-</td>
-                                </tr>
                            
                                 <tr>
                                 
                                    
-                                    <td>Petunjuk Teknis Pelaksanaan ASN NTB Awards</td>
-                                     <td><a href="<?php echo base_url().'assets/'?>download/Surat Perpanjangan Batas Waktu Penyampaian Usulan ASN NTB Awards 2025 (2).pdf" class="btn-three" target="_blank">Lihat Informasi</a>
+                                    <td>Materi Kepala Bidang PKAP - ASN NTB Awards Tahun 2026</td>
+                                     <td><a href="https://drive.google.com/drive/folders/1B3SeX1sBBGWO0QbwrKMsKZc2R-ZsVsy_?usp=drive_link" class="btn-three" target="_blank">Unduh</a>
 </td>
                                 </tr>
 
+                                <tr>
                                 
-                               
+                                   
+                                    <td>Petunjuk Teknis ASN NTB Awards Tahun 2026</td>
+                                     <td><a href="https://drive.google.com/drive/folders/1B3SeX1sBBGWO0QbwrKMsKZc2R-ZsVsy_?usp=drive_link" class="btn-three" target="_blank">Unduh</a>
+</td>
+                                </tr>
+                                
+                                
+                                 
                         </tbody>
                     </table>
 
@@ -206,12 +113,13 @@
                                 </div></div>
                                 <!--End single accordion box-->
 
+                                 
 
 
                                 <!--Start single accordion box-->
                                 <div class="accordion accordion-block">
                                     <div class="accord-btn">
-                                        <h4>Dasar Hukum Pelaksanaan ASN NTB Awards Tahun 2025</h4>
+                                        <h4>Dasar Hukum Pelaksanaan ASN NTB Awards</h4>
                                     </div>
                                     <div class="accord-content">
                                     
@@ -290,15 +198,11 @@
                                     <td>Pegawai Pemerintah Dengan Perjanjian Kerja (PPPK);</td>
                                 </tr>
 
-                                 <tr>
                                 
-                                    <td>7.</td>
-                                    <td>Pengelola Keuangan dan Aset; dan/atau;</td>
-                                </tr>
 
                                  <tr>
                                 
-                                    <td>8.</td>
+                                    <td>7.</td>
                                     <td>ASN Inspiratif;</td>
                                 </tr>
 
@@ -408,34 +312,6 @@
 
                                 
 
-                               
-                        </tbody>
-                    </table>
-
-
-                                </div></div>
-                                <!--End single accordion box-->
-
-                                 <!--Start single accordion box-->
-                                <div class="accordion accordion-block">
-                                    <div class="accord-btn">
-                                        <h4>Unduh Format Dokumen Surat Yang Dipersyaratkan</h4>
-                                    </div>
-                                    <div class="accord-content">
-                                    
-                                         <table id="datatable" class="table table-striped">
-                      
-                        <tbody>
-                           
-                                <tr>
-                                
-                                   
-                                    <td>Dokumen Surat Yang Dipersyaratkan (ASN NTB Awards)</td>
-                                     <td><a href="https://drive.google.com/drive/folders/1RZNS2ZKGQiQXtjbpxHE-bwh9xjaNc8IW?usp=drive_link" class="btn-three" target="_blank">Unduh Format Surat</a>
-</td>
-                                </tr>
-
-                                
                                
                         </tbody>
                     </table>
