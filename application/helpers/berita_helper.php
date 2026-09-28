@@ -264,30 +264,63 @@ if (!function_exists('bidang_layanan_filter_sop_download')) {
 if (!function_exists('youtube_embed_src')) {
 	/**
 	 * Ubah URL / kode embed YouTube menjadi URL embed aman untuk iframe.
+	 * Menerima: watch, youtu.be, embed, shorts, live, nocookie, atau iframe HTML.
 	 */
 	function youtube_embed_src($input)
 	{
-		$input = trim((string) $input);
+		$input = trim(html_entity_decode((string) $input, ENT_QUOTES, 'UTF-8'));
 		if ($input === '') {
 			return '';
 		}
 
-		if (preg_match('/<iframe[^>]+src=["\']([^"\']+)["\']/i', $input, $m)) {
-			$input = html_entity_decode($m[1], ENT_QUOTES, 'UTF-8');
+		// Ambil src dari kode embed iframe (bisa rusak oleh XSS filter).
+		if (preg_match('/src\s*=\s*["\']([^"\']+)["\']/i', $input, $m)) {
+			$input = trim($m[1]);
 		}
 
-		$id = '';
-		if (preg_match('#(?:youtube\.com/(?:watch\?(?:[^#]*&)?v=|embed/|shorts/|live/)|youtu\.be/)([A-Za-z0-9_-]{6,})#i', $input, $m)) {
-			$id = $m[1];
-		} elseif (preg_match('/^[A-Za-z0-9_-]{6,}$/', $input)) {
-			$id = $input;
-		}
-
+		$id = youtube_video_id($input);
 		if ($id === '') {
 			return '';
 		}
 
-		return 'https://www.youtube.com/embed/' . rawurlencode($id);
+		return 'https://www.youtube.com/embed/' . $id;
+	}
+}
+
+if (!function_exists('youtube_video_id')) {
+	function youtube_video_id($input)
+	{
+		$input = trim(html_entity_decode((string) $input, ENT_QUOTES, 'UTF-8'));
+		if ($input === '') {
+			return '';
+		}
+
+		if (preg_match('/src\s*=\s*["\']([^"\']+)["\']/i', $input, $m)) {
+			$input = trim($m[1]);
+		}
+
+		// Pattern umum YouTube / YouTube Music / nocookie.
+		$patterns = array(
+			'#(?:youtube(?:-nocookie)?\.com|youtube\.googleapis\.com)/embed/([A-Za-z0-9_-]{6,})#i',
+			'#(?:youtube(?:-nocookie)?\.com|m\.youtube\.com)/shorts/([A-Za-z0-9_-]{6,})#i',
+			'#(?:youtube(?:-nocookie)?\.com|m\.youtube\.com)/live/([A-Za-z0-9_-]{6,})#i',
+			'#(?:youtube(?:-nocookie)?\.com|m\.youtube\.com|music\.youtube\.com)/watch\?[^\s"\'<>]*?\bv=([A-Za-z0-9_-]{6,})#i',
+			'#youtu\.be/([A-Za-z0-9_-]{6,})#i',
+			'#^[A-Za-z0-9_-]{6,15}$#',
+		);
+
+		foreach ($patterns as $pattern) {
+			if (preg_match($pattern, $input, $m)) {
+				return isset($m[1]) ? $m[1] : $m[0];
+			}
+		}
+
+		// Cadangan: cari parameter v= di mana saja.
+		if (preg_match('/[?&]v=([A-Za-z0-9_-]{6,})/i', $input, $m)) {
+			return $m[1];
+		}
+
+		return '';
 	}
 }
 

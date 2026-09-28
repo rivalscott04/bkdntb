@@ -58,7 +58,8 @@ class Admin_bidang extends Admin_Controller {
 		$kepala_nip = trim($this->input->post('kepala_nip', TRUE));
 		$kepala_foto = trim($this->input->post('kepala_foto', TRUE));
 		$layanan_judul = trim($this->input->post('layanan_judul', TRUE));
-		$video_youtube = trim($this->input->post('video_youtube', TRUE));
+		// Jangan XSS-filter: kode embed iframe mengandung tag HTML.
+		$video_youtube = trim((string) $this->input->post('video_youtube', FALSE));
 		$ringkasan_tugas_judul = trim($this->input->post('ringkasan_tugas_judul', TRUE));
 		$filter_class = trim($this->input->post('filter_class', TRUE));
 		$urutan = (int) $this->input->post('urutan');
@@ -73,13 +74,22 @@ class Admin_bidang extends Admin_Controller {
 			$this->session->set_flashdata('error', 'Panjang kode/label/URL melebihi batas.');
 			redirect($redirect_form);
 		}
-		if (mb_strlen($video_youtube) > 500) {
-			$this->session->set_flashdata('error', 'Link video YouTube terlalu panjang (maksimal 500 karakter).');
+		if (mb_strlen($video_youtube) > 2000) {
+			$this->session->set_flashdata('error', 'Link video YouTube terlalu panjang (maksimal 2000 karakter).');
 			redirect($redirect_form);
 		}
-		if ($video_youtube !== '' && youtube_embed_src($video_youtube) === '') {
-			$this->session->set_flashdata('error', 'Link video YouTube tidak valid. Tempel URL YouTube atau kode embed iframe.');
-			redirect($redirect_form);
+		$video_embed = '';
+		if ($video_youtube !== '') {
+			$video_embed = youtube_embed_src($video_youtube);
+			if ($video_embed === '') {
+				$this->session->set_flashdata('error', 'Link video YouTube tidak valid. Tempel URL YouTube (watch / youtu.be / shorts) atau kode embed iframe.');
+				redirect($redirect_form);
+			}
+			// Simpan bentuk pendek yang stabil, bukan iframe mentah.
+			$video_id = youtube_video_id($video_youtube);
+			$video_youtube = $video_id !== ''
+				? 'https://www.youtube.com/watch?v=' . $video_id
+				: $video_embed;
 		}
 		if (!preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*$/', $url_slug)) {
 			$this->session->set_flashdata('error', 'URL hanya boleh huruf kecil, angka, dan strip.');

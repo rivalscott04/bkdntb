@@ -1,5 +1,12 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<?php if (!empty($bidang['kepala_nama'])): ?>
+<?php
+$has_kepala = !empty($bidang['kepala_nama']);
+$raw_video = trim((string) ($bidang['video_youtube'] ?? ''));
+$embed = ($raw_video !== '' && function_exists('youtube_embed_src'))
+	? youtube_embed_src($raw_video)
+	: '';
+?>
+<?php if ($has_kepala): ?>
 <div class="sidebar-contact-box text-center">
     <div class="inner-content">
         <?php if (!empty($bidang['kepala_foto'])): ?>
@@ -19,6 +26,24 @@
                 <span class="flaticon-next"></span>
             </a>
         </div>
+    </div>
+</div>
+<?php endif; ?>
+
+<?php if ($embed !== ''): ?>
+<div class="single-sidebar bidang-sidebar-block bidang-sidebar-video<?php echo $has_kepala ? ' bidang-sidebar-video--after-kepala' : ''; ?>">
+    <div class="title">
+        <h5>Video Layanan</h5>
+    </div>
+    <p class="bidang-sidebar-lead">Cuplikan singkat layanan bidang ini.</p>
+    <div class="bidang-sidebar-video-frame">
+        <iframe
+            src="<?php echo html_escape($embed); ?>"
+            title="Video layanan"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
 </div>
 <?php endif; ?>
