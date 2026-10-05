@@ -65,6 +65,16 @@
                                    
                                     <td><a href="<?php echo base_url().'assets/'?>download/SE. GUB NTB tt PELAKSANAAN PENILAIAN KOMPETENSI BAGI ASN LINGKUP PROV. NTB 2026 (stempel)_0001.pdf" class="btn-three" target="_blank">Download</a></td>
                                 </tr>
+
+                                 <tr>
+                              
+                                    <td><b>Peraturan Gubernur NTB Nomor 32 Tahun 2025</b><br> Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi, serta Tata Kerja Perangkat Daerah di Lingkungan Pemerintah Provinsi NTB
+                                   
+                                    <td>2025</td>
+                                   
+                                   
+                                    <td><a href="https://jdih.ntbprov.go.id/produk-hukum/pergub-nomor-32-tahun-2025-1768266885" class="btn-three" target="_blank">Download</a></td>
+                                </tr>
 							
 							 <tr>
                               
