@@ -34,6 +34,15 @@
                         </thead>
                         <tbody>
 
+                        <tr>
+                                   <td><b>Rencana Pembangunan Jangka Menengah Daerah (RPJMD)</b><br>Tahun 2025 - 2029
+                                   
+                                    <td>2026</td>
+                                   
+                                   
+                                    <td><a href="https://drive.google.com/file/d/1-rnHo4fVqk1OCEX813UYHCGRm985oKMf/view?usp=sharing" class="btn-three" target="_blank">Download</a></td>
+                          </tr>
+
                           <tr>
                               
                                    <td><b>Surat Keputusan Kepala BKN Republik Indonesia Nomor 863 Tahun 2026</b><br> Tentang Persetujuan Penerapan Manajemen Talenta di Lingkungan Pemerintah Provinsi NTB                                  
