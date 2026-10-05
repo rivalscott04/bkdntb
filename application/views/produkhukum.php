@@ -68,7 +68,7 @@
 
                                  <tr>
                               
-                                    <td><b>Peraturan Gubernur NTB Nomor 32 Tahun 2025</b><br> Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi, serta Tata Kerja Perangkat Daerah di Lingkungan Pemerintah Provinsi NTB
+                                    <td><b>Peraturan Gubernur NTB Nomor 32 Tahun 2025</b><br> Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi, serta Tata Kerja Perangkat Daerah di Lingkungan Pemprov NTB
                                    
                                     <td>2025</td>
                                    
