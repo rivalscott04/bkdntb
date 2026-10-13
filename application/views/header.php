@@ -52,7 +52,7 @@
                         </ul>
                         <div>
                             
-                         &nbsp;&nbsp; <a href="/konseling" class="btn-three" target="_blank">Konseling ASN</a>
+                         <a href="/agenda" class="btn-three" target="_blank">Agenda Pimpinan</a>
                             
                         </div>
                     </div>
