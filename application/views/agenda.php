@@ -25,12 +25,14 @@
                             <tr>
                            
                                 <td><b>Hari/Tanggal</b></td>
+                                <td><b>Asal Surat/Undangan</b></td>
                               
                                 <td><b>Agenda Kegiatan</b></td>
                                
                                 
-                                <td><b>Waktu</b></td>
+                                <td><b>Waktu (WITA)</b></td>
                                  <td><b>Tempat</b></td>
+                                   <td><b>Keterangan</b></td>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,28 +40,17 @@
 						   <tr>
                               
                                     <td>Senin, 22 September 2025</td>
+                                    <td>Dinas Perhubungan NTB</td>
                                    
                                     <td>Memimpin Apel Pagi di Dinas Perhubungan Provinsi NTB</td>
                                    
                                    
-                                    <td><a href="#" class="btn-three" target="_blank">07.30 Wita</a></td>
-                                    <td>Dinas Perhubungan Provinsi NTB</td>
+                                    <td><a href="#" class="btn-three" target="_blank">07.30</a></td>
+                                    <td>Kantor Dinas Perhubungan Provinsi NTB</td>
+                                    <td>Diwakili oleh Kepala Bidang Pengembangan</td>
                                 </tr>
 							
-							 <tr>
-                              
-                                    <td>Senin, 22 September 2025</td>
-                                   
-                                    <td>Rapat Jawaban Gubernur Atas Penetapan APBDP Provinsi NTB</td>
-                                   
-                                   
-                                    <td><a href="#" class="btn-three" target="_blank">10.00 Wita</a></td>
-                                    <td>Kantor Gubernur NTB</td>
-                                </tr>
-
-                           
-                      
-                         
+							
 
                         </tbody>
                     </table>
