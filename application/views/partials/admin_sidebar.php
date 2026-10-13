@@ -9,6 +9,9 @@
     <li class="<?php echo ($active_menu ?? '') === 'berita' ? 'active' : ''; ?>">
         <a href="<?php echo site_url('admin/berita'); ?>">Kelola Berita</a>
     </li>
+    <li class="<?php echo ($active_menu ?? '') === 'agenda' ? 'active' : ''; ?>">
+        <a href="<?php echo site_url('admin/agenda'); ?>">Agenda Kepala Badan</a>
+    </li>
     <li class="<?php echo ($active_menu ?? '') === 'bidang' ? 'active' : ''; ?>">
         <a href="<?php echo site_url('admin/bidang'); ?>">Kelola Bidang</a>
     </li>

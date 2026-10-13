@@ -193,6 +193,7 @@ application/views/admin/                 → tampilan admin
 | Login | `https://domain-anda.com/admin/login` |
 | Kelola berita | `https://domain-anda.com/admin/berita` |
 | Tambah berita | `https://domain-anda.com/admin/berita/tambah` |
+| Agenda Kepala Badan | `https://domain-anda.com/admin/agenda` (tampil di `/agenda`, satu minggu per halaman) |
 
 Login: `admin` / `admin123` (tabel `user` di database).
 

@@ -797,3 +797,28 @@ if (!function_exists('render_isi_berita')) {
 		return normalize_berita_html_images_for_display(sanitize_html_berita($html));
 	}
 }
+
+if (!function_exists('agenda_hari_tanggal')) {
+	/** "Senin, 13 Oktober 2026" */
+	function agenda_hari_tanggal($tanggal)
+	{
+		$hari = array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu');
+		return $hari[(int) date('w', strtotime($tanggal))] . ', ' . format_tanggal_berita($tanggal);
+	}
+}
+
+if (!function_exists('agenda_waktu')) {
+	/** "07.30 WITA", "09.00 s.d. 11.00 WITA", atau "" bila jam kosong. */
+	function agenda_waktu($row)
+	{
+		$fmt = function ($t) {
+			return $t ? str_replace(':', '.', substr($t, 0, 5)) : '';
+		};
+		$mulai = $fmt($row['waktu_mulai'] ?? null);
+		$selesai = $fmt($row['waktu_selesai'] ?? null);
+		if ($mulai === '') {
+			return '';
+		}
+		return ($selesai !== '' ? $mulai . ' s.d. ' . $selesai : $mulai) . ' WITA';
+	}
+}
