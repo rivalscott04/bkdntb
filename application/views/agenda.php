@@ -60,7 +60,7 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                                             <?php $tgl_sebelumnya = $row['tanggal']; ?>
                                         <?php endif; ?>
                                         <td class="agenda-asal" data-label="Asal Surat"><?php echo html_escape($row['asal_surat'] ?? ''); ?></td>
-                                        <td class="agenda-kegiatan"><?php echo html_escape($row['kegiatan']); ?></td>
+                                        <td class="agenda-kegiatan"><a href="<?php echo html_escape(agenda_surat_url($row['surat_file'])); ?>"><?php echo html_escape($row['kegiatan']); ?></a></td>
                                         <td class="agenda-waktu" data-label="Waktu">
                                             <?php if (!empty($row['surat_file'])): ?>
                                                 <a href="<?php echo html_escape(agenda_surat_url($row['surat_file'])); ?>" class="btn-three" target="_blank" rel="noopener" title="Lihat surat"><?php echo html_escape(agenda_waktu($row) ?: 'Lihat surat'); ?></a>
