@@ -102,7 +102,7 @@
                             </div> -->
 							
 							 <div class="float-right">
-                                <a href="#"><img src="<?php echo base_url().'assets/'?>images/hutridanntb-01.png" width="260x" height="40px" alt="Logo HUT NTB"></a>
+                               <br> <a href="/awards"><img src="<?php echo base_url().'assets/'?>images/asnawards.png" width="280x" height="10px" alt="Logo HUT NTB"></a>
                             </div>
 
                             <!-- <div class="header-call-button float-right">

@@ -18,8 +18,10 @@
             <tr>
                 <th>Hari/Tanggal</th>
                 <th>Waktu</th>
+                <th>Asal Surat</th>
                 <th>Agenda Kegiatan</th>
                 <th>Tempat</th>
+                <th>Keterangan</th>
                 <th>Status</th>
                 <th>Aksi</th>
             </tr>
@@ -27,15 +29,17 @@
         <tbody>
             <?php if (empty($agenda_list)): ?>
                 <tr>
-                    <td colspan="6" class="text-center">Belum ada agenda.</td>
+                    <td colspan="8" class="text-center">Belum ada agenda.</td>
                 </tr>
             <?php else: ?>
                 <?php foreach ($agenda_list as $item): ?>
                     <tr>
                         <td style="white-space: nowrap;"><?php echo html_escape(agenda_hari_tanggal($item['tanggal'])); ?></td>
                         <td style="white-space: nowrap;"><?php echo html_escape(agenda_waktu($item)) ?: '<span class="admin-muted">-</span>'; ?></td>
+                        <td><?php echo html_escape($item['asal_surat'] ?? ''); ?></td>
                         <td><?php echo html_escape($item['kegiatan']); ?></td>
                         <td><?php echo html_escape($item['tempat'] ?? ''); ?></td>
+                        <td><?php echo html_escape($item['keterangan'] ?? ''); ?></td>
                         <td>
                             <?php if ((int) $item['aktif'] === 1): ?>
                                 <span class="admin-badge admin-badge-published">Tampil</span>

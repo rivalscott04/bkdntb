@@ -3346,6 +3346,14 @@ li .single-footer-contact-info .inner {
     }
 }
 
+@media (max-width: 767px) {
+    .agenda-table .agenda-asal::before,
+    .agenda-table .agenda-keterangan::before {
+        content: attr(data-label) ": ";
+        color: #999999;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     .bidang-sidebar-block {
         margin-bottom: 22px;

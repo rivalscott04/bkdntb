@@ -87,15 +87,17 @@ class Admin_agenda extends Admin_Controller {
 		$mulai = trim((string) $this->input->post('waktu_mulai', TRUE));
 		$selesai = trim((string) $this->input->post('waktu_selesai', TRUE));
 		$kegiatan = trim((string) $this->input->post('kegiatan', TRUE));
+		$asal_surat = trim((string) $this->input->post('asal_surat', TRUE));
 		$tempat = trim((string) $this->input->post('tempat', TRUE));
+		$keterangan = trim((string) $this->input->post('keterangan', TRUE));
 		$redirect_form = $id ? 'admin/agenda/edit/' . $id : 'admin/agenda/tambah';
 
 		if ($kegiatan === '' || !$this->_valid_date($tanggal)) {
 			$this->session->set_flashdata('error', 'Tanggal dan agenda kegiatan wajib diisi.');
 			redirect($redirect_form);
 		}
-		if (mb_strlen($kegiatan) > 500 || mb_strlen($tempat) > 255) {
-			$this->session->set_flashdata('error', 'Agenda maksimal 500 karakter, tempat maksimal 255 karakter.');
+		if (mb_strlen($kegiatan) > 500 || mb_strlen($tempat) > 255 || mb_strlen($asal_surat) > 255 || mb_strlen($keterangan) > 500) {
+			$this->session->set_flashdata('error', 'Agenda dan keterangan maksimal 500 karakter. Asal surat dan tempat maksimal 255 karakter.');
 			redirect($redirect_form);
 		}
 		if (($mulai !== '' && !$this->_valid_time($mulai)) || ($selesai !== '' && !$this->_valid_time($selesai))) {
@@ -114,7 +116,9 @@ class Admin_agenda extends Admin_Controller {
 			'waktu_mulai'   => $mulai !== '' ? $mulai : null,
 			'waktu_selesai' => $selesai !== '' ? $selesai : null,
 			'kegiatan'      => $kegiatan,
+			'asal_surat'    => $asal_surat !== '' ? $asal_surat : null,
 			'tempat'        => $tempat !== '' ? $tempat : null,
+			'keterangan'    => $keterangan !== '' ? $keterangan : null,
 			'aktif'         => $this->input->post('aktif') ? 1 : 0,
 		);
 

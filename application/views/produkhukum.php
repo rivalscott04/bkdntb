@@ -34,6 +34,15 @@
                         </thead>
                         <tbody>
 
+                        <tr>
+                                   <td><b>Rencana Pembangunan Jangka Menengah Daerah (RPJMD)</b><br>Tahun 2025 - 2029
+                                   
+                                    <td>2026</td>
+                                   
+                                   
+                                    <td><a href="https://drive.google.com/file/d/1-rnHo4fVqk1OCEX813UYHCGRm985oKMf/view?usp=sharing" class="btn-three" target="_blank">Download</a></td>
+                          </tr>
+
                           <tr>
                               
                                    <td><b>Surat Keputusan Kepala BKN Republik Indonesia Nomor 863 Tahun 2026</b><br> Tentang Persetujuan Penerapan Manajemen Talenta di Lingkungan Pemerintah Provinsi NTB                                  
@@ -64,6 +73,16 @@
                                    
                                    
                                     <td><a href="<?php echo base_url().'assets/'?>download/SE. GUB NTB tt PELAKSANAAN PENILAIAN KOMPETENSI BAGI ASN LINGKUP PROV. NTB 2026 (stempel)_0001.pdf" class="btn-three" target="_blank">Download</a></td>
+                                </tr>
+
+                                 <tr>
+                              
+                                    <td><b>Peraturan Gubernur NTB Nomor 32 Tahun 2025</b><br> Tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi, serta Tata Kerja Perangkat Daerah di Lingkungan Pemprov NTB
+                                   
+                                    <td>2025</td>
+                                   
+                                   
+                                    <td><a href="https://jdih.ntbprov.go.id/produk-hukum/pergub-nomor-32-tahun-2025-1768266885" class="btn-three" target="_blank">Download</a></td>
                                 </tr>
 							
 							 <tr>

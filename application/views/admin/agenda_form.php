@@ -43,6 +43,15 @@
             </div>
 
             <div class="admin-field">
+                <label>Asal Surat/Undangan</label>
+                <div class="input-box">
+                    <input type="text" name="asal_surat" maxlength="255"
+                           value="<?php echo html_escape($agenda['asal_surat'] ?? ''); ?>"
+                           placeholder="Dinas Perhubungan NTB">
+                </div>
+            </div>
+
+            <div class="admin-field">
                 <label>Agenda Kegiatan <span class="required">*</span></label>
                 <div class="input-box">
                     <textarea name="kegiatan" rows="3" required maxlength="500"
@@ -56,6 +65,15 @@
                     <input type="text" name="tempat" maxlength="255"
                            value="<?php echo html_escape($agenda['tempat'] ?? ''); ?>"
                            placeholder="Kantor Gubernur NTB">
+                </div>
+            </div>
+
+            <div class="admin-field">
+                <label>Keterangan</label>
+                <div class="input-box">
+                    <input type="text" name="keterangan" maxlength="500"
+                           value="<?php echo html_escape($agenda['keterangan'] ?? ''); ?>"
+                           placeholder="Diwakili oleh Kepala Bidang Pengembangan">
                 </div>
             </div>
 

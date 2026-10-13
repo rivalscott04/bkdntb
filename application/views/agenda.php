@@ -18,7 +18,6 @@
 
 <?php
 $rentang = format_tanggal_berita($senin) . ' s.d. ' . format_tanggal_berita($minggu);
-// jumlah baris per tanggal untuk rowspan kolom Hari/Tanggal
 $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
 ?>
 <section class="agenda-area">
@@ -35,15 +34,17 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                         <thead>
                             <tr>
                                 <th>Hari/Tanggal</th>
+                                <th>Asal Surat/Undangan</th>
                                 <th>Agenda Kegiatan</th>
-                                <th>Waktu</th>
+                                <th>Waktu (WITA)</th>
                                 <th>Tempat</th>
+                                <th>Keterangan</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php if (empty($agenda_list)): ?>
                                 <tr>
-                                    <td colspan="4" class="text-center">Belum ada agenda untuk minggu ini.</td>
+                                    <td colspan="6" class="text-center">Belum ada agenda untuk minggu ini.</td>
                                 </tr>
                             <?php else: ?>
                                 <?php $tgl_sebelumnya = null; ?>
@@ -58,9 +59,11 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                                             </td>
                                             <?php $tgl_sebelumnya = $row['tanggal']; ?>
                                         <?php endif; ?>
+                                        <td class="agenda-asal" data-label="Asal Surat"><?php echo html_escape($row['asal_surat'] ?? ''); ?></td>
                                         <td class="agenda-kegiatan"><?php echo html_escape($row['kegiatan']); ?></td>
                                         <td class="agenda-waktu" data-label="Waktu"><?php echo html_escape(agenda_waktu($row)); ?></td>
                                         <td class="agenda-tempat" data-label="Tempat"><?php echo html_escape($row['tempat'] ?? ''); ?></td>
+                                        <td class="agenda-keterangan" data-label="Keterangan"><?php echo html_escape($row['keterangan'] ?? ''); ?></td>
                                     </tr>
                                 <?php endforeach; ?>
                             <?php endif; ?>
