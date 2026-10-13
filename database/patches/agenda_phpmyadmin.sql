@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS `agenda` (
   `asal_surat` varchar(255) DEFAULT NULL,
   `tempat` varchar(255) DEFAULT NULL,
   `keterangan` varchar(500) DEFAULT NULL,
+  `surat_file` varchar(255) DEFAULT NULL,
   `aktif` tinyint(1) NOT NULL DEFAULT 1,
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
   `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -42,6 +43,19 @@ SET @sql := (
   )
   FROM information_schema.COLUMNS
   WHERE TABLE_SCHEMA = @db AND TABLE_NAME = 'agenda' AND COLUMN_NAME = 'keterangan'
+);
+PREPARE stmt FROM @sql;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+
+SET @sql := (
+  SELECT IF(
+    COUNT(*) = 0,
+    'ALTER TABLE `agenda` ADD COLUMN `surat_file` varchar(255) DEFAULT NULL AFTER `keterangan`',
+    'SELECT 1'
+  )
+  FROM information_schema.COLUMNS
+  WHERE TABLE_SCHEMA = @db AND TABLE_NAME = 'agenda' AND COLUMN_NAME = 'surat_file'
 );
 PREPARE stmt FROM @sql;
 EXECUTE stmt;

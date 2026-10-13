@@ -22,6 +22,7 @@
                 <th>Agenda Kegiatan</th>
                 <th>Tempat</th>
                 <th>Keterangan</th>
+                <th>Surat</th>
                 <th>Status</th>
                 <th>Aksi</th>
             </tr>
@@ -29,7 +30,7 @@
         <tbody>
             <?php if (empty($agenda_list)): ?>
                 <tr>
-                    <td colspan="8" class="text-center">Belum ada agenda.</td>
+                    <td colspan="9" class="text-center">Belum ada agenda.</td>
                 </tr>
             <?php else: ?>
                 <?php foreach ($agenda_list as $item): ?>
@@ -40,6 +41,13 @@
                         <td><?php echo html_escape($item['kegiatan']); ?></td>
                         <td><?php echo html_escape($item['tempat'] ?? ''); ?></td>
                         <td><?php echo html_escape($item['keterangan'] ?? ''); ?></td>
+                        <td>
+                            <?php if (!empty($item['surat_file'])): ?>
+                                <a href="<?php echo html_escape(agenda_surat_url($item['surat_file'])); ?>" target="_blank" rel="noopener">Lihat</a>
+                            <?php else: ?>
+                                <span class="admin-muted">-</span>
+                            <?php endif; ?>
+                        </td>
                         <td>
                             <?php if ((int) $item['aktif'] === 1): ?>
                                 <span class="admin-badge admin-badge-published">Tampil</span>

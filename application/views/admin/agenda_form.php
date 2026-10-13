@@ -6,7 +6,7 @@
 
 <div class="contact-form">
     <div class="inner-box">
-        <?php echo form_open('admin/agenda/simpan'); ?>
+        <?php echo form_open_multipart('admin/agenda/simpan'); ?>
             <?php if (isset($agenda)): ?>
                 <input type="hidden" name="id" value="<?php echo (int) $agenda['id']; ?>">
             <?php endif; ?>
@@ -75,6 +75,29 @@
                            value="<?php echo html_escape($agenda['keterangan'] ?? ''); ?>"
                            placeholder="Diwakili oleh Kepala Bidang Pengembangan">
                 </div>
+            </div>
+
+            <div class="admin-field">
+                <label>Surat/Undangan (gambar atau PDF)</label>
+                <div class="input-box">
+                    <input type="file" name="surat_file" accept=".jpg,.jpeg,.png,.pdf,image/jpeg,image/png,application/pdf">
+                </div>
+                <p class="admin-muted">
+                    JPG, PNG, atau PDF, maksimal 5 MB. Di halaman publik, tombol waktu akan membuka surat ini di tab baru.
+                    <?php if (!empty($agenda['surat_file'])): ?>
+                        Surat saat ini:
+                        <a href="<?php echo html_escape(agenda_surat_url($agenda['surat_file'])); ?>" target="_blank" rel="noopener">lihat surat</a>.
+                        Pilih file baru untuk mengganti.
+                    <?php endif; ?>
+                </p>
+                <?php if (!empty($agenda['surat_file'])): ?>
+                    <div class="input-box admin-checkbox-wrap">
+                        <label class="admin-checkbox">
+                            <input type="checkbox" name="hapus_surat" value="1">
+                            Hapus surat saat disimpan
+                        </label>
+                    </div>
+                <?php endif; ?>
             </div>
 
             <div class="admin-field">

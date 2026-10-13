@@ -35,3 +35,6 @@ application/config/database.php
 
 # Graphify knowledge graph (local generated)
 graphify-out/
+
+# Upload surat agenda dari admin (bukan bagian kode)
+assets/images/agenda/

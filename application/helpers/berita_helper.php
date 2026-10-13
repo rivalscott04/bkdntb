@@ -822,3 +822,19 @@ if (!function_exists('agenda_waktu')) {
 		return ($selesai !== '' ? $mulai . ' s.d. ' . $selesai : $mulai) . ' WITA';
 	}
 }
+
+if (!function_exists('agenda_surat_relpath')) {
+	function agenda_surat_relpath($filename = '')
+	{
+		return 'assets/images/agenda/' . ltrim(basename((string) $filename), '/');
+	}
+}
+
+if (!function_exists('agenda_surat_url')) {
+	/** URL publik file surat agenda, atau "" bila tidak ada. */
+	function agenda_surat_url($filename)
+	{
+		$filename = trim((string) $filename);
+		return $filename === '' ? '' : base_url(agenda_surat_relpath($filename));
+	}
+}
