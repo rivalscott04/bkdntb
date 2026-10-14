@@ -52,7 +52,7 @@
                         </ul>
                         <div>
                             
-                         <a href="/agenda" class="btn-three" target="_blank">Agenda Pimpinan</a>
+                         &nbsp; &nbsp; &nbsp;<a href="/agenda" class="btn-three" target="_blank">Agenda Kepala Badan</a>
                             
                         </div>
                     </div>
@@ -176,7 +176,7 @@
 
                                                 <li class="dropdown"><a href="#">Layanan Kepegawaian</a>
                                                 <ul>
-                                                         
+                                                <li><a href="/agenda">Agenda Harian Kepala Badan</a></li>         
                                                 <li><a href="/wfh"><em>Work From Home</em> Setiap Jumat</a></li>
                                                 <li><a href="/proasn"><em>Profilling</em> ASN (ProASN)</a></li>
                                                          <li><a href="/konseling">Konseling Psikologi ASN</a></li>
