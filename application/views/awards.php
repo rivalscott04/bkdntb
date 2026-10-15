@@ -25,14 +25,14 @@
                                 <div class="row">
                                     <div class="col-lg-7">
                                         <div class="single-product-image-holder">
-                                            <iframe width="675" height="397" src="https://www.youtube.com/embed/E1fLNCla2i0?si=yi8UrErpWcQkoQ9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            <iframe width="675" height="404" src="https://www.youtube.com/embed/E1fLNCla2i0?si=yi8UrErpWcQkoQ9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                            
                                         </div>
                                     </div><p></p>
                                     <div class="col-lg-5">
                                         <div class="content-box">
-                                            <span class="price">Anugerah Bagi ASN Berprestasi</span>
-                                            <h2>ASN NTB Awards Tahun 2026</h2>
+                                            <span class="price">ASN NTB Awards Tahun 2026</span>
+                                            <h2>Pengumuman Hasil Seleksi Administrasi</h2>
                                             <div class="review-box">
                                                 <ul>
                                                     <li><i class="fa fa-star"></i></li>
@@ -43,12 +43,12 @@
                                                 </ul>
                                             </div>
                                             <div class="text">
-                                                <p align="justify">ASN NTB Awards merupakan program penghargaan tahunan bagi ASN di Pemerintah Provinsi NTB yang bertujuan untuk mendorong terciptanya Aparatur Sipil Negara yang profesional, berintegritas, berorientasi pada pelayanan, serta mampu menjadi teladan bagi masyarakat dan rekan kerja. Kegiatan ini merupakan salah satu pondasi utama menuju birokrasi kelas dunia yang kita cita-citakan melalui NTB Makmur Mendunia.</p>
+                                                <p align="justify">Penetapan Peserta 10 (sepuluh) Besar Seleksi Administrasi ASN NTB Awards 2026 adalah sebagaimana tercantum dalam Lampiran Pengumuman ini. Nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan mengikuti Seleksi Focus Group Discussion pada Selasa, 20 Oktober 2026 di BKD Provinsi NTB.</p>
                                             </div>
                                             
                                             <div>
                                                 <br>
-                                              <a class="btn-one" href="https://asnntb.my.id">Pendaftaran ASN NTB Awards 2026<span class="flaticon-next"></span></a>
+                                              <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Administrasi ASN NTB Awards 2026.pdf">Hasil Seleksi Administrasi<span class="flaticon-next"></span></a>
                                                 
                             
                              
