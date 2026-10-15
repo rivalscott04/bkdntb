@@ -136,9 +136,9 @@
                             <div class="inner-content">
                                 <div class="text">
                                     <h3>Pengumuman</h3>
-                                    <p>Informasi Seleksi Penerimaan Calon Praja IPDN Tahun 2026</p>
+                                    <p>Informasi Hasil Seleksi Administrasi ASN NTB Awards Tahun 2026</p>
                                 </div>
-                                <a class="btn-one" href="<?php echo base_url().'assets/'?>download/SE Pelaksanaan SPCP IPDN TA. 2026.pdf">Selengkapnya<span class="flaticon-next"></span></a>
+                                <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Administrasi ASN NTB Awards 2026.pdf">Selengkapnya<span class="flaticon-next"></span></a>
                             </div>
                         </div>
                     </div>
