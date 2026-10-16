@@ -341,7 +341,7 @@
                     <div class="about-style2-image-box">
                         <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                         <div class="image">
-                            <img src="<?php echo base_url().'assets/'?>images/resources/visimisi.jpg" alt="Awesome Image">
+                            <img src="<?php echo base_url().'assets/'?>images/resources/visimisi-poster.jpg" alt="Awesome Image">
                             <!--div class="overlay-box">
                                 <div class="title">
                                     <h1>24 <span>Hours<br> Services</span></h1>
