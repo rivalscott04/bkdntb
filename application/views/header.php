@@ -138,7 +138,7 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                 <li><a href="home">Beranda</a>
+                                 <li><a href="https://bkd.ntbprov.go.id">Beranda</a>
     
                                                 </li>
                                                 
