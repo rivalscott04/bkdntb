@@ -23,25 +23,14 @@
                     <div class="about-style2-text">
                         <div class="sec-title">
                             <p>Komitmen Pimpinan</p>
-                            <div class="title">Maklumat Pelayanan <br>BKD Provinsi NTB</div>
+                            <div class="title">Pengertian <br>Maklumat Pelayanan</div>
                         </div>
                         <div class="text">
-                            <p align="justify">Dengan ini menyatakan sanggup menyelenggarakan pelayanan sesuai dengan standar pelayanan yang telah ditetapkan dan apabila tidak menepati janji ini, kami siap menerima sanksi dan/atau memberikan kompensasi jika pelayanan tidak sesuai dengan standar serta akan melakukan perbaikan secara terus menerus.</a-->
-                            </p>
+                            <p align="justify">Maklumat Pelayanan adalah pernyataan tertulis yang berisi kesanggupan dan kewajiban penyelenggara pelayanan publik untuk melaksanakan pelayanan sesuai dengan standar pelayanan yang telah ditetapkan, serta kesiapan untuk menerima konsekuensi atau memberikan tindak lanjut apabila pelayanan yang diberikan tidak sesuai dengan ketentuan tersebut.<br>
+                        Maklumat Pelayanan merupakan bentuk komitmen instansi pemerintah dalam memberikan pelayanan yang profesional, transparan, akuntabel, adil, dan berorientasi pada kepuasan masyarakat. Maklumat ini juga menjadi sarana untuk membangun kepercayaan publik sekaligus memberikan kepastian kepada masyarakat mengenai kualitas pelayanan yang berhak mereka terima ataupun ketahui.<br>
+                    Dalam konteks Badan Kepegawaian Daerah (BKD) Provinsi NTB, Maklumat Pelayanan menjadi wujud komitmen dalam menyelenggarakan layanan kepegawaian yang mudah diakses, cepat, tepat, ramah, dan bebas dari diskriminasi, dengan mengedepankan integritas serta pemanfaatan teknologi informasi.</p>
                         </div>
-                        <div class="authorised-info">
-                            <div class="signature">
-                                <img src="<?php echo base_url().'assets/'?>images/resources/qrcode.jpg" width="140px" height="140px" alt="QrCode">
-                            </div>
-                            <div class="name">
-							
-                                <h3>Drs. Tri Budiprayitno, M.Si</h3>
-                                <p>Kepala BKD Provinsi NTB</p>
-								
-                                
-                           
-                            </div>
-                        </div>
+                        
                         <!--div class="button">
                             <a class="btn-one" href="profil.html">Selengkapnya<span class="flaticon-next"></span></a>
                         </div-->
