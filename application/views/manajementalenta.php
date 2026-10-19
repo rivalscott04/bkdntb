@@ -102,7 +102,7 @@
                              <!--Start Single excellent project-->
                             <div class="single-project-style3">
                                 <div class="img-holder">
-                                    <img src="<?php echo base_url().'assets/'?>images/projects/mata5.jpg" alt="Awesome Image">
+                                    <img src="<?php echo base_url().'assets/'?>images/projects/mata6.jpg" alt="Awesome Image">
                                     <div class="overlay-content">
                                         <div class="inner-content">
                                             <div class="links-icons">
@@ -114,6 +114,8 @@
                                 
                             </div>
                             <!--End Single excellent project-->
+
+                           
 
                              <!--Start Single excellent project-->
                             <div class="single-project-style3">
@@ -131,10 +133,44 @@
                             </div>
                             <!--End Single excellent project-->
 
+                              <!--Start Single excellent project-->
+                            <div class="single-project-style3">
+                                <div class="img-holder">
+                                    <img src="<?php echo base_url().'assets/'?>images/projects/mata5.jpg" alt="Awesome Image">
+                                    <div class="overlay-content">
+                                        <div class="inner-content">
+                                            <div class="links-icons">
+                                                <a href="/manajementalenta"><span class="icon-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--End Single excellent project-->
+
                              <!--Start Single excellent project-->
                             <div class="single-project-style3">
                                 <div class="img-holder">
                                     <img src="<?php echo base_url().'assets/'?>images/projects/mata3.jpg" alt="Awesome Image">
+                                    <div class="overlay-content">
+                                        <div class="inner-content">
+                                            <div class="links-icons">
+                                                <a href="/manajementalenta"><span class="icon-link"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!--End Single excellent project-->
+
+                            
+
+                             <!--Start Single excellent project-->
+                            <div class="single-project-style3">
+                                <div class="img-holder">
+                                    <img src="<?php echo base_url().'assets/'?>images/projects/mata7.jpg" alt="Awesome Image">
                                     <div class="overlay-content">
                                         <div class="inner-content">
                                             <div class="links-icons">
