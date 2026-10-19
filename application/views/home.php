@@ -200,7 +200,7 @@
                         </div>
                          <div class="button text-center">
                             <a class="btn-one" href="/manajementalenta">Buku Panduan Manajemen Talenta<span class="flaticon-next"></span></a>
-                            <a class="btn-one black" href="<?php echo base_url().'assets/'?>download/SK MANAJEMEN TALENTA PEMERINTAH PROVINSI NTB-1.pdf" target="_blank">SK Penetapan Manajemen Talenta<span class="flaticon-next"></span></a>
+                            <a class="btn-one black" href="<?php echo base_url().'assets/'?>download/SK MANAJEMEN TALENTA PEMERINTAH PROVINSI NTB-1.pdf" target="_blank">Persetujuan Penerapan Manajemen Talenta<span class="flaticon-next"></span></a>
                         </div>
                     </div>
                 </div>
