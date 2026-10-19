@@ -176,14 +176,15 @@
 
                                                 <li class="dropdown"><a href="#">Layanan Kepegawaian</a>
                                                 <ul>
-                                                <li><a href="/agenda">Agenda Harian Kepala Badan</a></li>         
+                                                <li><a href="/agenda">Agenda Harian Kepala Badan</a></li>  
+                                                  <li><a href="/manajementalenta">Manajemen Talenta</li>       
                                                 <li><a href="/wfh"><em>Work From Home</em> Setiap Jumat</a></li>
                                                 <li><a href="/proasn"><em>Profilling</em> ASN (ProASN)</a></li>
                                                          <li><a href="/konseling">Konseling Psikologi ASN</a></li>
                                                         <li><a href="/tugasbelajar">Penerbitan SK Tugas Belajar</a></li>
                                                         <li><a href="/pengajuancuti">Pengajuan Cuti Bagi ASN</a></li>
-                                                        <li><a href="/karpeg">Pengurusan Karpeg/Karis/Karsu</a></li>
-                                                        <li><a href="/kenaikanpangkat">Kenaikan Pangkat</a></li>
+                                                        <!-- <li><a href="/karpeg">Pengurusan Karpeg/Karis/Karsu</a></li>
+                                                        <li><a href="/kenaikanpangkat">Kenaikan Pangkat</a></li> -->
                                                         <li><a href="/layananmutasi">Mutasi Pegawai</a></li>
                                                         <li><a href="/pensiun">Pemberhentian & Pensiun</a></li>
                                                         <li><a href="/disiplin">Penyelesaian Kasus ASN</a></li>
