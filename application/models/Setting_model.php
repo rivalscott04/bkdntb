@@ -25,6 +25,20 @@ class Setting_model extends CI_Model {
 		return $row['nilai'];
 	}
 
+	public function get_many(array $kunci)
+	{
+		$out = array();
+		if (!$kunci || !$this->table_ready()) {
+			return $out;
+		}
+		$this->db->reset_query();
+		$rows = $this->db->where_in('kunci', $kunci)->get('cms_setting')->result_array();
+		foreach ($rows as $row) {
+			$out[$row['kunci']] = $row['nilai'];
+		}
+		return $out;
+	}
+
 	public function increment($kunci)
 	{
 		if (!$this->table_ready()) {

@@ -23,4 +23,11 @@ cek('referer situs', pengunjung_asal_valid('', 'https://bkd.ntbprov.go.id/agenda
 cek('referer asing', pengunjung_asal_valid('', 'https://evil.test/', 'bkd.ntbprov.go.id') === false);
 cek('tanpa asal', pengunjung_asal_valid('', '', 'bkd.ntbprov.go.id') === false);
 
+$rahasia = 'uji';
+$tanda = pengunjung_tanda('0123456789abcdef', '2026-10-19', '2026-W43', '2026-10', $rahasia);
+$baca = pengunjung_baca($tanda, $rahasia);
+cek('tanda vid', $baca && $baca['vid'] === '0123456789abcdef' && $baca['hari'] === '2026-10-19' && $baca['minggu'] === '2026-W43' && $baca['bulan'] === '2026-10');
+cek('cookie palsu', pengunjung_baca($tanda . 'a', $rahasia) === null);
+cek('cookie lama', pengunjung_baca('1', $rahasia) === null);
+
 echo "ok\n";

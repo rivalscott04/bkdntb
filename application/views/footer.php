@@ -152,16 +152,13 @@
                                 <h3>Jumlah Pengunjung</h3>
                             </div>
                             <div class="services-links">
-                                <ul>
-                                    
-                                    <li>Jumlah Total : </li>
-                                    <li>Hari Ini : </li>
-                                    <li>Minggu Ini : </li>
-                                    <li>Bulan Ini : </li>
-                                    <li>Tahun Ini : </li>
-                                    <li>Sedang Online : </li>
-                                 
-                         
+                                <?php $rekap = pengunjung_rekap(); ?>
+                                <ul class="pengunjung-list">
+                                    <li><span>Jumlah Total Pengunjung:</span> <strong data-pengunjung="total"><?php echo pengunjung_angka($rekap['total']); ?></strong></li>
+                                    <li><span>Pengunjung Hari ini:</span> <strong data-pengunjung="hari"><?php echo pengunjung_angka($rekap['hari']); ?></strong></li>
+                                    <li><span>Pengunjung Minggu ini:</span> <strong data-pengunjung="minggu"><?php echo pengunjung_angka($rekap['minggu']); ?></strong></li>
+                                    <li><span>Pengunjung Bulan ini:</span> <strong data-pengunjung="bulan"><?php echo pengunjung_angka($rekap['bulan']); ?></strong></li>
+                                    <li><span>Pengunjung Sedang Online:</span> <strong data-pengunjung="online"><?php echo pengunjung_angka($rekap['online']); ?></strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -218,7 +215,6 @@
                         <div class="footer-bottom-content flex-box-two">
                             <div class="copyright-text">
                                 <p>© 2026 All Rights Reserved. <a href="#">Badan Kepegawaian Daerah Provinsi Nusa Tenggara Barat.</a></p>
-                                <p id="pengunjung-total">Pengunjung: <?php echo number_format(pengunjung_total(), 0, ',', '.'); ?></p>
                             </div>
 
                             <div class="footer-social-links float-right">
@@ -299,19 +295,42 @@
     <script src="<?php echo base_url().'assets/'?>js/custom.js"></script>
     <script>
     (function () {
+        var token = <?php echo json_encode($this->security->get_csrf_hash()); ?>;
+        var nama = <?php echo json_encode($this->security->get_csrf_token_name()); ?>;
+        var urlCatat = <?php echo json_encode(site_url('pengunjung')); ?>;
+        var urlOnline = <?php echo json_encode(site_url('pengunjung/online')); ?>;
+        var timer = null;
+        function terapkan(data) {
+            ['total', 'hari', 'minggu', 'bulan', 'online'].forEach(function (k) {
+                var el = document.querySelector('[data-pengunjung="' + k + '"]');
+                if (!el || typeof data[k] === 'undefined' || !isFinite(Number(data[k]))) return;
+                el.textContent = Number(data[k]).toLocaleString('id-ID');
+            });
+            if (data.csrf) token = data.csrf;
+        }
+        function kirim(url, selesai) {
+            var x = new XMLHttpRequest();
+            x.open('POST', url, true);
+            x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            x.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            x.onload = function () {
+                if (x.status !== 200) return;
+                try { terapkan(JSON.parse(x.responseText)); } catch (e) { return; }
+                if (selesai) selesai();
+            };
+            x.send(nama + '=' + encodeURIComponent(token));
+        }
+        function jagaOnline() {
+            if (timer) return;
+            timer = setInterval(function () { kirim(urlOnline); }, 240000);
+        }
         var m = document.cookie.match(/(?:^|; )bkd_pengunjung=([^;]*)/);
-        if (!m || decodeURIComponent(m[1]) !== 'baru') return;
-        var x = new XMLHttpRequest();
-        x.open('POST', <?php echo json_encode(site_url('pengunjung')); ?>, true);
-        x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        x.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        x.onload = function () {
-            var el = document.getElementById('pengunjung-total');
-            var n = parseInt(x.responseText, 10);
-            if (!el || x.status !== 200 || !isFinite(n)) return;
-            el.textContent = 'Pengunjung: ' + n.toLocaleString('id-ID');
-        };
-        x.send(<?php echo json_encode($this->security->get_csrf_token_name()); ?> + '=' + encodeURIComponent(<?php echo json_encode($this->security->get_csrf_hash()); ?>));
+        var nilai = m ? decodeURIComponent(m[1]) : '';
+        if (nilai === 'baru') {
+            kirim(urlCatat, jagaOnline);
+        } else if (nilai) {
+            jagaOnline();
+        }
     })();
     </script>
 
