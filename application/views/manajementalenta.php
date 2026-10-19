@@ -28,12 +28,14 @@
                             <div class="text">
                                 <p>Manajemen Talenta ASN Instansi adalah sistem manajemen karier ASN yang meliputi tahapan akuisisi, pengembangan, retensi, dan penempatan talenta yang diprioritaskan untuk menduduki jabatan target berdasarkan tingkatan potensial dan kinerja tertinggi melalui mekanisme tertentu yang dilaksanakan secara efektif dan berkelanjutan untuk memenuhi kebutuhan Instansi Pusat dan Instansi Daerah. Untuk mewujudkan <b>Triple Agenda</b> pembangunan daerah, maka <b>Pemerintah Provinsi NTB memerlukan Sumber Daya Manusia yang kompeten</b> untuk menjalankan dan mengelola program yang tertuang dalam RPJMD Provinsi NTB 2025 -2029.
 
-                                </p>
-                            </div>
+                                <a href="<?php echo base_url().'assets/'?>download/SK MANAJEMEN TALENTA PEMERINTAH PROVINSI NTB-1.pdf" target="_blank"><b>Unduh SK Penetapan Manajemen Talenta di Lingkungan Pemerintah Provinsi NTB</b></a>
+                         </p>
+                                </div>
                             
                             <div class="button">
                                 <a class="btn-one" href="https://drive.google.com/drive/folders/1ICCTPdSAPRCQVntDxRHMb2uc86eF6ZYj?usp=sharing">Unduh Buku Petunjuk Manajemen Talenta<span class="flaticon-next"></span></a>
-                               
+                        
+        
                             </div>
                         </div>
                     </div>

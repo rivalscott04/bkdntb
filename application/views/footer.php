@@ -154,11 +154,11 @@
                             <div class="services-links">
                                 <?php $rekap = pengunjung_rekap(); ?>
                                 <ul class="pengunjung-list">
-                                    <li><span>Jumlah Total Pengunjung:</span> <strong data-pengunjung="total"><?php echo pengunjung_angka($rekap['total']); ?></strong></li>
-                                    <li><span>Pengunjung Hari ini:</span> <strong data-pengunjung="hari"><?php echo pengunjung_angka($rekap['hari']); ?></strong></li>
-                                    <li><span>Pengunjung Minggu ini:</span> <strong data-pengunjung="minggu"><?php echo pengunjung_angka($rekap['minggu']); ?></strong></li>
-                                    <li><span>Pengunjung Bulan ini:</span> <strong data-pengunjung="bulan"><?php echo pengunjung_angka($rekap['bulan']); ?></strong></li>
-                                    <li><span>Pengunjung Sedang Online:</span> <strong data-pengunjung="online"><?php echo pengunjung_angka($rekap['online']); ?></strong></li>
+                                    <li><span>Total Pengunjung</span> <data-pengunjung="total"><?php echo pengunjung_angka($rekap['total']); ?></li>
+                                    <li><span>Hari ini</span> <data-pengunjung="hari"><?php echo pengunjung_angka($rekap['hari']); ?></li>
+                                    <li><span>Minggu ini</span> <data-pengunjung="minggu"><?php echo pengunjung_angka($rekap['minggu']); ?></li>
+                                    <li><span>Bulan ini</span> <data-pengunjung="bulan"><?php echo pengunjung_angka($rekap['bulan']); ?></li>
+                                    <li><span>Sedang Online</span> <data-pengunjung="online"><?php echo pengunjung_angka($rekap['online']); ?></li>
                                 </ul>
                             </div>
                         </div>
