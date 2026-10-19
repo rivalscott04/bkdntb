@@ -175,8 +175,7 @@
                                                 </li>
 
                                                 <li class="dropdown"><a href="#">Layanan Kepegawaian</a>
-                                                <ul>
-                                                <li><a href="/agenda">Agenda Harian Kepala Badan</a></li>  
+                                             <li><a href="/agenda">Agenda Harian Kepala Badan</a></li>  
                                                   <li><a href="/manajementalenta">Manajemen Talenta</li>       
                                                 <li><a href="/wfh"><em>Work From Home</em> Setiap Jumat</a></li>
                                                 <li><a href="/proasn"><em>Profilling</em> ASN (ProASN)</a></li>
