@@ -5,6 +5,7 @@ class Setting_model extends CI_Model {
 
 	const SOP_MAX_SIZE_KB = 'sop_max_size_kb';
 	const SOP_MAX_SIZE_KB_DEFAULT = 2048;
+	const PENGUNJUNG = 'pengunjung';
 
 	public function table_ready()
 	{
@@ -22,6 +23,19 @@ class Setting_model extends CI_Model {
 			return $default;
 		}
 		return $row['nilai'];
+	}
+
+	public function increment($kunci)
+	{
+		if (!$this->table_ready()) {
+			return false;
+		}
+		$this->db->reset_query();
+		return $this->db->query(
+			'INSERT INTO cms_setting (kunci, nilai) VALUES (?, \'1\')
+			 ON DUPLICATE KEY UPDATE nilai = CAST(nilai AS UNSIGNED) + 1',
+			array($kunci)
+		);
 	}
 
 	public function set($kunci, $nilai)

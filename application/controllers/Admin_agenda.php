@@ -121,14 +121,28 @@ class Admin_agenda extends Admin_Controller {
 		}
 
 		$ada_kolom_surat = $this->db->field_exists('surat_file', 'agenda');
+		$ada_kolom_foto = $this->db->field_exists('foto_file', 'agenda');
 		$surat_baru = null;
 		if (!empty($_FILES['surat_file']['name'])) {
 			if (!$ada_kolom_surat) {
 				$this->session->set_flashdata('error', 'Kolom surat belum ada. Jalankan migrasi database terlebih dahulu.');
 				redirect($redirect_form);
 			}
-			$surat_baru = $this->_upload_surat();
+			$surat_baru = $this->_upload_agenda_file('surat_file', 'jpg|jpeg|png|pdf', 'surat');
 			if ($surat_baru === false) {
+				redirect($redirect_form);
+			}
+		}
+		$foto_baru = null;
+		if (!empty($_FILES['foto_file']['name'])) {
+			if (!$ada_kolom_foto) {
+				$this->_hapus_file_agenda($surat_baru);
+				$this->session->set_flashdata('error', 'Kolom foto belum ada. Jalankan migrasi database terlebih dahulu.');
+				redirect($redirect_form);
+			}
+			$foto_baru = $this->_upload_agenda_file('foto_file', 'jpg|jpeg|png', 'foto');
+			if ($foto_baru === false) {
+				$this->_hapus_file_agenda($surat_baru);
 				redirect($redirect_form);
 			}
 		}
@@ -150,11 +164,20 @@ class Admin_agenda extends Admin_Controller {
 		} elseif ($ada_kolom_surat && $this->input->post('hapus_surat')) {
 			$data['surat_file'] = null;
 		}
+		$foto_lama = $existing['foto_file'] ?? null;
+		if ($foto_baru !== null) {
+			$data['foto_file'] = $foto_baru;
+		} elseif ($ada_kolom_foto && $this->input->post('hapus_foto')) {
+			$data['foto_file'] = null;
+		}
 
 		if ($id) {
 			$this->Agenda_model->update($id, $data);
 			if ($surat_lama && array_key_exists('surat_file', $data)) {
-				$this->_hapus_file_surat($surat_lama);
+				$this->_hapus_file_agenda($surat_lama);
+			}
+			if ($foto_lama && array_key_exists('foto_file', $data)) {
+				$this->_hapus_file_agenda($foto_lama);
 			}
 			$this->session->set_flashdata('success', 'Agenda berhasil diperbarui.');
 		} else {
@@ -174,14 +197,15 @@ class Admin_agenda extends Admin_Controller {
 			$this->session->set_flashdata('error', 'Gagal menghapus agenda.');
 			redirect('admin/agenda');
 		}
-		$this->_hapus_file_surat($agenda['surat_file'] ?? null);
+		$this->_hapus_file_agenda($agenda['surat_file'] ?? null);
+		$this->_hapus_file_agenda($agenda['foto_file'] ?? null);
 
 		$this->session->set_flashdata('success', 'Agenda berhasil dihapus.');
 		redirect('admin/agenda');
 	}
 
 	/** Nama file tersimpan, atau false bila gagal (pesan error sudah di flashdata). */
-	private function _upload_surat()
+	private function _upload_agenda_file($field, $allowed, $label)
 	{
 		$path = FCPATH . agenda_surat_relpath();
 		if (!is_dir($path)) {
@@ -189,19 +213,19 @@ class Admin_agenda extends Admin_Controller {
 		}
 		$this->upload->initialize(array(
 			'upload_path'      => $path,
-			'allowed_types'    => 'jpg|jpeg|png|pdf',
+			'allowed_types'    => $allowed,
 			'max_size'         => $this->surat_max_kb,
 			'encrypt_name'     => TRUE,
 			'file_ext_tolower' => TRUE,
 		));
-		if (!$this->upload->do_upload('surat_file')) {
-			$this->session->set_flashdata('error', 'Upload surat gagal: ' . strip_tags($this->upload->display_errors('', '')));
+		if (!$this->upload->do_upload($field)) {
+			$this->session->set_flashdata('error', 'Upload ' . $label . ' gagal: ' . strip_tags($this->upload->display_errors('', '')));
 			return false;
 		}
 		return $this->upload->data('file_name');
 	}
 
-	private function _hapus_file_surat($filename)
+	private function _hapus_file_agenda($filename)
 	{
 		if (!$filename) {
 			return;
