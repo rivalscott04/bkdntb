@@ -3348,7 +3348,8 @@ li .single-footer-contact-info .inner {
 
 @media (max-width: 767px) {
     .agenda-table .agenda-asal::before,
-    .agenda-table .agenda-keterangan::before {
+    .agenda-table .agenda-keterangan::before,
+    .agenda-table .agenda-foto::before {
         content: attr(data-label) ": ";
         color: #999999;
     }

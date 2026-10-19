@@ -12,6 +12,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
+$hook['post_controller_constructor'][] = array(
+	'class'    => 'Pengunjung_cookie',
+	'function' => 'tandai',
+	'filename' => 'Pengunjung_cookie.php',
+	'filepath' => 'hooks',
+);
+
 $hook['display_override'][] = array(
 	'class'    => 'Asset_url_rewrite',
 	'function' => 'rewrite',

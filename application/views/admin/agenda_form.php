@@ -101,6 +101,29 @@
             </div>
 
             <div class="admin-field">
+                <label>Foto Kegiatan (gambar)</label>
+                <div class="input-box">
+                    <input type="file" name="foto_file" accept=".jpg,.jpeg,.png,image/jpeg,image/png">
+                </div>
+                <p class="admin-muted">
+                    JPG atau PNG, maksimal 5 MB. Di halaman publik tampil sebagai tautan, tanpa gambar kecil.
+                    <?php if (!empty($agenda['foto_file'])): ?>
+                        Foto saat ini:
+                        <a href="<?php echo html_escape(agenda_surat_url($agenda['foto_file'])); ?>" target="_blank" rel="noopener">lihat foto</a>.
+                        Pilih file baru untuk mengganti.
+                    <?php endif; ?>
+                </p>
+                <?php if (!empty($agenda['foto_file'])): ?>
+                    <div class="input-box admin-checkbox-wrap">
+                        <label class="admin-checkbox">
+                            <input type="checkbox" name="hapus_foto" value="1">
+                            Hapus foto saat disimpan
+                        </label>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <div class="admin-field">
                 <label>Status</label>
                 <div class="input-box admin-checkbox-wrap">
                     <label class="admin-checkbox">

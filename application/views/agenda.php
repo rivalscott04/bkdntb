@@ -39,12 +39,13 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                                 <th>Waktu (WITA)</th>
                                 <th>Tempat</th>
                                 <th>Keterangan</th>
+                                <th>Foto Kegiatan</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php if (empty($agenda_list)): ?>
                                 <tr>
-                                    <td colspan="6" class="text-center">Belum ada agenda untuk minggu ini.</td>
+                                    <td colspan="7" class="text-center">Belum ada agenda untuk minggu ini.</td>
                                 </tr>
                             <?php else: ?>
                                 <?php $tgl_sebelumnya = null; ?>
@@ -70,6 +71,11 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                                         </td>
                                         <td class="agenda-tempat" data-label="Tempat"><?php echo html_escape($row['tempat'] ?? ''); ?></td>
                                         <td class="agenda-keterangan" data-label="Keterangan"><?php echo html_escape($row['keterangan'] ?? ''); ?></td>
+                                        <td class="agenda-foto" data-label="Foto Kegiatan">
+                                            <?php if (!empty($row['foto_file'])): ?>
+                                                <a href="<?php echo html_escape(agenda_surat_url($row['foto_file'])); ?>" target="_blank" rel="noopener">Lihat foto</a>
+                                            <?php endif; ?>
+                                        </td>
                                     </tr>
                                 <?php endforeach; ?>
                             <?php endif; ?>

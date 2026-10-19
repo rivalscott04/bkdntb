@@ -218,6 +218,7 @@
                         <div class="footer-bottom-content flex-box-two">
                             <div class="copyright-text">
                                 <p>© 2026 All Rights Reserved. <a href="#">Badan Kepegawaian Daerah Provinsi Nusa Tenggara Barat.</a></p>
+                                <p id="pengunjung-total">Pengunjung: <?php echo number_format(pengunjung_total(), 0, ',', '.'); ?></p>
                             </div>
 
                             <div class="footer-social-links float-right">
@@ -296,6 +297,23 @@
 
     <!-- thm custom script -->
     <script src="<?php echo base_url().'assets/'?>js/custom.js"></script>
+    <script>
+    (function () {
+        var m = document.cookie.match(/(?:^|; )bkd_pengunjung=([^;]*)/);
+        if (!m || decodeURIComponent(m[1]) !== 'baru') return;
+        var x = new XMLHttpRequest();
+        x.open('POST', <?php echo json_encode(site_url('pengunjung')); ?>, true);
+        x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        x.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        x.onload = function () {
+            var el = document.getElementById('pengunjung-total');
+            var n = parseInt(x.responseText, 10);
+            if (!el || x.status !== 200 || !isFinite(n)) return;
+            el.textContent = 'Pengunjung: ' + n.toLocaleString('id-ID');
+        };
+        x.send(<?php echo json_encode($this->security->get_csrf_token_name()); ?> + '=' + encodeURIComponent(<?php echo json_encode($this->security->get_csrf_hash()); ?>));
+    })();
+    </script>
 
 </body>
 
