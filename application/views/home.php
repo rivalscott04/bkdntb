@@ -194,13 +194,13 @@
                     <div class="col-xl-12">
                         <div class="sec-title text-center">
                             
-                            <p>Potret Data & Informasi Kepegawaian</p>
-                            <div class="title">Postur Kepegawaian<br>ASN Pemerintah Provinsi NTB</div>
+                            <p>Transfromasi Reformasi Birokrasi Pemerintah Provinsi NTB</p>
+                            <div class="title">Penerapan Kebijakan Manajemen Talenta PNS<br>di Lingkup Pemerintah Provinsi NTB</div>
                             
                         </div>
-                        <div class="button text-center">
-                            
-                            <a class="btn-one" href="/pegawai">Informasi Data Kepegawaian<span class="flaticon-next"></span></a>
+                         <div class="button text-center">
+                            <a class="btn-one" href="/manajementalenta">Buku Panduan Manajemen Talenta<span class="flaticon-next"></span></a>
+                            <a class="btn-one black" href="<?php echo base_url().'assets/'?>download/SK MANAJEMEN TALENTA PEMERINTAH PROVINSI NTB-1.pdf" target="_blank">SK Penetapan Manajemen Talenta<span class="flaticon-next"></span></a>
                         </div>
                     </div>
                 </div>

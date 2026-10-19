@@ -88,7 +88,7 @@
             <div class="container">
                 <div class="row">
                     <!--Start single footer widget-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div class="single-footer-widget marbtm50">
                             <div class="contact-info-box">
                                 <div class="footer-logo">
@@ -123,7 +123,7 @@
                     </div>
                     <!--End single footer widget-->
                     <!--Start single footer widget-->
-                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div class="single-footer-widget marbtm50">
                             <div class="title">
                                 <h3>Link Terkait</h3>
@@ -132,18 +132,43 @@
                                 <ul>
                                     
                                     <li><a href="https://www.kemendagri.go.id/">Kementerian Dalam Negeri</a></li>
-                                    <li><a href="https://menpan.go.id/site/">Kementerian Pendayagunaan Aparatur Negara - RB</a></li>
+                                    <li><a href="https://menpan.go.id/site/">Kemenpan - RB</a></li>
                                     <li><a href="https://www.bkn.go.id/">Badan Kepegawaian Negara</a></li>
-                                    <li><a href="https://denpasar.bkn.go.id/">Badan Kepegawaian Negara Regional X</a></li>
+                                    <li><a href="https://denpasar.bkn.go.id/">BKN Regional X</a></li>
                                     <li><a href="https://ntbprov.go.id/">Pemerintah Provinsi NTB</a></li>
                                     <li><a href="https://sscasn.bkn.go.id/">Portal SSCASN BKN</a></li>
-                                     <li><a href="https://www.lapor.go.id/">Kanal Pengaduan SPAN-LAPOR</a></li>
+                                     <li><a href="https://www.lapor.go.id/">SPAN-LAPOR</a></li>
                          
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <!--End single footer widget-->
+
+                     <!--Start single footer widget-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50">
+                            <div class="title">
+                                <h3>Jumlah Pengunjung</h3>
+                            </div>
+                            <div class="services-links">
+                                <ul>
+                                    
+                                    <li>Jumlah Total : </li>
+                                    <li>Hari Ini : </li>
+                                    <li>Minggu Ini : </li>
+                                    <li>Bulan Ini : </li>
+                                    <li>Tahun Ini : </li>
+                                    <li>Sedang Online : </li>
+                                 
+                         
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+
                 
                      <!--Start single footer widget-->
                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
@@ -177,6 +202,8 @@
                     </div>
                     <!--End single footer widget-->
 
+
+                    
 
                 </div>
             </div>
