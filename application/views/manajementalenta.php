@@ -200,6 +200,7 @@
                                             <div class="text">
                                                 <p>Pengembangan karier ASN tidak boleh lagi bergantung pada kontestasi sesaat. Ke depan, karier aparatur harus dipandu oleh Manajemen Talenta ASN berbasis kinerja dan potensi sehingga adil bagi ASN dan menguntungkan organisasi.</p>
                                                 <a class="btn-two" href="#">Dr. Lalu Muhamad Iqbal<span class="flaticon-next"></span></a>
+                                                <br><small>Pesan Gubernur NTB dalam Pelantikan JPT Pratama & Jabatan Administrator Lingkup Pemerintah Provinsi NTB | Jumat, 9 Januari 2026</small>
                                             </div>
                                         </div>
                                     </div>
@@ -221,6 +222,7 @@
                                             <div class="text">
                                                 <p>Menjadi pemimpin tidak hanya membanggakan diri dengan sejumlah prestasi yang dicapai. Tetapi yang lebih utama, Bapak/Ibu sebagai pemimpin bisa memberikan rasa nyaman bagi seluruh bawahan, memastikan semangat mereka tetap terjaga, dan tidak ada ketakutan berlebihan ketika dipercayai menempati jabatan. Kerja sungguh-sungguh yang Bapak/Ibu tunjukkan tidak pernah akan bisa tertukar dengan pihak lain.</p>
                                                 <a class="btn-two" href="#">Hj. Indah Dhamayanti Putri, SE., M.IP<span class="flaticon-next"></span></a>
+                                                <br><small>Pesan Wakil Gubernur NTB dalam  Workshop Manajemen Risiko Pemerintah Provinsi NTB | Sabtu, 8 Agustus 2026</small>
                                             </div>
                                         </div>
                                     </div>
@@ -242,6 +244,8 @@
                                             <div class="text">
                                                 <p>Provinsi NTB sedang bergerak maju dengan menyiapkan tenaga-tenaga ahli yang diperlukan untuk membawa NTB ke arah yang lebih baik. Melalui manajemen talenta, Pemprov NTB berharap penataan ASN tidak hanya menghasilkan distribusi pegawai yang lebih proporsional, tetapi juga mampu memastikan setiap aparatur ditempatkan sesuai kemampuan dan kebutuhan organisasi.</p>
                                                 <a class="btn-two" href="#">Abul Chair, Ak<span class="flaticon-next"></span></a>
+                                                <br><small>Pesan Sekda Provinsi NTB dalam Pelantikan Pejabat Fungsional Pemprov NTB<br>
+Jumat, 31 Juli 2026</small>
                                             </div>
                                         </div>
                                     </div>
