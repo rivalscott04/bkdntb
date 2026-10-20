@@ -38,13 +38,77 @@
                     </div>
                     <br>
 
-                     <img src="<?php echo base_url().'assets/'?>images/komposisi ASN.png" alt="Awesome Image">
+                   
 					
         </div>
 		
 		</div>
 		</section>
 <br>
+
+ <!--Start Team Area-->
+        <section class="team-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="sec-title float-left">
+                            <p>Data & Informasi Pemerintah Provinsi NTB</p>
+                            <div class="title">Postur Kepegawaian (ASN)</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <!--Start Single Team Member-->
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="single-team-member">
+                            <div class="img-holder">
+                                <img src="<?php echo base_url().'assets/'?>images/team/1.jpg" alt="Awesome Image">
+                                
+                                
+                            </div>
+                            <div class="name text-center">
+                                <p><span>Jumlah PNS</span></p>
+                                <h3>11.369 Orang</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Member-->
+                    <!--Start Single Team Member-->
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="single-team-member">
+                            <div class="img-holder">
+                                <img src="<?php echo base_url().'assets/'?>images/team/2.jpg" alt="Awesome Image">
+                               
+                               
+                            </div>
+                            <div class="name text-center">
+                                <p><span>Jumlah PPPK Penuh Waktu</span></p>
+                                <h3>7.079 Orang</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Member-->
+                    <!--Start Single Team Member-->
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="single-team-member">
+                            <div class="img-holder">
+                                <img src="<?php echo base_url().'assets/'?>images/team/3.jpg" alt="Awesome Image">
+                                
+                            </div>
+                            <div class="name text-center">
+                                <p><span>Jumlah PPPK Paruh Waktu</span></p>
+                                <h3>9.386 Orang</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Team Member-->
+                    
+                </div>
+                <center><em>Pembaharuan Data : 1 September 2026</em></center>
+            </div>
+        </section>
+        <!--End Team Area-->
 
 <br>
 

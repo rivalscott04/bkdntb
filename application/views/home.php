@@ -189,7 +189,7 @@
         <section class="featured-area">
             <br><br><br>
             <div class="container about-style3-content">
-                <div class="about-style3-bg" style="background-image: url(<?php echo base_url().'assets/'?>images/pattern/about-style3-bg.jpg);"></div>
+                
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="sec-title text-center">
@@ -211,7 +211,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/1.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/11.jpg" alt="Awesome Image"></a>
                                     
                                     
                                 </div>
@@ -220,26 +220,18 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/2.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/22.jpg" alt="Awesome Image"></a>
                                     
                                     
                                 </div>
                             </div>
                             <!--End single project style1-->
-                            <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/3.jpg" alt="Awesome Image"></a>
-                                    
-                                  
-                                </div>
-                            </div>
-                            <!--End single project style1-->
+                           
 
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/4.jpg" alt="Awesome Image"></a>
+                                    <a href="/manajementalenta"><img src="<?php echo base_url().'assets/'?>images/konten/44.jpg" alt="Awesome Image"></a>
                                     
                                    
                                 </div>
@@ -248,7 +240,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/5.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/55.jpg" alt="Awesome Image"></a>
                                     
                                    
                                 </div>
@@ -258,7 +250,7 @@
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
-                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/6.jpg" alt="Awesome Image"></a>
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/konten/66.jpg" alt="Awesome Image"></a>
                                     
                                    
                                 </div>
@@ -269,7 +261,7 @@
                           
                       
                         </div>
-                        <br><center><em>Pembaharuan Data : 01 September 2026</em></center>
+                     
                     </div>
                 </div>
 
