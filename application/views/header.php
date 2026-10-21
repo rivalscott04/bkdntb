@@ -161,7 +161,7 @@
                                                     </ul>
                                                     
                                                 </li>
-                                                <li><a href="berita">Berita</a>
+                                                <li><a href="https://bkd.ntbprov.go.id/berita">Berita</a>
     
                                                 </li>
                                                
