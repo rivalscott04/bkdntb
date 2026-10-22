@@ -149,15 +149,17 @@
                                                         <li><a href="/kaban">Kepala Badan</a></li>
                                                         <li><a href="/sekban">Sekretaris Badan</a></li>
                                                         <li><a href="/pimpinan">Pejabat OPD</a></li>
+                                                         <li><a href="/visi">Visi & Misi</a></li>
+                                                          <li><a href="/struktur">Struktur Organisasi</a></li>
+                                                        <li><a href="/tupoksi">Tugas Pokok & Fungsi</a></li>
+                                                        <li><a href="/maklumat">Maklumat Pelayanan</a></li>
                                                         <li><a href="/pegawai">Data Kepegawaian</a></li>
                                                         <li><a href="/lhkpn">Informasi LHKPN</a></li>
-                                                        <li><a href="/struktur">Struktur Organisasi</a></li>
-                                                        <li><a href="/tupoksi">Tugas Pokok & Fungsi</a></li>
-                                                        <li><a href="/visi">Visi & Misi</a></li>
+                                                        <li><a href="/denah">Denah Kantor</a></li>    
                                                         <li><a href="/prestasi">Prestasi Badan</a></li>
-                                                        <li><a href="/maklumat">Maklumat Pelayanan</a></li>
-                                                        <li><a href="/evakuasi">SOP Peringatan Dini & Evakuasi</a></li>
-                                                        <li><a href="/produkhukum">Produk Hukum</a></li>
+                                                        
+                                                        <li><a href="/evakuasi">Peringatan Dini & Evakuasi</a></li>
+                                                        
                                                        
                                                     </ul>
                                                     

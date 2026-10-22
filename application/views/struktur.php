@@ -6,8 +6,8 @@
                         <div class="inner-content-box clearfix">
                             <div class="title-s2 text-center">
                                
-                                <h1>&nbsp;</h1>
-                                 <span>&nbsp;</span>
+                                <h1>Struktur Organisasi</h1>
+                                 <span>Badan Kepegawaian Daerah Provinsi NTB</span>
                             </div>
                             <div class="breadcrumb-menu float-left">
                                 <ul class="clearfix">
@@ -15,13 +15,7 @@
                                    
                                 </ul>
                             </div>
-                            <div class="breadcrumb-menu float-left">
-                                <ul class="clearfix">
-                                    
-                                    <li><a href="#">Profil</a></li>
-                                    <li class="active">Struktur Organisasi</li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
