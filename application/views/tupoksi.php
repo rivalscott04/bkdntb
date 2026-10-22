@@ -30,12 +30,12 @@
                         <div class="intro-box clearfix">
                             <div class="sec-title">
                                 <p>Dasar Hukum</p>
-                                <div class="title">Pergub NTB Nomor 42 Tahun 2017</div>
+                                <div class="title">Pergub NTB Nomor 32 Tahun 2025</div>
                             </div>
                             <div class="text">
                                 <p>
-                                   Tugas Pokok dan Fungsi Badan Kepegawaian Daerah (BKD) Provinsi NTB telah diatur dalam Peraturan Gubernur NTB Nomor 42 Tahun 2017 tentang Perubahan Atas Peraturan Gubernur Nomor 51 Tahun 2016 Tentang Kedudukan, Susunan Organisasi, Tugas & Fungsi serta Tata Kerja Badan-Badan Daerah Provinsi Nusa Tenggara Barat. Tugas pokok utamanya adalah melaksanakan penyusunan dan pelaksanaan kebijakan daerah di bidang manajemen kepegawaian daerah.</p><br>
-                            	<a href="<?php echo base_url().'assets/'?>download/Pergub 42 Tahun 2017.pdf" class="btn-three" target="_blank">Lihat File Pergub Nomor 42 Tahun 2017</a>
+                                   Tugas Pokok dan Fungsi Badan Kepegawaian Daerah (BKD) Provinsi NTB telah diatur dalam Peraturan Gubernur NTB Nomor 32 Tahun 2025 tentang Kedudukan, Susunan Organisasi, Tugas & Fungsi serta Tata Kerja Perangkat Daerah Provinsi Nusa Tenggara Barat. Tugas pokok utamanya adalah melaksanakan penyusunan dan pelaksanaan kebijakan daerah di bidang manajemen kepegawaian daerah.</p><br>
+                            	<a href="<?php echo base_url().'assets/'?>download/Pergub 32 Tahun 2025.pdf" class="btn-three" target="_blank">Lihat File Pergub Nomor 32 Tahun 2025</a>
 							</div>
 							
                         </div>
