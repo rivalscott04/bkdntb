@@ -68,14 +68,16 @@
 									<td><a href="<?php echo base_url().'assets/'?>download/Pengumuman_Harta_Kekayaan_LHKPN_91118.pdf" class="btn-three" target="_blank">Lihat LHKPN</a></td>
                                 </tr>
 
-                                  <tr>
+                                <tr>
                                 <td>2.</td>
-                                    <td>Ida Bagus Arnawa, SE</td>
-                                   <td>Sekretaris Badan</td> 
+                                    <td>Sry Wahyuningsih, S.STP, M.H.</td>
+                                   <td>Plt. Sekretaris Badan</td> 
                                    
                                    <td><a href="#" class="btn-three" target="_blank">Lihat LHKPN</a></td>
-									  <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman_Harta_Kekayaan_LHKPN_221371.pdf" class="btn-three" target="_blank">Lihat LHKPN</a></td>
+									  <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman_Harta_Kekayaan_LHKPN_174153.pdf" class="btn-three" target="_blank">Lihat LHKPN</a></td>
                                 </tr>
+
+                                 
 
                                   <tr>
                                 <td>3.</td>
