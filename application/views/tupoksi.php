@@ -30,7 +30,7 @@
                         <div class="intro-box clearfix">
                             <div class="sec-title">
                                 <p>Dasar Hukum</p>
-                                <div class="title">Pergub NTB Nomor 32 Tahun 2025</div>
+                                <div class="title">Pergub NTB <br>Nomor 32 Tahun 2025</div>
                             </div>
                             <div class="text">
                                 <p>
