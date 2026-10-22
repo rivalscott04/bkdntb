@@ -15,33 +15,52 @@
         </section>
         <!--End breadcrumb area-->
 
-        <section>
-		<div class="container">
-		<div class="row">
-                    <div class="col-xl-12">
-                        <div class="intro-box clearfix">
-                            <div class="sec-title">
-                                <br><br><p>BKD Provinsi Nusa Tenggara Barat</p>
-                                <div class="title">Visi & Misi<br> <span>Provinsi NTB</span></div>
-                            </div>
-                            <div class="text">
-                                <p>BKD melaksanakan fungsi penunjang urusan pemerintahan bidang Kepegawaian. Pada era Kepemimpinan Lalu Muhamad Iqbal & Indah Damayanti Putri, Provinsi NTB memiliki visi <b>BANGKIT BERSAMA MENUJU NTB PROVINSI KEPULAUAN YANG MAKMUR MENDUNIA
-</b></p>
-                            	
-							</div>
-							
+         <section class="about-style2-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="about-style2-text">
+                        <div class="sec-title">
+                            <p>Arah Pembangunan Pemerintah Provinsi NTB 2025-2029</p>
+                            <div class="title">Visi Misi<br>Provinsi NTB <br>2025-2029</div>
                         </div>
-
-						
+                        <div class="text">
+                            <p>Strategi dan arah kebijakan yang telah digariskan untuk menyiapkan fondasi
+transformasi daerah dalam lima tahun ke depan adalah pengentasan kemiskinan,
+penguatan ketahanan pangan dan mewujudkan NTB sebagai destinasi pariwisata berkelas
+dunia. BKD melaksanakan fungsi penunjang urusan pemerintahan bidang Kepegawaian. Pada era Kepemimpinan Lalu Muhamad Iqbal & Indah Damayanti Putri, Provinsi NTB memiliki visi sebagai berikut:</p>
+                        </div>
+                        <div class="text">
+                            <p><b>“BANGKIT BERSAMA MENUJU NTB PROVINSI KEPULAUAN YANG MAKMUR MENDUNIA”</b></p>
+                        </div>
+                        
+                        
+                        <!--div class="button">
+                            <a class="btn-one" href="profil.html">Selengkapnya<span class="flaticon-next"></span></a>
+                        </div-->
                     </div>
-					
+                </div>
+                <div class="col-xl-7">
+                    <div class="about-style2-image-box">
+                        <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
+                        <div class="image">
+                            <img src="<?php echo base_url().'assets/'?>images/resources/visimisi-poster.jpg" alt="Awesome Image">
+                            <!--div class="overlay-box">
+                                <div class="title">
+                                    <h1>24 <span>Hours<br> Services</span></h1>
+                                </div>
+                                <div class="button">
+                                    <a href="#"><span class="icon-back"></span></a>
+                                </div>
+                            </div-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-		
-		</div>
-		</section>
-		
-        <br><br>
-		<section>
+    </section><br>
+
+       		<section>
 		<div class="container">
 		<div class="row">
                     <div class="col-xl-12">
