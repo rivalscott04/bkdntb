@@ -64,7 +64,17 @@ class Berita extends CI_Controller {
 		if (!$berita) {
 			show_404();
 		}
-		$this->load->view('header');
+		$ringkasan = trim(preg_replace('/\s+/u', ' ', html_entity_decode(strip_tags($berita['isi_berita'] ?? ''), ENT_QUOTES, 'UTF-8')));
+		if (mb_strlen($ringkasan, 'UTF-8') > 200) {
+			$ringkasan = rtrim(mb_substr($ringkasan, 0, 200, 'UTF-8')) . '...';
+		}
+		$this->load->view('header', array(
+			'page_title'     => $berita['judul_berita'],
+			'og_type'        => 'article',
+			'og_title'       => $berita['judul_berita'],
+			'og_description' => $ringkasan,
+			'og_image'       => url_gambar_berita_featured($berita['gambar_berita'] ?? ''),
+		));
 		$this->load->view('berita_detail', array('berita' => $berita));
 		$this->load->view('footer-berita');
 	}

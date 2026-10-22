@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <?php $this->load->view('og_meta', array('og_title' => 'Inspirasi Pagi | BKD Provinsi NTB', 'og_description' => 'Kata-kata inspirasi pagi pegawai BKD Provinsi NTB.')); ?>
 
     <!-- master stylesheet -->
     <link rel="stylesheet" href="<?php echo base_url().'assets/'?>css/bundle.css">

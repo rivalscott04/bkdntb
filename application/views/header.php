@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <?php $this->load->view('og_meta'); ?>
 
     <!-- master stylesheet (bundle: style + imports, fewer requests for shared hosting) -->
     <link rel="stylesheet" href="<?php echo base_url().'assets/'?>css/bundle.css">
