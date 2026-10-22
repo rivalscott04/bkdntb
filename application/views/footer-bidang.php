@@ -1,15 +1,15 @@
- <!--Start footer area-->
+   <!--Start footer area-->
         <footer class="footer-area">
             <div class="footer-shape-bg wow slideInRight" data-wow-delay="300ms" data-wow-duration="2500ms"></div>
             <div class="container">
                 <div class="row">
                     <!--Start single footer widget-->
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div class="single-footer-widget marbtm50">
                             <div class="contact-info-box">
                                 <div class="footer-logo">
                                     <a href="index.html">
-                                        <img src="<?php echo base_url().'assets/'?>images/resources/logo2.png" alt="Awesome Logo">
+                                        <img src="<?php echo base_url().'assets/'?>images/resources/logo2.png" alt="PPID">
                                     </a>
                                 </div>
                                 <ul>
@@ -39,7 +39,7 @@
                     </div>
                     <!--End single footer widget-->
                     <!--Start single footer widget-->
-                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                         <div class="single-footer-widget marbtm50">
                             <div class="title">
                                 <h3>Link Terkait</h3>
@@ -48,18 +48,40 @@
                                 <ul>
                                     
                                     <li><a href="https://www.kemendagri.go.id/">Kementerian Dalam Negeri</a></li>
-                                    <li><a href="https://menpan.go.id/site/">Kementerian Pendayagunaan Aparatur Negara - RB</a></li>
+                                    <li><a href="https://menpan.go.id/site/">Kemenpan - RB</a></li>
                                     <li><a href="https://www.bkn.go.id/">Badan Kepegawaian Negara</a></li>
-                                    <li><a href="https://denpasar.bkn.go.id/">Badan Kepegawaian Negara Regional X</a></li>
+                                    <li><a href="https://denpasar.bkn.go.id/">BKN Regional X</a></li>
                                     <li><a href="https://ntbprov.go.id/">Pemerintah Provinsi NTB</a></li>
                                     <li><a href="https://sscasn.bkn.go.id/">Portal SSCASN BKN</a></li>
-                                     <li><a href="https://www.lapor.go.id/">Kanal Pengaduan SPAN-LAPOR</a></li>
+                                     <li><a href="https://www.lapor.go.id/">SPAN-LAPOR</a></li>
                          
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <!--End single footer widget-->
+
+                     <!--Start single footer widget-->
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50">
+                            <div class="title">
+                                <h3>Jumlah Pengunjung</h3>
+                            </div>
+                            <div class="services-links">
+                                <?php $rekap = pengunjung_rekap(); ?>
+                                <ul class="pengunjung-list">
+                                    <li><span>Total Pengunjung</span> <data-pengunjung="total"><?php echo pengunjung_angka($rekap['total']); ?></li>
+                                    <li><span>Hari ini</span> <data-pengunjung="hari"><?php echo pengunjung_angka($rekap['hari']); ?></li>
+                                    <li><span>Minggu ini</span> <data-pengunjung="minggu"><?php echo pengunjung_angka($rekap['minggu']); ?></li>
+                                    <li><span>Bulan ini</span> <data-pengunjung="bulan"><?php echo pengunjung_angka($rekap['bulan']); ?></li>
+                                    <li><span>Sedang Online</span> <data-pengunjung="online"><?php echo pengunjung_angka($rekap['online']); ?></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+
+
                 
                      <!--Start single footer widget-->
                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
@@ -93,6 +115,8 @@
                     </div>
                     <!--End single footer widget-->
 
+
+                    
 
                 </div>
             </div>
@@ -185,8 +209,46 @@
 
     <!-- thm custom script -->
     <script src="<?php echo base_url().'assets/'?>js/custom.js"></script>
-
-
+    <script>
+    (function () {
+        var token = <?php echo json_encode($this->security->get_csrf_hash()); ?>;
+        var nama = <?php echo json_encode($this->security->get_csrf_token_name()); ?>;
+        var urlCatat = <?php echo json_encode(site_url('pengunjung')); ?>;
+        var urlOnline = <?php echo json_encode(site_url('pengunjung/online')); ?>;
+        var timer = null;
+        function terapkan(data) {
+            ['total', 'hari', 'minggu', 'bulan', 'online'].forEach(function (k) {
+                var el = document.querySelector('[data-pengunjung="' + k + '"]');
+                if (!el || typeof data[k] === 'undefined' || !isFinite(Number(data[k]))) return;
+                el.textContent = Number(data[k]).toLocaleString('id-ID');
+            });
+            if (data.csrf) token = data.csrf;
+        }
+        function kirim(url, selesai) {
+            var x = new XMLHttpRequest();
+            x.open('POST', url, true);
+            x.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            x.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            x.onload = function () {
+                if (x.status !== 200) return;
+                try { terapkan(JSON.parse(x.responseText)); } catch (e) { return; }
+                if (selesai) selesai();
+            };
+            x.send(nama + '=' + encodeURIComponent(token));
+        }
+        function jagaOnline() {
+            if (timer) return;
+            timer = setInterval(function () { kirim(urlOnline); }, 240000);
+        }
+        var m = document.cookie.match(/(?:^|; )bkd_pengunjung=([^;]*)/);
+        var nilai = m ? decodeURIComponent(m[1]) : '';
+        if (nilai === 'baru') {
+            kirim(urlCatat, jagaOnline);
+        } else if (nilai) {
+            jagaOnline();
+        }
+    })();
+    </script>
 
 </body>
 
