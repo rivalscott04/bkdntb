@@ -32,7 +32,7 @@
                                     <div class="col-lg-5">
                                         <div class="content-box">
                                             <span class="price">ASN NTB Awards Tahun 2026</span>
-                                            <h2>Pengumuman Hasil Seleksi Administrasi</h2>
+                                            <h2>Pengumuman <br>Hasil Seleksi Tahap II</h2>
                                             <div class="review-box">
                                                 <ul>
                                                     <li><i class="fa fa-star"></i></li>
@@ -43,12 +43,12 @@
                                                 </ul>
                                             </div>
                                             <div class="text">
-                                                <p align="justify">Penetapan Peserta 10 (sepuluh) Besar Seleksi Administrasi ASN NTB Awards 2026 adalah sebagaimana tercantum dalam Lampiran Pengumuman ini. Nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan mengikuti Seleksi Focus Group Discussion pada Selasa, 20 Oktober 2026 di BKD Provinsi NTB.</p>
+                                                <p align="justify">Penetapan Peserta 5 (lima) Besar Seleksi Administrasi ASN NTB Awards 2026 adalah sebagaimana tercantum dalam Lampiran Pengumuman ini. Nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan memasuki tahap Uji Publik kemudian dilanjutkan dengan Presentasi & Wawancara.</p>
                                             </div>
                                             
                                             <div>
                                                 <br>
-                                              <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Administrasi ASN NTB Awards 2026.pdf">Hasil Seleksi Administrasi<span class="flaticon-next"></span></a>
+                                              <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Tahap II ASN NTB Awards 2026.pdf">Hasil Seleksi Tahap II<span class="flaticon-next"></span></a>
                                                 
                             
                              
@@ -77,6 +77,36 @@
                         
                     <div class="faq-content-box">
                             <div class="accordion-box">
+
+
+                              <!--Start single accordion box-->
+                                <div class="accordion accordion-block">
+                                    <div class="accord-btn">
+                                        <h4>Pengumuman Hasil Seleksi Administrasi</h4>
+                                    </div>
+                                    <div class="accord-content">
+                                    
+                                         <table id="datatable" class="table table-striped">
+                      
+                        <tbody>
+                           
+                                <tr>
+                                
+                                   
+                                    <td>Lihat Pengumuman Hasil Seleksi Administrasi ASN NTB Awards 2026</td>
+                                     <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Administrasi ASN NTB Awards 2026.pdf" class="btn-three" target="_blank">Unduh</a>
+</td>
+                                </tr>
+
+                               
+                                 
+                        </tbody>
+                    </table>
+
+
+                                </div></div>
+                                <!--End single accordion box-->
+
 
                                <!--Start single accordion box-->
                                 <div class="accordion accordion-block">

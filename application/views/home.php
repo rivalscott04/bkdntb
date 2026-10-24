@@ -15,7 +15,7 @@
                                 style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
                                     <div class="big-title">
-                                   Pengumuman Hasil Seleksi Administrasi ASN NTB Awards Tahun 2026
+                                   Pengumuman Hasil Seleksi Tahap II <br>ASN NTB Awards Tahun 2026
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@
                                 data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
-                                   <div class="text"><br>Penetapan Peserta 10 (sepuluh) Besar Seleksi Administrasi ASN NTB Awards 2026, nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan mengikuti Seleksi Focus Group Discussion pada Selasa, 20 Oktober 2026 di BKD Provinsi NTB.
+                                   <div class="text"><br>Penetapan Peserta 5 (lima) Besar Seleksi Administrasi ASN NTB Awards 2026, nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan mengikuti tahap Uji Publik dan kemudian Presentasi & Wawancara.
 </div>
                                 </div>
                             </div>
@@ -136,9 +136,9 @@
                             <div class="inner-content">
                                 <div class="text">
                                     <h3>Pengumuman</h3>
-                                    <p>Informasi Hasil Seleksi Administrasi ASN NTB Awards Tahun 2026</p>
+                                    <p>Informasi Hasil Seleksi Tahap II ASN NTB Awards Tahun 2026</p>
                                 </div>
-                                <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Administrasi ASN NTB Awards 2026.pdf">Selengkapnya<span class="flaticon-next"></span></a>
+                                <a class="btn-one" href="/awards">Selengkapnya<span class="flaticon-next"></span></a>
                             </div>
                         </div>
                     </div>
