@@ -17,20 +17,13 @@
 <!--End breadcrumb area-->
 
 
-<?php
-$rentang = format_tanggal_berita($senin) . ' s.d. ' . format_tanggal_berita($minggu);
-$per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
-?>
+
  <!--Start cart area-->
         <section class="cart-area">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <div class="text">
-                    
-                    <span>Rekapituasi Agenda Kegiatan : </span><h5><?php echo html_escape($rentang); ?></h5>
-                </div>
-<br>
+                        
                         <div class="table-outer">
                             <table class="cart-table">
                                 
@@ -67,11 +60,20 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
         </section>
         <!--End cart area-->
 
-
+<?php
+$rentang = format_tanggal_berita($senin) . ' s.d. ' . format_tanggal_berita($minggu);
+$per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
+?>
 <section class="agenda-area">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
+
+            <div class="text">
+                    
+                    <span>Rekapituasi Agenda Kegiatan : </span><h5><?php echo html_escape($rentang); ?></h5>
+                </div>
+<br>
                 
                 <div class="table-responsive">
                     <table class="table agenda-table">
