@@ -18,48 +18,6 @@
 
 
 
- <!--Start cart area-->
-        <section class="cart-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        
-                        <div class="table-outer">
-                            <table class="cart-table">
-                                
-                                <tbody>
-                                    <tr>
-                                        <td colspan="2" class="prod-column">
-                                            <div class="column-box">
-                                                <div class="prod-thumb">
-                                                    <a href="#"><img src="<?php echo base_url().'assets/'?>images/Kaban Menggunakan Pakaian Adat Sasak.png" alt=""></a>
-                                                </div>
-                                                <div class="title">
-                                                    <h3 class="prod-title">Drs. Tri Budiprayitno, M.Si</h3>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        
-                                        <td class="unit-price">
-                                            <div class="available-info">
-                                            Kepala BKD Provinsi NTB
-                                            </div>
-                                        </td>
-                                        <td class="price">Pembina Utama Madya (IV/d)</td>
-                                        <td class="price">NIP. 196810161988031003</td>
-                                    </tr>
-                                   
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-        <!--End cart area-->
-
 <?php
 $rentang = format_tanggal_berita($senin) . ' s.d. ' . format_tanggal_berita($minggu);
 $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
@@ -68,13 +26,11 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-
-            <div class="text">
+                <div class="text">
                     
                     <span>Rekapituasi Agenda Kegiatan : </span><h5><?php echo html_escape($rentang); ?></h5>
                 </div>
 <br>
-                
                 <div class="table-responsive">
                     <table class="table agenda-table">
                         <thead>
