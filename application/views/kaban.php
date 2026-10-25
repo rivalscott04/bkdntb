@@ -60,27 +60,31 @@ manajemen kepegawaian
 		</div>
 		</section>
 		
-        <section class="single-service-area">
+<section class="single-service-area">
             <div class="container">
                 
 			<div class="how-work-box">
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="image-box">
-                                        <img src="<?php echo base_url().'assets/'?>images/services/service-single/kaban.jpg" alt="Kaban">
+                                        <img src="<?php echo base_url().'assets/'?>images/services/service-single/kaban.jpg" alt="Kaban"><br><br>
+                                      
+                                             
+                                                   
+                                               
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="how-works-content">
-                                        <h2>Profil Kepala Badan</h2>
+                                        <h5>Profil Kepala Badan</h5>
                                         <ul>
                                             <li>
                                                 <div class="icon">
                                                     <span class="icon-tick"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <span>Nama Lengkap :</span>
-                                                    <h4>Drs. Tri Budiprayitno, M.Si</h4>
+                                                    <span>Nama Lengkap :</span><br>
+                                                    <b>Drs. Tri Budiprayitno, M.Si</b>
                                                  
                                                 </div>
                                             </li>
@@ -89,8 +93,8 @@ manajemen kepegawaian
                                                     <span class="icon-tick"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <span>Pangkat / Golongan</span>
-                                                    <h5>Pembina Utama Madya (IV/d)</h5>
+                                                    <span>Pangkat / Golongan</span><br>
+                                                    Pembina Utama Madya (IV/d)
                                                 </div>
                                             </li>
                                             <li>
@@ -98,8 +102,8 @@ manajemen kepegawaian
                                                     <span class="icon-tick"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <span>Tempat & Tanggal Lahir</span>
-                                                    <h5>Mataram, 16 Oktober 1968</h5>
+                                                    <span>Tempat & Tanggal Lahir</span><br>
+                                                    Mataram, 16 Oktober 1968
                                                 </div>
                                             </li>
 											<li>
@@ -107,8 +111,10 @@ manajemen kepegawaian
                                                     <span class="icon-tick"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <span>Pendidikan</span>
-                                                    <h5>Magister Administrasi Publik</h5>
+                                                    <span>Pendidikan</span><br>
+                                                    S2 Administrasi Publik (UGM Yogyakarta) Tahun 2000<br>
+                                                    S1 Ilmu Pemerintahan (IIP Jakarta) Tahun 1995<br>
+                                                    DIII APDN Mataram Tahun 1990
                                                 </div>
                                             </li>
 											<li>
@@ -117,26 +123,30 @@ manajemen kepegawaian
                                                 </div>
                                                 <div class="text">
                                                     <span>Riwayat Jabatan</span><br>
-													KEPALA DINAS PEMUDA DAN OLAHRAGA <br>
-													KEPALA DINAS PERPUSTAKAAN DAN KEARSIPAN<br>
-													KEPALA SATUAN POLISI PAMONG PRAJA<br>
-													KEPALA BADAN PENGEMBANGAN SUMBER DAYA MANUSIA DAERAH<br>
-													KEPALA DINAS KOMUNIKASI, INFORMATIKA DAN STATISTIK<br>
-													KEPALA BIRO ORGANISASI<br>
+                                                    <b>Kepala BKD Provinsi NTB (Sekarang)</b><br>
+													Kepala Dinas Pemuda & Olahraga <br>
+													Kepala Dinas Perpustakaan dan Kearsipan<br>
+													Kepala Satuan Polisi Pamong Praja<br>
+													Kepala Badan Pengembangan Sumber Daya Manusia Daerah<br>
+													Kepala Dinas Komunikasi, Informatika dan Statistik<br>
+													Kepala Biro Organisasi<br>
 
 														
                                                 </div>
                                             </li>
 
-											<li>
+                                            <li>
                                                 <div class="icon">
                                                     <span class="icon-tick"></span>
                                                 </div>
                                                 <div class="text">
-                                                    <span>Informasi LHKPN</span><br>
-                                                    <a class="btn-one black" href="/lhkpn">Lihat LHKPN Kepala Badan</a>
+                                                    <span>Informasi LHKPN</span><br><br>
+                                                    <a class="btn-one black" href="/lhkpn">Lihat LHKPN Kepala BKD Provinsi NTB</a>
                                                 </div>
                                             </li>
+
+
+											
 
                                         </ul>
                                     </div>

@@ -16,19 +16,63 @@
 </section>
 <!--End breadcrumb area-->
 
+
 <?php
 $rentang = format_tanggal_berita($senin) . ' s.d. ' . format_tanggal_berita($minggu);
 $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
 ?>
-<section class="agenda-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="text">
+ <!--Start cart area-->
+        <section class="cart-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="text">
                     
                     <span>Rekapituasi Agenda Kegiatan : </span><h5><?php echo html_escape($rentang); ?></h5>
                 </div>
 <br>
+                        <div class="table-outer">
+                            <table class="cart-table">
+                                
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" class="prod-column">
+                                            <div class="column-box">
+                                                <div class="prod-thumb">
+                                                    <a href="#"><img src="<?php echo base_url().'assets/'?>images/Kaban Menggunakan Pakaian Adat Sasak.png" alt=""></a>
+                                                </div>
+                                                <div class="title">
+                                                    <h3 class="prod-title">Drs. Tri Budiprayitno, M.Si</h3>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        
+                                        <td class="unit-price">
+                                            <div class="available-info">
+                                            Kepala BKD Provinsi NTB
+                                            </div>
+                                        </td>
+                                        <td class="price">Pembina Utama Madya (IV/d)</td>
+                                        <td class="price">NIP. 196810161988031003</td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!--End cart area-->
+
+
+<section class="agenda-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                
                 <div class="table-responsive">
                     <table class="table agenda-table">
                         <thead>
@@ -94,109 +138,19 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
     </div>
 </section>
 
- <section class="single-service-area">
-            <div class="container">
-                
-			<div class="how-work-box">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                    <div class="image-box">
-                                        <img src="<?php echo base_url().'assets/'?>images/services/service-single/kaban.jpg" alt="Kaban"><br><br>
-                                      
-                                             
-                                                   
-                                               
-                                    </div>
-                                </div>
-                                <div class="col-xl-6">
-                                    <div class="how-works-content">
-                                        <h5>Profil Kepala Badan</h5>
-                                        <ul>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-tick"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Nama Lengkap :</span><br>
-                                                    <b>Drs. Tri Budiprayitno, M.Si</b>
-                                                 
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-tick"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Pangkat / Golongan</span><br>
-                                                    Pembina Utama Madya (IV/d)
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-tick"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Tempat & Tanggal Lahir</span><br>
-                                                    Mataram, 16 Oktober 1968
-                                                </div>
-                                            </li>
-											<li>
-                                                <div class="icon">
-                                                    <span class="icon-tick"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Pendidikan</span><br>
-                                                    S2 Administrasi Publik (UGM Yogyakarta) Tahun 2000<br>
-                                                    S1 Ilmu Pemerintahan (IIP Jakarta) Tahun 1995<br>
-                                                    DIII APDN Mataram Tahun 1990
-                                                </div>
-                                            </li>
-											<li>
-                                                <div class="icon">
-                                                    <span class="icon-tick"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Riwayat Jabatan</span><br>
-                                                    <b>Kepala BKD Provinsi NTB (Sekarang)</b><br>
-													Kepala Dinas Pemuda & Olahraga <br>
-													Kepala Dinas Perpustakaan dan Kearsipan<br>
-													Kepala Satuan Polisi Pamong Praja<br>
-													Kepala Badan Pengembangan Sumber Daya Manusia Daerah<br>
-													Kepala Dinas Komunikasi, Informatika dan Statistik<br>
-													Kepala Biro Organisasi<br>
 
-														
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="icon">
-                                                    <span class="icon-tick"></span>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Informasi LHKPN</span><br><br>
-                                                    <a class="btn-one black" href="/lhkpn">Lihat LHKPN Kepala BKD Provinsi NTB</a>
-                                                </div>
-                                            </li>
-
-
-											
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
-			</div>
-</section>	
 
 <section class="featured-area">
             
             <div class="container about-style3-content">
                   <div class="row">
                     <div class="col-xl-12">
-                        
+                      <div class="sec-title text-center">
+                            
+                           
+                            <div class="title">Jejak Pimpinan BKD NTB<br>Dari Masa ke Masa</div>
+                            
+                        </div>
                     </div>
                 </div>
                 
