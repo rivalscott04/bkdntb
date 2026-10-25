@@ -24,11 +24,11 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
-                <div class="sec-title agenda-heading">
-                    <p><?php echo $page === 1 ? 'Rekap Agenda Harian Kepala BKD Provinsi NTB' : 'Agenda Minggu Sebelumnya'; ?></p>
-                    <h3><?php echo html_escape($rentang); ?></h3>
+                <div class="text">
+                    
+                    <span>Rekapituasi Agenda Kegiatan : </span><h5><?php echo html_escape($rentang); ?></h5>
                 </div>
-
+<br>
                 <div class="table-responsive">
                     <table class="table agenda-table">
                         <thead>
@@ -73,7 +73,7 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                                         <td class="agenda-keterangan" data-label="Keterangan"><?php echo html_escape($row['keterangan'] ?? ''); ?></td>
                                         <td class="agenda-foto" data-label="Foto Kegiatan">
                                             <?php if (!empty($row['foto_file'])): ?>
-                                                <a href="<?php echo html_escape(agenda_surat_url($row['foto_file'])); ?>" target="_blank" rel="noopener">Lihat foto</a>
+                                                <a href="<?php echo html_escape(agenda_surat_url($row['foto_file'])); ?>" target="_blank" rel="noopener">Lihat Foto</a>
                                             <?php endif; ?>
                                         </td>
                                     </tr>
@@ -93,3 +93,184 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
         </div>
     </div>
 </section>
+
+ <section class="single-service-area">
+            <div class="container">
+                
+			<div class="how-work-box">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="image-box">
+                                        <img src="<?php echo base_url().'assets/'?>images/services/service-single/kaban.jpg" alt="Kaban"><br><br>
+                                      
+                                             
+                                                   
+                                               
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="how-works-content">
+                                        <h5>Profil Kepala Badan</h5>
+                                        <ul>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-tick"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span>Nama Lengkap :</span><br>
+                                                    <b>Drs. Tri Budiprayitno, M.Si</b>
+                                                 
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-tick"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span>Pangkat / Golongan</span><br>
+                                                    Pembina Utama Madya (IV/d)
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-tick"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span>Tempat & Tanggal Lahir</span><br>
+                                                    Mataram, 16 Oktober 1968
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="icon">
+                                                    <span class="icon-tick"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span>Pendidikan</span><br>
+                                                    S2 Administrasi Publik (UGM Yogyakarta) Tahun 2000<br>
+                                                    S1 Ilmu Pemerintahan (IIP Jakarta) Tahun 1995<br>
+                                                    DIII APDN Mataram Tahun 1990
+                                                </div>
+                                            </li>
+											<li>
+                                                <div class="icon">
+                                                    <span class="icon-tick"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span>Riwayat Jabatan</span><br>
+                                                    <b>Kepala BKD Provinsi NTB (Sekarang)</b><br>
+													Kepala Dinas Pemuda & Olahraga <br>
+													Kepala Dinas Perpustakaan dan Kearsipan<br>
+													Kepala Satuan Polisi Pamong Praja<br>
+													Kepala Badan Pengembangan Sumber Daya Manusia Daerah<br>
+													Kepala Dinas Komunikasi, Informatika dan Statistik<br>
+													Kepala Biro Organisasi<br>
+
+														
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="icon">
+                                                    <span class="icon-tick"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span>Informasi LHKPN</span><br><br>
+                                                    <a class="btn-one black" href="/lhkpn">Lihat LHKPN Kepala BKD Provinsi NTB</a>
+                                                </div>
+                                            </li>
+
+
+											
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+			</div>
+</section>	
+
+<section class="featured-area">
+            
+            <div class="container about-style3-content">
+                  <div class="row">
+                    <div class="col-xl-12">
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-carousel-v2 owl-carousel owl-theme">
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/1.png" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/2.png" alt="Awesome Image"></a>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/3.png" alt="Awesome Image"></a>
+                                    
+                                  
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/4.png" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                            <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/5.png" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                             <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="https://www.instagram.com/p/DajYFhKDwkb/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="><img src="<?php echo base_url().'assets/'?>images/kaban/6.png" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
+                          
+
+                          
+                      
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+
+            </div>
+
+              
+        </section>
+
