@@ -97,7 +97,7 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
 
                 <?php if ($pagination): ?>
                     <?php if ($page === 1): ?>
-                        <p class="agenda-pagination-hint">Halaman berikutnya menampilkan agenda minggu sebelumnya.</p><br>
+                        <!-- <p class="agenda-pagination-hint">Halaman berikutnya menampilkan agenda minggu sebelumnya.</p><br> -->
                     <?php endif; ?>
                     <div class="blog-post"><?php echo $pagination; ?></div>
                 <?php endif; ?>
