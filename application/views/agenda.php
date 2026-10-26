@@ -6,7 +6,7 @@
             <div class="col-xl-12">
                 <div class="inner-content-box clearfix">
                     <div class="title-s2 text-center">
-                        <span>BKD Provinsi NTB</span>
+                        <span>BKD Provinsi Nusa Tenggara Barat</span>
                         <h1>Agenda Harian Kepala Badan</h1>
                     </div>
                 </div>
@@ -25,13 +25,22 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
 <section class="agenda-area">
     <div class="container">
         <div class="row">
-            <div class="col-xl-12">
+            <div class="col-xl-9">
                 <div class="text">
                     
-                    <span>Rekapituasi Agenda Kegiatan : </span><h5><?php echo html_escape($rentang); ?></h5>
+                    <span>Agenda Harian Kepala BKD Provinsi NTB</span><br>
+                 <h5><?php echo html_escape($rentang); ?></h5>
                 </div>
+            </div>    
+
+
+                <div class="col-xl-3">
+                     <a class="btn-one black" href="/kaban">Profil Kepala BKD NTB</a>
+                </div>    
 <br>
                 <div class="table-responsive">
+                  
+<br>
                     <table class="table agenda-table">
                         <thead>
                             <tr>
@@ -79,6 +88,7 @@ $per_tanggal = array_count_values(array_column($agenda_list, 'tanggal'));
                                             <?php endif; ?>
                                         </td>
                                     </tr>
+                                    
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </tbody>
