@@ -208,6 +208,16 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="project-carousel-v2 owl-carousel owl-theme">
+
+                        <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="/manajementalenta"><img src="<?php echo base_url().'assets/'?>images/konten/77.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
@@ -238,15 +248,7 @@
                             </div>
                             <!--End single project style1-->
 
-                              <!--Start single project style1-->
-                            <div class="single-project-style2">
-                                <div class="img-holder">
-                                    <a href="/manajementalenta"><img src="<?php echo base_url().'assets/'?>images/konten/77.jpg" alt="Awesome Image"></a>
-                                    
-                                   
-                                </div>
-                            </div>
-                            <!--End single project style1-->
+                              
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
