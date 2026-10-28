@@ -237,6 +237,16 @@
                                 </div>
                             </div>
                             <!--End single project style1-->
+
+                              <!--Start single project style1-->
+                            <div class="single-project-style2">
+                                <div class="img-holder">
+                                    <a href="/manajementalenta"><img src="<?php echo base_url().'assets/'?>images/konten/77.jpg" alt="Awesome Image"></a>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <!--End single project style1-->
                             <!--Start single project style1-->
                             <div class="single-project-style2">
                                 <div class="img-holder">
