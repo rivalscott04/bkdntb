@@ -15,7 +15,7 @@
                                 style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
                                     <div class="big-title">
-                                   Pengumuman Hasil Seleksi Tahap II <br>ASN NTB Awards Tahun 2026
+                                   Uji Publik 5 Besar ASN NTB Awards 2026<br>Masyarakat Diajak Ikut Mengawal Seleksi
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +23,7 @@
                                 data-hoffset="['15','15','15','15']" data-voffset="['-55','15','-5','0']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
                         {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
-                                   <div class="text"><br>Penetapan Peserta 5 (lima) Besar Seleksi Administrasi ASN NTB Awards 2026, nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan mengikuti tahap Uji Publik dan kemudian Presentasi & Wawancara.
+                                   <div class="text"><br>Setelah melewati seleksi tahap sebelumnya, para peserta yang dinyatakan lolos kini menghadapi uji publik. Sebanyak 35 aparatur sipil negara (ASN) dari tujuh kategori mendapatkan kesempatan untuk memperkenalkan rekam jejak, profil, serta kiprah pengabdiannya kepada masyarakat. 
 </div>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@
                                 style="z-index: 7; white-space: nowrap;">
                                 <div class="slide-content left-slide">
                                     <div class="btn-box">
-                                       <br>   <a class="btn-one" href="/awards">Selengkapnya<span class="flaticon-next"></span></a>
+                                       <br>   <a class="btn-one" href="https://bkd.ntbprov.go.id/berita/uji-publik-5-besar-asn-ntb-awards-2026-masyarakat-diajak-ikut-mengawal-seleksi">Selengkapnya<span class="flaticon-next"></span></a>
                                  
                                     </div>
                                 </div>
