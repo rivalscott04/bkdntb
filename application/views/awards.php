@@ -25,14 +25,14 @@
                                 <div class="row">
                                     <div class="col-lg-7">
                                         <div class="single-product-image-holder">
-                                            <iframe width="675" height="404" src="https://www.youtube.com/embed/E1fLNCla2i0?si=yi8UrErpWcQkoQ9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                            <iframe width="675" height="414" src="https://www.youtube.com/embed/E1fLNCla2i0?si=yi8UrErpWcQkoQ9u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                            
                                         </div>
                                     </div><p></p>
                                     <div class="col-lg-5">
                                         <div class="content-box">
                                             <span class="price">ASN NTB Awards Tahun 2026</span>
-                                            <h2>Pengumuman <br>Hasil Seleksi Tahap II</h2>
+                                            <h2>Uji Publik Peringkat 5 Besar <br>Masyarakat Diajak Ikut Mengawal Seleksi</h2>
                                             <div class="review-box">
                                                 <ul>
                                                     <li><i class="fa fa-star"></i></li>
@@ -43,12 +43,12 @@
                                                 </ul>
                                             </div>
                                             <div class="text">
-                                                <p align="justify">Penetapan Peserta 5 (lima) Besar Seleksi Administrasi ASN NTB Awards 2026 adalah sebagaimana tercantum dalam Lampiran Pengumuman ini. Nama peserta dalam lampiran ini, disusun berdasarkan urutan abjad dan tidak menunjukkan peringkat atau urutan penilaian. Peserta akan memasuki tahap Uji Publik kemudian dilanjutkan dengan Presentasi & Wawancara.</p>
+                                                <p align="justify">Setelah melewati seleksi tahap sebelumnya, para peserta yang dinyatakan lolos kini menghadapi uji publik. Sebanyak 35 aparatur sipil negara (ASN) dari tujuh kategori mendapatkan kesempatan untuk memperkenalkan rekam jejak, profil, serta kiprah pengabdiannya kepada masyarakat.</p>
                                             </div>
                                             
                                             <div>
                                                 <br>
-                                              <a class="btn-one" href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Tahap II ASN NTB Awards 2026.pdf">Hasil Seleksi Tahap II<span class="flaticon-next"></span></a>
+                                              <a class="btn-one" href="https://asnntb.my.id/awards/uji-publik/">Lihat Profil & Beri Tanggapan<span class="flaticon-next"></span></a>
                                                 
                             
                              
@@ -77,6 +77,34 @@
                         
                     <div class="faq-content-box">
                             <div class="accordion-box">
+
+                             <!--Start single accordion box-->
+                                <div class="accordion accordion-block">
+                                    <div class="accord-btn">
+                                        <h4>Pengumuman Hasil Seleksi Tahap II</h4>
+                                    </div>
+                                    <div class="accord-content">
+                                    
+                                         <table id="datatable" class="table table-striped">
+                      
+                        <tbody>
+                           
+                                <tr>
+                                
+                                   
+                                    <td>Lihat Pengumuman Hasil Seleksi Tahap II ASN NTB Awards 2026</td>
+                                     <td><a href="<?php echo base_url().'assets/'?>download/Pengumuman Hasil Seleksi Tahap II ASN NTB Awards 2026.pdf" class="btn-three" target="_blank">Unduh</a>
+</td>
+                                </tr>
+
+                               
+                                 
+                        </tbody>
+                    </table>
+
+
+                                </div></div>
+                                <!--End single accordion box-->
 
 
                               <!--Start single accordion box-->
