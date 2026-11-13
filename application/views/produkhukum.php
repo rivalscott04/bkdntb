@@ -34,6 +34,15 @@
                         </thead>
                         <tbody>
 
+                         <tr>
+                              
+                                   <td><b>Surat Edaran Gubernur NTB Nomor : 300.2/185/GUB.43/2026 </b><br> Tentang Kesiapsiagaan & Penanganan Bencana di Provinsi NTB                                 
+                                    <td>2026</td>
+                                   
+                                   
+                                    <td><a href="<?php echo base_url().'assets/'?>download/SE Kesiapsiagaan Bencana.pdf" class="btn-three" target="_blank">Download</a></td>
+                          </tr>
+
                         <tr>
                                    <td><b>Rencana Pembangunan Jangka Menengah Daerah (RPJMD)</b><br>Tahun 2025 - 2029
                                    
