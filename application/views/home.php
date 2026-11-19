@@ -447,7 +447,7 @@
         
 
         <!--Start breadcrumb area-->
-        <section class="breadcrumb-area style2" style="background-image: url(<?php echo base_url().'assets/'?>images/anugerahki.jpg);">
+        <section class="breadcrumb-area style2" style="background-image: url(<?php echo base_url().'assets/'?>images/spandukkorpri.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
